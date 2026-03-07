@@ -2,7 +2,7 @@
 
 ## 📖 项目简介
 
-- Astro-xwnav:不仅仅是简单的链接集合，更是智能化的导航平台，让您只需专注内容管理而非技术细节,**只需编辑一个数据文件，所有功能都会自动更新，极大简化维护工作**,是低配甚至无服务器,个人用户或新手搭建导航站的首选
+- Astro-nav:不仅仅是简单的链接集合，更是智能化的导航平台，让您只需专注内容管理而非技术细节,**只需编辑一个数据文件，所有功能都会自动更新，极大简化维护工作**,是低配甚至无服务器,个人用户或新手搭建导航站的首选
 
 ### 🧭演示站点：[https://52dh.cc.cd](https://52dh.cc.cd)
 
@@ -60,7 +60,7 @@
 ## 🎶 部署指南`总共六步 (git拉取➡️安装环境➡️自定义网站➡️更新数据文件➡️图标脚本➡️部署)
 
 ### ✅ git 拉取
-- `git clone https://github.com/zywe03/astro-xwnav.git`(或者下载压缩包源码解压)
+- `git clone https://github.com/mydaozun/nav.git`(或者下载压缩包源码解压)
 
 ### ✅ windowns安装Node.js 环境
 - 安装 **Node.js 18.0+** (推荐LTS版本)[官网](https://nodejs.org/zh-cn)
@@ -130,7 +130,7 @@ baidu.com
 
 ## 更新指南
 Astro-xwnav 会不定期发布 新功能,修复BUG,维护功能
-- 添加一次上游`git remote add upstream https://github.com/zywe03/astro-xwnav.git`
+- 添加一次上游`git remote add upstream https://github.com/mydaozun/nav.git`
 - 之后执行`git pull upstream main`即可更新(⚠️ 注意写好`.gitignore文件`避免覆盖数据)
 
 ## 🎥 项目核心结构
@@ -277,4 +277,4 @@ npx tsx .\icon-system\0icon.ts
 Feather,Simple,Iconify,DuckDuckGo,Unavatar,myip.la,openweathermap.org,Clearbit,Logo
 ```
 🌟 **52DH导航站** - 让您的网络世界更有序、更高效！
-意见与反馈可使用📧 联系我：[电子邮箱](mailto:zywe03@qq.com)
+意见与反馈可使用📧 联系我：[电子邮箱](mailto:x888888@111.com)
