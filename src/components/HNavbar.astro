@@ -18,11 +18,10 @@ const validCategories = Array.isArray(categories) ? categories : [];
                 <img 
                   src={category.icon} 
                   alt={`${category.name} 分类图标`} 
-                  class="w-4 h-4 opacity-0 transition-opacity duration-300" 
+                  class="w-4 h-4 object-contain" 
                   loading="lazy"
                   decoding="async"
-                  onload="this.classList.remove('opacity-0')"
-                  onerror="this.onerror=null; this.parentElement.innerHTML='&lt;span class=\'text-xs font-bold text-gray-400 dark:text-gray-500\'&gt;'+this.alt.charAt(0)+'&lt;/span&gt;'"
+                  onerror="this.onerror=null; this.src='/images/default.svg';"
                   width="16"
                   height="16"
                 />
