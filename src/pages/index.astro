@@ -58,6 +58,8 @@ const pageDescription = siteDescription;
                                 height={40}
                                 class="w-10 h-10 rounded-lg shadow-sm group-hover:scale-110 group-hover:shadow-md transition-all duration-300 object-cover" 
                                 loading="lazy"
+                                decoding="async"
+                                fetchpriority="low"
                                 onerror="this.onerror=null; this.src='/images/default.svg';"
                               />
                             ) : (

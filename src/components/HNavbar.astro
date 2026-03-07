@@ -20,6 +20,8 @@ const validCategories = Array.isArray(categories) ? categories : [];
                   alt={`${category.name} 分类图标`} 
                   class="w-4 h-4 opacity-0 transition-opacity duration-300" 
                   loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
                   onload="this.classList.remove('opacity-0')"
                   onerror="this.onerror=null; this.parentElement.innerHTML='&lt;span class=\'text-xs font-bold text-gray-400 dark:text-gray-500\'&gt;'+this.alt.charAt(0)+'&lt;/span&gt;'"
                   width="16"
@@ -165,7 +167,7 @@ const validCategories = Array.isArray(categories) ? categories : [];
       const offset = headerHeight + 20; 
       let currentSection = null;
       for (const section of sections) {
-        const sectionEl = section as HTMLElement;
+        const sectionEl = section;
         if (sectionEl.offsetTop - offset <= scrollPosition) {
           currentSection = section;
         } else {
