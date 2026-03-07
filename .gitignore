@@ -1,0 +1,30 @@
+# build output
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# environment variables
+.env
+.env.local
+.env.production
+
+# macOS-specific files
+.DS_Store
+/dist
+# jetbrains setting folder
+.idea/astro.config.mjs
+/src/pages/robots.txt.ts
+/src/components/LogoName.astro
+/src/data/navLinks.js
+/public/
+astro.config.mjs

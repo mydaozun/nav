@@ -1,0 +1,424 @@
+---
+import { categories, sites } from '../data/navLinks.js';
+const totalSites: number = Array.isArray(sites) ? sites.length : 0;
+const totalCategories: number = Array.isArray(categories) ? categories.length : 0;
+import WeatherIsland from '../Island/WeatherIsland.jsx'; 
+import ThemeIsland from '../Island/ThemeIsland.jsx';   
+import LogoName from '../components/LogoName.astro';  
+---
+<div id="sidebar" class="fixed top-0 left-0 bottom-0 w-[90%] xs:w-[85%] sm:w-[70%] md:w-[40%] lg:w-[30%] xl:w-1/4 max-w-sm bg-white/95 dark:bg-gray-800/95 backdrop-blur-md shadow-xl z-50 transform -translate-x-full transition-all duration-300 ease-out overflow-hidden border-r border-gray-100 dark:border-gray-700 flex flex-col">
+  <div class="flex-shrink-0 p-3 sm:p-4 flex justify-between items-center border-b border-gray-100 dark:border-gray-700 bg-white/95 dark:bg-gray-800/95">
+    <LogoName />
+    <button
+      id="sidebar-close"
+      class="p-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-all duration-200 touch-manipulation"
+      aria-label="关闭侧边栏"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  <div id="sidebar-content" class="flex-1 overflow-y-auto flex flex-col px-3 sm:px-4 py-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+    <WeatherIsland client:visible />
+    <ThemeIsland client:load />
+    <div class="mb-6">
+      <div id="toggle-categories" class="flex justify-between items-center mb-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 -m-2 transition-all duration-200 touch-manipulation" aria-label="折叠或展开分类列表">
+        <h3 class="text-base sm:text-lg font-medium text-gray-800 dark:text-white">分类导航</h3>
+        <div class="p-1">
+          <svg id="category-toggle-icon" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 text-gray-600 dark:text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </div>
+      <div id="categories-container" class="overflow-hidden" style="transition:max-height 0.3s ease-in-out; max-height:0;">
+        <div id="sidebar-categories" class="space-y-1 py-2">
+          {categories.map(category => (
+            <a href={`#${category.id}`} class="sidebar-category-link flex items-center px-3 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-200 touch-manipulation">
+              <div class="w-6 h-6 mr-3 flex items-center justify-center flex-shrink-0">
+                {category.icon ? (
+                  <img src={category.icon} alt={`${category.name} 图标`} class="w-5 h-5" width="20" height="20" onerror="this.onerror=null; this.parentElement.innerHTML='&lt;span class=\'text-xl font-bold text-gray-400 dark:text-gray-500\'&gt;'+this.alt.charAt(0)+'&lt;/span&gt;'" />
+                ) : (
+                  <span class="text-xl font-bold text-gray-400 dark:text-gray-500">
+                    {category.name.charAt(0)}
+                  </span>
+                )}
+              </div>
+              <span class="text-sm font-medium">{category.name}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+      <div id="stats-module" class="mt-1 p-2 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl border border-black/5 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.3)] cursor-pointer transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:bg-white/90 dark:hover:bg-gray-900/90 dark:hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] touch-manipulation">
+        <div class="flex gap-1">
+          <div class="flex-1 bg-gradient-to-br from-blue-50/90 to-blue-100/70 dark:from-blue-900/30 dark:to-blue-800/20 backdrop-blur-lg rounded-xl p-2.5 shadow-[0_4px_16px_rgba(59,130,246,0.15)] dark:shadow-[0_4px_16px_rgba(59,130,246,0.25)] text-center">
+            <div class="text-3xl font-bold text-blue-700 dark:text-blue-300 mb-1 drop-shadow-sm">{totalSites}</div>
+            <div class="text-xs text-blue-600 dark:text-blue-400 font-medium">收录网站</div>
+          </div>
+          <div class="flex-1 bg-gradient-to-br from-green-50/90 to-green-100/70 dark:from-green-900/30 dark:to-green-800/20 backdrop-blur-lg rounded-xl p-2.5 shadow-[0_4px_16px_rgba(34,197,94,0.15)] dark:shadow-[0_4px_16px_rgba(34,197,94,0.25)] text-center">
+            <div class="text-3xl font-bold text-green-700 dark:text-green-300 mb-1 drop-shadow-sm">{totalCategories}</div>
+            <div class="text-xs text-green-600 dark:text-green-400 font-medium">收录分类</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 联系我们按钮 -记得修改 -->
+    <div id="make-website-btn" class="mt-auto" style="padding-top:16px;">
+      <a
+        href="https://52dh.cc.cd"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 font-medium shadow-sm border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600 transition-all duration-200 flex items-center justify-center touch-manipulation"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+        </svg>
+        <span class="text-sm sm:text-base">联系我们</span>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="sidebar-backdrop" class="fixed inset-0 backdrop-blur-sm bg-white/30 dark:bg-black/20 z-40 hidden transition-all duration-300" style="pointer-events: auto;"></div>
+<div id="swipe-hint" class="fixed left-1 bottom-1/4 z-30 opacity-0 pointer-events-none transition-all duration-300 ease-out">
+  <div class="flex -space-x-3">
+    <svg class="w-8 h-8 text-gray-600 dark:text-gray-300 swipe-arrow-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 5L16 12L4 19" />
+    </svg>
+    <svg class="w-8 h-8 text-gray-400/70 dark:text-gray-400/70 swipe-arrow-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 5L16 12L4 19" />
+    </svg>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const sidebarClose = document.getElementById('sidebar-close');
+    const sidebar = document.getElementById('sidebar');
+    const backdrop = document.getElementById('sidebar-backdrop');
+    const openSidebar = () => {
+      sidebar?.classList.remove('-translate-x-full');
+      backdrop?.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+      setupCategoryLinks();
+      const swipeHint = document.getElementById('swipe-hint');
+      swipeHint?.classList.remove('opacity-100');
+      swipeHint?.classList.add('opacity-0');
+    };
+    sidebarToggle?.addEventListener('click', openSidebar);
+    const closeSidebar = () => {
+      sidebar?.classList.add('-translate-x-full');
+      backdrop?.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    };
+    sidebarClose?.addEventListener('click', closeSidebar);
+    backdrop?.addEventListener('click', closeSidebar);
+    let touchStartX = 0;
+    let touchStartY = 0;
+    sidebar?.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+    sidebar?.addEventListener('touchmove', (e) => {
+      if (!sidebar.classList.contains('-translate-x-full')) {
+        const touchX = e.touches[0].clientX;
+        const touchY = e.touches[0].clientY;
+        const deltaX = touchStartX - touchX;
+        const deltaY = Math.abs(touchStartY - touchY);
+        if (deltaX > 50 && deltaY < 100) {
+          closeSidebar();
+        }
+      }
+    }, { passive: true });
+    let edgeTouchStartX = 0;
+    let edgeTouchStartY = 0;
+    const getEdgeThreshold = () => window.innerWidth * 0.4; 
+    document.addEventListener('touchstart', (e) => {
+      const touch = e.touches[0];
+      edgeTouchStartX = touch.clientX;
+      edgeTouchStartY = touch.clientY;
+    }, { passive: true });
+    document.addEventListener('touchmove', (e) => {
+      if (sidebar?.classList.contains('-translate-x-full')) {
+        const touch = e.touches[0];
+        const touchX = touch.clientX;
+        const touchY = touch.clientY;
+        const deltaX = touchX - edgeTouchStartX;
+        const deltaY = Math.abs(touchY - edgeTouchStartY);
+        if (edgeTouchStartX <= getEdgeThreshold() && deltaX > 50 && deltaY < 100) {
+          openSidebar();
+        }
+      }
+    }, { passive: true });
+    let mouseStartX = 0;
+    let mouseStartY = 0;
+    let isMouseDragging = false;
+    document.addEventListener('mousedown', (e) => {
+      mouseStartX = e.clientX;
+      mouseStartY = e.clientY;
+      isMouseDragging = true;
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (sidebar?.classList.contains('-translate-x-full') && isMouseDragging) {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const deltaX = mouseX - mouseStartX;
+        const deltaY = Math.abs(mouseY - mouseStartY);
+        if (mouseStartX <= getEdgeThreshold() && deltaX > 50 && deltaY < 100) {
+          openSidebar();
+          isMouseDragging = false; 
+        }
+      }
+    });
+    document.addEventListener('mouseup', () => {
+      isMouseDragging = false;
+    });
+    function setupCategoryLinks() {
+      const categoryLinks = document.querySelectorAll('.sidebar-category-link');
+      if (categoryLinks.length === 0) {
+        return;
+      }
+      categoryLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const href = link.getAttribute('href');
+          if (!href) return;
+          const id = href.replace('#', '');
+          closeSidebar();
+          setTimeout(() => {
+            const targetSection = document.getElementById(id);
+            if (targetSection) {
+              const headerHeight = 70; 
+              const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }, 100); 
+        });
+      });
+    }
+    const toggleCategories = document.getElementById('toggle-categories');
+    const categoriesContainer = document.getElementById('categories-container');
+    const categoryToggleIcon = document.getElementById('category-toggle-icon');
+    const statsModule = document.getElementById('stats-module');
+    const toggleCategoriesDisplay = () => {
+      if (categoriesContainer && categoryToggleIcon) {
+        const categoriesList = document.getElementById('sidebar-categories');
+        if (!categoriesList) return;
+        const isExpanded = categoriesContainer.style.maxHeight !== '0px' && categoriesContainer.style.maxHeight !== '';
+        if (isExpanded) {
+          categoriesContainer.style.maxHeight = '0px';
+          categoryToggleIcon.style.transform = 'rotate(0deg)';
+        } else {
+          const totalHeight = categoriesList.scrollHeight;
+          categoriesContainer.style.maxHeight = `${totalHeight}px`;
+          categoryToggleIcon.style.transform = 'rotate(180deg)';
+        }
+      }
+    };
+    toggleCategories?.addEventListener('click', toggleCategoriesDisplay);
+    statsModule?.addEventListener('click', toggleCategoriesDisplay);
+    const checkUrlForCategory = () => {
+      const hash = window.location.hash;
+      if (hash && hash.startsWith('#')) {
+        if (categoriesContainer && categoryToggleIcon) {
+          const categoriesList = document.getElementById('sidebar-categories');
+          if (categoriesList) {
+            const totalHeight = categoriesList.scrollHeight;
+            categoriesContainer.style.maxHeight = `${totalHeight}px`;
+            categoryToggleIcon.style.transform = 'rotate(180deg)';
+          }
+        }
+      }
+    };
+    setTimeout(checkUrlForCategory, 300);
+    setupCategoryLinks();
+    const swipeHint = document.getElementById('swipe-hint');
+    let hintShown = false;
+    let hintTimeout = null;
+    let showDelayTimeout = null;
+    let hintShowCount = 0;
+    const canShowHint = () => {
+      return hintShowCount < 2;
+    };
+    const incrementHintShowCount = () => {
+      hintShowCount++;
+    };
+    const handleScroll = () => {
+      if (!sidebar?.classList.contains('-translate-x-full')) return;
+      if (!canShowHint()) return;
+      const scrollY = window.scrollY;
+      const shouldShow = scrollY > 300; 
+      if (shouldShow && !hintShown) {
+        if (showDelayTimeout) {
+          clearTimeout(showDelayTimeout);
+        }
+        showDelayTimeout = setTimeout(() => {
+          if (window.scrollY > 300 && sidebar?.classList.contains('-translate-x-full') && !hintShown && canShowHint()) {
+            swipeHint?.classList.remove('opacity-0');
+            swipeHint?.classList.add('opacity-100');
+            hintShown = true;
+            incrementHintShowCount();
+            hintTimeout = setTimeout(() => {
+              swipeHint?.classList.remove('opacity-100');
+              swipeHint?.classList.add('opacity-0');
+              hintShown = false;
+            }, 2000);
+          }
+        }, 1500);
+      } else if (!shouldShow) {
+        if (showDelayTimeout) {
+          clearTimeout(showDelayTimeout);
+          showDelayTimeout = null;
+        }
+        if (hintShown) {
+          swipeHint?.classList.remove('opacity-100');
+          swipeHint?.classList.add('opacity-0');
+          hintShown = false;
+        }
+        if (hintTimeout) {
+          clearTimeout(hintTimeout);
+          hintTimeout = null;
+        }
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+  });
+</script>
+<style>
+  /* 侧边栏基础样式 */
+  #sidebar {
+    /* 使用 top 和 bottom 定位，让浏览器自动计算高度 */
+    /* 这样可以避免在某些设备上出现高度计算问题 */
+  }
+  /* 滚动区域样式 */
+  #sidebar-content .overflow-y-auto {
+    /* 隐藏滚动条但保持滚动功能 */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* 优化移动端滚动 */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  #sidebar-content .overflow-y-auto::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+  /* 桌面端悬停显示滚动条 */
+  @media (hover: hover) and (pointer: fine) {
+    #sidebar-content .overflow-y-auto:hover::-webkit-scrollbar {
+      width: 4px;
+      display: block;
+    }
+    #sidebar-content .overflow-y-auto:hover::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    #sidebar-content .overflow-y-auto:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(156, 163, 175, 0.5);
+      border-radius: 10px;
+    }
+    .dark #sidebar-content .overflow-y-auto:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(156, 163, 175, 0.3);
+    }
+  }
+  /* 移动端专用样式 */
+  @media (max-width: 768px) {
+    #sidebar {
+      /* 确保在移动端占据合适的宽度 */
+      max-width: calc(100vw - 40px);
+    }
+    /* 优化触摸交互 */
+    .touch-manipulation {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* 确保按钮有足够的点击区域 */
+    .sidebar-category-link {
+      min-height: 44px; /* iOS推荐的最小触摸目标 */
+    }
+    #toggle-categories,
+    #sidebar-close {
+      min-width: 44px;
+      min-height: 44px;
+    }
+  }
+  /* 超小屏幕适配 */
+  @media (max-width: 375px) {
+    #sidebar {
+      width: 95% !important;
+      max-width: none;
+    }
+  }
+  /* 横屏模式适配 */
+  @media (max-height: 500px) and (orientation: landscape) {
+    #sidebar {
+      /* 横屏模式下也使用 top/bottom 定位 */
+    }
+    #sidebar-content .overflow-y-auto {
+      /* 横屏时减少内边距 */
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    #make-website-btn {
+      padding: 0.5rem;
+    }
+  }
+  /* 安全区域适配 */
+  @supports (padding: max(0px)) {
+    #sidebar {
+      padding-left: max(0px, env(safe-area-inset-left));
+    }
+    #make-website-btn {
+      padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+    }
+  }
+  /* 动画优化 */
+  @media (prefers-reduced-motion: reduce) {
+    #sidebar,
+    #categories-container,
+    .transition-all,
+    .transition-transform {
+      transition: none !important;
+    }
+  }
+  /* 高对比度模式支持 */
+  @media (prefers-contrast: high) {
+    #sidebar {
+      border-width: 2px;
+    }
+    .sidebar-category-link:hover,
+    #toggle-categories:hover,
+    #sidebar-close:hover {
+      outline: 2px solid currentColor;
+    }
+  }
+  /* 左滑提示箭头动画 - 优雅流畅版本 */
+  .swipe-arrow-1 {
+    animation: swipeFlow1 1.0s ease-in-out infinite;
+  }
+  .swipe-arrow-2 {
+    animation: swipeFlow2 1.0s ease-in-out infinite;
+    animation-delay: 0.15s;
+  }
+  @keyframes swipeFlow1 {
+    0%, 100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 0.8;
+      transform: translateX(5px);
+    }
+  }
+  @keyframes swipeFlow2 {
+    0%, 100% {
+      opacity: 0.7;
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 0.9;
+      transform: translateX(7px);
+    }
+  }
+</style>

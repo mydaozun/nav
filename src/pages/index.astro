@@ -1,0 +1,213 @@
+---
+import MainLayout, { siteTitle, siteDescription } from '../layouts/MainLayout.astro'; 
+import Header from '../components/Header.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
+import HNavbar from '../components/HNavbar.astro';
+import { categories, sites } from '../data/navLinks.js';
+const pageTitle = siteTitle;
+const pageDescription = siteDescription;
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <Header />
+  <div class="w-full lg:flex lg:flex-nowrap lg:gap-6">
+    <Sidebar class="lg:block lg:sticky lg:top-0 lg:h-screen lg:flex-none lg:w-60 lg:overflow-y-auto lg:translate-x-0 lg:z-auto" />
+    <main class="pt-24 pb-8 lg:flex-1 lg:min-w-0 px-1">
+      {/* 添加 H1 标签 */}
+      <h1 class="sr-only">{pageTitle}</h1> {/* 使用 sr-only 使其在视觉上隐藏，但对屏幕阅读器和搜索引擎可见 */}
+      <HNavbar />
+      <div class="px-1 pb-8">
+        <div class="max-w-7xl mx-auto space-y-6">
+          {categories.map(category => {
+            const categorySites = sites.filter(site => site.category === category.id);
+            if (categorySites.length === 0) return null;
+            
+            return (
+              <section 
+                id={category.id}
+                class="bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden
+                         border border-gray-100 dark:border-gray-700"
+              >
+                <div class="px-6 h-14 flex items-center bg-gradient-to-r from-gray-50 to-transparent
+                              dark:from-gray-700/30 dark:to-transparent">
+                  <h2 class="text-base font-medium text-gray-900 dark:text-white flex items-center">
+                    <span class="w-1 h-4 bg-blue-500 rounded-full mr-3"></span>
+                    {category.name}
+                    <span class="ml-2 text-sm text-gray-500 dark:text-gray-400">
+                      ({categorySites.length})
+                    </span>
+                  </h2>
+                </div>
+                <div class="p-6">
+                  <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
+                    {categorySites.map(site => (
+                      <div key={site.id} class="relative group">
+                        <a
+                          href={site.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="flex items-center p-3 rounded-xl
+                                   border border-gray-100 dark:border-gray-700
+                                   hover:shadow-lg hover:shadow-blue-500/5
+                                   hover:border-blue-500/50 dark:hover:border-blue-500/50
+                                   bg-gradient-to-br from-gray-50 to-white
+                                   dark:from-gray-800 dark:to-gray-750
+                                   hover:from-blue-50/50 hover:to-white
+                                   dark:hover:from-blue-500/10 dark:hover:to-gray-750
+                                   transition-all duration-300"
+                        >
+                          <div class="flex-shrink-0">
+                            {site.icon ? (
+                              <img 
+                                src={site.icon} 
+                                alt=""
+                                width={40}
+                                height={40}
+                                class="w-10 h-10 rounded-lg shadow-sm group-hover:scale-110 group-hover:shadow-md
+                                         transition-all duration-300 object-cover" 
+                                loading="lazy"
+                                onerror="this.onerror=null; this.src='/images/default.svg';"
+                              />
+                            ) : (
+                              <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gray-100 to-gray-50
+                                            dark:from-gray-700 dark:to-gray-600
+                                            flex items-center justify-center shadow-sm
+                                            group-hover:scale-110 group-hover:shadow-md
+                                            transition-all duration-300">
+                                <span class="text-xl font-bold text-gray-400 dark:text-gray-500">
+                                  {site.title[0]}
+                                </span>
+                              </div>
+                            )}
+                          </div>
+                          <div class="ml-3 min-w-0">
+                            <h3 class="font-medium text-gray-900 dark:text-white truncate text-sm
+                                         group-hover:text-blue-500">
+                              {site.title}
+                            </h3>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 truncate">
+                              {site.shortDesc || site.description}
+                            </p>
+                          </div>
+                        </a>
+                        {site.description && (
+                          <div class="absolute bottom-full left-0 right-0 mx-auto mb-2 px-3 py-2 
+                                        bg-gray-900 dark:bg-gray-700 text-white text-xs rounded-lg
+                                        shadow-xl opacity-0 invisible group-hover:opacity-100 
+                                        group-hover:visible transition-all duration-200
+                                        z-50 break-words max-w-[200px] whitespace-normal text-center">
+                            {site.description}
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0
+                                          border-l-4 border-r-4 border-t-4
+                                          border-transparent border-t-gray-900 dark:border-t-gray-700" />
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            );
+          })}
+        </div>
+      </div>
+    </main>
+  </div>
+  <Footer />
+</MainLayout>
+<script>
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const searchResults = document.getElementById('search-results');
+  const allCards = document.querySelectorAll('.card');
+  interface SearchResult {
+    title: string;
+    description: string;
+    categoryId: string;
+    categoryName: string;
+    url: string;
+    icon: string;
+  }
+  function getCategoryNameById(categoryId: string): string {
+    const categoryElement = document.querySelector(`section#${categoryId} h2`);
+    return categoryElement && categoryElement.textContent ? categoryElement.textContent.trim() : categoryId;
+  }
+  function initSearch(): void {
+    if (!searchInput) return;
+    searchInput.addEventListener('input', (e: Event) => {
+      const target = e.target as HTMLInputElement;
+      const query = target?.value?.toLowerCase() || '';
+      if (!query) {
+        searchResults?.classList.add('hidden');
+        return;
+      }
+      const results: SearchResult[] = [];
+      allCards.forEach(card => {
+        const title = card.querySelector('h3')?.textContent?.toLowerCase() || '';
+        const categoryId = card.getAttribute('data-category') || '';
+        const url = card.getAttribute('data-url') || '#';
+        const urlLower = url.toLowerCase();
+        const icon = card.querySelector('img')?.getAttribute('src') || '/icons/default.svg';
+        if (title.includes(query) || urlLower.includes(query)) {
+          const categoryName = getCategoryNameById(categoryId);
+          results.push({
+            title: card.querySelector('h3')?.textContent || '',
+            description: card.querySelector('p')?.textContent || '',
+            categoryId,
+            categoryName,
+            url,
+            icon
+          });
+        }
+      });
+      if (results.length > 0) {
+        searchResults?.classList.remove('hidden');
+        let resultsHTML = '';
+        results.forEach(result => {
+          resultsHTML += `
+            <div class="p-3 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors cursor-pointer flex items-start">
+              <div class="w-10 h-10 mr-3 flex-shrink-0 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-md overflow-hidden">
+                <img src="${result.icon}" alt="${result.title} 图标" class="w-6 h-6" width="24" height="24" loading="lazy" onerror="this.src='/icons/default.svg'">
+              </div>
+              <div class="flex-grow">
+                <h4 class="font-medium text-gray-900 dark:text-gray-100">${result.title}</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-1">${result.description}</p>
+                <span class="text-xs text-gray-500 dark:text-gray-500 mt-1">分类: ${result.categoryName}</span>
+              </div>
+            </div>
+          `;
+        });
+        if (searchResults) {
+          searchResults.innerHTML = resultsHTML;
+          const resultItems = searchResults.querySelectorAll('div.cursor-pointer');
+          resultItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+              const result = results[index];
+              if (result && result.url) {
+                window.location.href = result.url;
+              }
+            });
+          });
+        }
+      } else {
+        searchResults?.classList.remove('hidden');
+        if (searchResults) {
+          searchResults.innerHTML = `<div class="p-3 text-center text-gray-500 dark:text-gray-400">没有找到相关网站</div>`;
+        }
+      }
+    });
+  }
+  function initClickOutside(): void {
+    document.addEventListener('click', (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target && (!target.closest('#search-container') && !target.closest('#search-toggle'))) {
+        searchResults?.classList.add('hidden');
+      }
+    });
+  }
+  initSearch();
+  initClickOutside();
+</script>
