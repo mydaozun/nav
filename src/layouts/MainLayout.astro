@@ -121,16 +121,10 @@ const canonicalURL = new URL(Astro.url.pathname, baseSiteURL).href;
     <!-- 图标 -->
     <link rel="icon" type="image/svg+xml" href={websiteConfig.favicon || "/images/logo.svg"} />
     {[
-      'api.myip.la',
-      'myip.ipip.net',
-      'nominatim.openstreetmap.org',
       'api.openweathermap.org',
       'api.open-meteo.com'
     ].map(domain => (
-      <>
-        <link rel="dns-prefetch" href={`//${domain}`} />
-        <link rel="preconnect" href={`https://${domain}`} crossorigin />
-      </>
+      <link rel="dns-prefetch" href={`//${domain}`} />
     ))}
     <style>
       @media (max-width: 768px) {
@@ -184,13 +178,31 @@ const canonicalURL = new URL(Astro.url.pathname, baseSiteURL).href;
       }
     </style>
     <!-- 谷歌广告 -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const googleAdScript = document.createElement('script');
+        googleAdScript.async = true;
+        googleAdScript.crossOrigin = 'anonymous';
+        googleAdScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643';
+        document.head.appendChild(googleAdScript);
+      });
+    </script>
     <!-- MONETAG广告 -->
-    <script src="https://5gvci.com/act/files/tag.min.js?z=10688447" data-cfasync="false" async></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          const monetagScript = document.createElement('script');
+          monetagScript.async = true;
+          monetagScript.dataset.cfasync = 'false';
+          monetagScript.src = 'https://5gvci.com/act/files/tag.min.js?z=10688447';
+          document.head.appendChild(monetagScript);
+        }, 3000);
+      });
+    </script>
   </head>
   <body>
     <slot />
-    <ThemeIsland client:load />
+    <ThemeIsland client:idle />
     <QuicklyUpButton client:visible />
   </body>
 </html>

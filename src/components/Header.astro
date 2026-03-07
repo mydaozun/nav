@@ -52,8 +52,8 @@ import LogoName from '../components/LogoName.astro';
     </div>
   </div>
 </header>
-<SearchIsland client:idle />
-<ThemeIsland client:idle />
+<SearchIsland client:visible />
+<ThemeIsland client:visible />
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     let lastScrollY = window.scrollY;
