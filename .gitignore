@@ -22,9 +22,4 @@ pnpm-debug.log*
 .DS_Store
 /dist
 # jetbrains setting folder
-.idea/astro.config.mjs
-/src/pages/robots.txt.ts
-/src/components/LogoName.astro
-/src/data/navLinks.js
-/public/
-astro.config.mjs
+.idea/
