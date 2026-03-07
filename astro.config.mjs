@@ -84,10 +84,6 @@ export default defineConfig({
       ]
     },
   },
-  prefetch: {
-    defaultStrategy: 'viewport',
-    prefetchAll: true,
-  },
   compressHTML: true,
   integrations: [
     tailwind({
