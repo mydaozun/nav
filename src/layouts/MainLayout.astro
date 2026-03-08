@@ -178,27 +178,10 @@ const canonicalURL = new URL(Astro.url.pathname, baseSiteURL).href;
       }
     </style>
     <!-- 谷歌广告 -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const googleAdScript = document.createElement('script');
-        googleAdScript.async = true;
-        googleAdScript.crossOrigin = 'anonymous';
-        googleAdScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643';
-        document.head.appendChild(googleAdScript);
-      });
-    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643"
+     crossorigin="anonymous"></script>
     <!-- MONETAG广告 -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-          const monetagScript = document.createElement('script');
-          monetagScript.async = true;
-          monetagScript.dataset.cfasync = 'false';
-          monetagScript.src = 'https://5gvci.com/act/files/tag.min.js?z=10688447';
-          document.head.appendChild(monetagScript);
-        }, 3000);
-      });
-    </script>
+    <script src="https://5gvci.com/act/files/tag.min.js?z=10688447" data-cfasync="false" async></script>
   </head>
   <body>
     <slot />
