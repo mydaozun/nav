@@ -35,18 +35,33 @@ jobs:
 
       - name: Create .env.local file
         run: |
+          echo "=== 检查 Secrets ==="
+          echo "NOTION_API_KEY: ${{ secrets.NOTION_API_KEY != '' && secrets.NOTION_API_KEY != null && secrets.NOTION_API_KEY != 'null' && secrets.NOTION_API_KEY != 'undefined' ? '✓ 已设置' : '✗ 未设置' }}"
+          echo "NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID != '' && secrets.NOTION_DATABASE_ID != null && secrets.NOTION_DATABASE_ID != 'null' && secrets.NOTION_DATABASE_ID != 'undefined' ? '✓ 已设置' : '✗ 未设置' }}"
+          echo "NOTION_CONFIG_DATABASE_ID: ${{ secrets.NOTION_CONFIG_DATABASE_ID != '' && secrets.NOTION_CONFIG_DATABASE_ID != null && secrets.NOTION_CONFIG_DATABASE_ID != 'null' && secrets.NOTION_CONFIG_DATABASE_ID != 'undefined' ? '✓ 已设置' : '✗ 未设置' }}"
+          echo "NOTION_WEBSITE_CONFIG_ID: ${{ secrets.NOTION_WEBSITE_CONFIG_ID != '' && secrets.NOTION_WEBSITE_CONFIG_ID != null && secrets.NOTION_WEBSITE_CONFIG_ID != 'null' && secrets.NOTION_WEBSITE_CONFIG_ID != 'undefined' ? '✓ 已设置' : '✗ 未设置' }}"
+          echo "=== 创建 .env.local ==="
           echo "NOTION_API_KEY=${{ secrets.NOTION_API_KEY }}" >> .env.local
           echo "NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }}" >> .env.local
           echo "NOTION_CONFIG_DATABASE_ID=${{ secrets.NOTION_CONFIG_DATABASE_ID }}" >> .env.local
           echo "NOTION_WEBSITE_CONFIG_ID=${{ secrets.NOTION_WEBSITE_CONFIG_ID }}" >> .env.local
+          echo "=== .env.local 内容 ==="
+          cat .env.local | sed 's/NOTION_API_KEY=.*/NOTION_API_KEY=***/g'
 
       - name: Sync data from Notion
-        continue-on-error: true
-        run: pnpm sync:notion
+        run: |
+          echo "=== 开始同步 Notion 数据 ==="
+          pnpm sync:notion
+          echo "=== 检查 webnav.js ==="
+          ls -la src/data/
+          cat src/data/webnav.js | head -50
 
       - name: Sync to navLinks.js
-        continue-on-error: true
-        run: pnpm sync:navlinks
+        run: |
+          echo "=== 开始同步到 navLinks.js ==="
+          pnpm sync:navlinks
+          echo "=== 检查 navLinks.js ==="
+          cat src/data/navLinks.js | head -50
 
       - name: Configure Git
         run: |
