@@ -96,7 +96,12 @@ jobs:
           git commit -m "chore: auto-update data from Notion"
           git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
 
-      - name: Trigger Vercel Deploy
-        if: steps.check_notion.outcome == 'success' && steps.check_changes.outputs.changes == 'true' && secrets.VERCEL_DEPLOY_HOOK != ''
+      - name: Set up deploy hook
+        if: steps.check_notion.outcome == 'success' && steps.check_changes.outputs.changes == 'true'
         run: |
-          curl -X POST ${{ secrets.VERCEL_DEPLOY_HOOK }}
+          echo "VERCEL_DEPLOY_HOOK=${{ secrets.VERCEL_DEPLOY_HOOK }}" >> $GITHUB_ENV
+
+      - name: Trigger Vercel Deploy
+        if: steps.check_notion.outcome == 'success' && steps.check_changes.outputs.changes == 'true' && env.VERCEL_DEPLOY_HOOK != ''
+        run: |
+          curl -X POST ${{ env.VERCEL_DEPLOY_HOOK }}
