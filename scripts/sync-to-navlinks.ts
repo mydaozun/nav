@@ -9,51 +9,6 @@ const __dirname = path.dirname(__filename);
 const WEBPACK_FILE = path.join(__dirname, '..', 'src', 'data', 'webnav.js');
 const OUTPUT_FILE = path.join(__dirname, '..', 'src', 'data', 'navLinks.js');
 
-function escapeSingleQuote(str: string): string {
-  if (!str) return '';
-  return str.replace(/'/g, "\\'");
-}
-
-function formatCategories(categories: any[]): string {
-  return categories.map(cat => {
-    return `  {
-    id: '${escapeSingleQuote(cat.id)}',
-    name: '${escapeSingleQuote(cat.name)}',
-  }`;
-  }).join(',\n');
-}
-
-function formatSites(sites: any[]): string {
-  const groupedSites: Record<string, any[]> = {};
-  
-  sites.forEach(site => {
-    if (!groupedSites[site.category]) {
-      groupedSites[site.category] = [];
-    }
-    groupedSites[site.category].push(site);
-  });
-
-  let result = '';
-  
-  for (const [category, siteList] of Object.entries(groupedSites)) {
-    result += `  //${category}      
-`;
-    result += siteList.map(site => {
-      return `      {
-      id: '${escapeSingleQuote(site.id)}',
-      title: '${escapeSingleQuote(site.title)}',
-      description: '${escapeSingleQuote(site.description)}',
-      shortDesc: '${escapeSingleQuote(site.shortDesc || '')}',
-      url: '${escapeSingleQuote(site.url)}',
-      category: '${escapeSingleQuote(site.category)}',
-      }`;
-    }).join(',\n');
-    result += '\n';
-  }
-  
-  return result;
-}
-
 async function main() {
   try {
     console.log('🚀 开始同步数据到 navLinks.js...');
@@ -71,21 +26,28 @@ async function main() {
     
     fs.unlinkSync(tempModulePath);
 
+    const categoriesWithEmptyIcon = categories.map(cat => ({
+      ...cat,
+      icon: ''
+    }));
+
+    const sitesWithEmptyIcon = sites.map(site => ({
+      ...site,
+      icon: ''
+    }));
+
     const outputContent = `export const websiteConfig = ${JSON.stringify(websiteConfig, null, 2)};
 
 /**
  * 网站分类列表
  * @type {Array<{id: string, name: string, icon: string}>}
  */
-export const categories = [
-${formatCategories(categories)}
-];
+export const categories = ${JSON.stringify(categoriesWithEmptyIcon, null, 2)};
 /**
  * 网站列表
  * @type {Array<{id: string, title: string, description: string, shortDesc: string, url: string, icon: string, category: string}>}
  */
-export const sites = [
-${formatSites(sites)}];
+export const sites = ${JSON.stringify(sitesWithEmptyIcon, null, 2)};
 /**
  * 搜索网站功能
  * @param {string} query - 搜索关键词
@@ -152,6 +114,7 @@ function escapeHtml(str) {
     fs.writeFileSync(OUTPUT_FILE, outputContent, 'utf-8');
 
     console.log('✅ 数据同步完成！已保存到 src/data/navLinks.js');
+    console.log('💡 提示：现在可以运行 pnpm sync:icons 来下载图标');
 
   } catch (error) {
     console.error('❌ 同步数据失败:', error);

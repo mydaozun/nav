@@ -265,6 +265,36 @@ function detectImageExtension(data: Buffer, url: string): string {
  * @returns {Promise<DownloadResult>} - 下载结果
  */
 async function downloadSiteIcon(task: IconTask): Promise<DownloadResult> {
+  logInfo(`开始下载网站图标: ${task.name} (${task.id})`);
+  
+  if (task.iconUrl && task.iconUrl.startsWith('http')) {
+    try {
+      logInfo(`尝试使用 Notion 提供的图标 URL: ${task.iconUrl}`);
+      const response = await fetchWithTimeout(task.iconUrl, { 
+        headers: createCommonHeaders('image/*')
+      }, 10000, 1);
+      
+      if (response.statusCode === 200) {
+        const iconData = Buffer.from(await response.body.arrayBuffer());
+        if (iconData && iconData.length > 0) {
+          const extension = detectImageExtension(iconData, task.iconUrl);
+          const fileName = `${normalizeFilename(task.id)}.${extension}`;
+          const filePath = path.join(SITE_ICONS_DIR, fileName);
+          await fs.writeFile(filePath, iconData);
+          logSuccess(`成功从 Notion 提供的 URL 下载图标: ${task.name}`);
+          return {
+            taskId: task.id,
+            success: true,
+            type: 'site',
+            path: filePath
+          };
+        }
+      }
+    } catch (error: any) {
+      logWarning(`从 Notion 提供的 URL 下载失败: ${task.name} - ${error.message}`);
+    }
+  }
+  
   if (!task.url) {
     return {
       taskId: task.id,
@@ -273,7 +303,7 @@ async function downloadSiteIcon(task: IconTask): Promise<DownloadResult> {
       error: '缺少URL'
     };
   }
-  logInfo(`开始下载网站图标: ${task.name} (${task.id})`);
+  
   const domain = extractDomain(task.url);
   for (const source of SITE_ICON_SOURCES) {
     try {
@@ -447,6 +477,35 @@ async function downloadFromIconify(searchData: any): Promise<Buffer | null> {
  */
 async function downloadCategoryIcon(task: IconTask): Promise<DownloadResult> {
   logInfo(`开始获取分类图标: ${task.name} (${task.id})`);
+  
+  if (task.iconUrl && task.iconUrl.startsWith('http')) {
+    try {
+      logInfo(`尝试使用 Notion 提供的分类图标 URL: ${task.iconUrl}`);
+      const response = await fetchWithTimeout(task.iconUrl, { 
+        headers: createCommonHeaders('image/*')
+      }, 10000, 1);
+      
+      if (response.statusCode === 200) {
+        const iconData = Buffer.from(await response.body.arrayBuffer());
+        if (iconData && iconData.length > 0) {
+          const extension = detectImageExtension(iconData, task.iconUrl);
+          const fileName = `${normalizeFilename(task.id)}.${extension}`;
+          const filePath = path.join(CATEGORY_ICONS_DIR, fileName);
+          await fs.writeFile(filePath, iconData);
+          logSuccess(`成功从 Notion 提供的 URL 下载分类图标: ${task.name}`);
+          return {
+            taskId: task.id,
+            success: true,
+            type: 'category',
+            path: filePath
+          };
+        }
+      }
+    } catch (error: any) {
+      logWarning(`从 Notion 提供的 URL 下载分类图标失败: ${task.name} - ${error.message}`);
+    }
+  }
+  
   try {
     let iconData: Buffer | null = null;
     let fileName: string;
