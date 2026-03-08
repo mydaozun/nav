@@ -12,10 +12,10 @@
   "license": "MIT",
   "scripts": {
     "astro": "astro",
-    "fetch:notion": "tsx scripts/fetch-notion-data.ts",
-    "fetch:icons": "tsx icon-system/0icon.ts",
-    "build": "pnpm fetch:notion && astro build",
-    "build:quick": "astro build",
+    "sync:notion": "tsx scripts/fetch-notion-data.ts",
+    "sync:icons": "tsx icon-system/0icon.ts",
+    "sync": "pnpm sync:notion && pnpm sync:icons",
+    "build": "astro build",
     "dev": "astro dev",
     "preview": "astro preview",
     "sync": "astro sync"

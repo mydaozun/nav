@@ -2,10 +2,7 @@
 import * as dotenv from 'dotenv';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
-import { exec } from 'child_process';
-import { promisify } from 'util';
 
-const execAsync = promisify(exec);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.join(__dirname, '..', '.env.local') });
@@ -14,10 +11,11 @@ import { getLinks, getConfig, getWebsiteConfig } from '../lib/notion';
 import * as fs from 'fs';
 
 const OUTPUT_FILE = path.join(__dirname, '..', 'src', 'data', 'navLinks.js');
-const ICON_SCRIPT = path.join(__dirname, '..', 'icon-system', '0icon.ts');
 
 async function main() {
   try {
+    console.log('🚀 开始从 Notion 获取数据...');
+
     const [links, config, websiteConfig] = await Promise.all([
       getLinks(),
       getConfig(),
@@ -156,25 +154,11 @@ function escapeHtml(str) {
 
     fs.writeFileSync(OUTPUT_FILE, outputContent, 'utf-8');
 
-    console.log('✅ Notion 数据获取完成！');
-    console.log('🚀 开始自动获取和处理图标...');
-    
-    try {
-      const { stdout, stderr } = await execAsync(`npx tsx "${ICON_SCRIPT}"`, {
-        cwd: path.join(__dirname, '..'),
-        encoding: 'utf-8'
-      });
-      
-      if (stdout) console.log(stdout);
-      if (stderr) console.error(stderr);
-      
-      console.log('✅ 图标自动处理完成！');
-    } catch (iconError) {
-      console.error('⚠️ 图标处理失败，但网站数据已保存:', iconError);
-    }
+    console.log('✅ Notion 数据获取完成！数据已保存到 src/data/navLinks.js');
+    console.log('💡 提示：运行 "pnpm sync:icons" 可以自动获取和优化图标');
 
   } catch (error) {
-    console.error('从 Notion 获取数据失败:', error);
+    console.error('❌ 从 Notion 获取数据失败:', error);
     process.exit(1);
   }
 }
