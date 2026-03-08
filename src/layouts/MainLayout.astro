@@ -29,17 +29,16 @@ if (Astro.site) {
   const siteStr = Astro.site.toString();
   baseSiteURL = siteStr.endsWith('/') ? siteStr.slice(0, -1) : siteStr;
 } else {
+  const originStr = Astro.url.origin.toString();
+  baseSiteURL = originStr.endsWith('/') ? originStr.slice(0, -1) : originStr;
   if (import.meta.env.PROD) {
-    console.error("错误：'site' 未在 astro.config.mjs 中配置。这将导致SEO的绝对URL不正确。");
-    throw new Error("'site' 配置缺失于 astro.config.mjs。生产构建需要此配置以生成正确的绝对URL。");
-  } else {
-    console.warn("警告：'site' 未在 astro.config.mjs 中配置。现为本地开发使用 Astro.url.origin。请设置 'site' 以确保生产构建时绝对URL的正确性。");
-    const originStr = Astro.url.origin.toString();
-    baseSiteURL = originStr.endsWith('/') ? originStr.slice(0, -1) : originStr;
+    console.warn("警告：'site' 未在 astro.config.mjs 中配置。使用 Astro.url.origin 作为回退。建议在 astro.config.mjs 中配置 site 以生成正确的绝对URL。");
   }
 }
-const defaultOgImage = new URL('/images/logo.png', baseSiteURL).href; //想更改OG图片文件名/路径，同步修改这里
-const canonicalURL = new URL(Astro.url.pathname, baseSiteURL).href;
+// 确保 baseSiteURL 有效，避免 new URL 在异常情况下抛出
+const safeBase = baseSiteURL && baseSiteURL.startsWith('http') ? baseSiteURL : 'https://52dh.cc.cd';
+const defaultOgImage = new URL('/images/logo.png', safeBase).href; //想更改OG图片文件名/路径，同步修改这里
+const canonicalURL = new URL(Astro.url.pathname, safeBase).href;
 ---
 <!DOCTYPE html>
 <html lang="zh-CN">
