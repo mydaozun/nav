@@ -70,7 +70,7 @@ jobs:
         if: steps.check_notion.outcome == 'success'
         id: check_changes
         run: |
-          git add src/data/webnav.js src/data/navLinks.js public/icons/
+          git add src/data/webnav.js src/data/navLinks.js
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
           else
