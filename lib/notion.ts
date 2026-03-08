@@ -123,7 +123,8 @@ export async function getConfig(): Promise<ConfigItem[]> {
         }
       })
       .filter((item): item is ConfigItem => item !== null);
-  } catch {
+  } catch (err) {
+    console.error('[Notion] getConfig 失败:', err instanceof Error ? err.message : err);
     return [];
   }
 }
@@ -213,7 +214,8 @@ export async function getLinks(): Promise<Link[]> {
         }
       })
       .filter((link): link is Link => link !== null);
-  } catch {
+  } catch (err) {
+    console.error('[Notion] getLinks 失败:', err instanceof Error ? err.message : err);
     return [];
   }
 }
@@ -332,7 +334,8 @@ export async function getWebsiteConfig(): Promise<WebsiteConfig> {
       });
 
     return config;
-  } catch {
+  } catch (err) {
+    console.error('[Notion] getWebsiteConfig 失败:', err instanceof Error ? err.message : err);
     return {};
   }
 }

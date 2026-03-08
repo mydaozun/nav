@@ -15,6 +15,13 @@ const OUTPUT_FILE = path.join(__dirname, '..', 'src', 'data', 'webnav.js');
 async function main() {
   try {
     console.log('🚀 开始从 Notion 获取数据...');
+    const envCheck = {
+      NOTION_API_KEY: !!process.env.NOTION_API_KEY,
+      NOTION_DATABASE_ID: !!process.env.NOTION_DATABASE_ID,
+      NOTION_CONFIG_DATABASE_ID: !!process.env.NOTION_CONFIG_DATABASE_ID,
+      NOTION_WEBSITE_CONFIG_ID: !!process.env.NOTION_WEBSITE_CONFIG_ID,
+    };
+    console.log('📋 环境变量检查:', JSON.stringify(envCheck, null, 2));
 
     const [links, config, websiteConfig] = await Promise.all([
       getLinks(),
@@ -176,7 +183,8 @@ function escapeHtml(str) {
 
     fs.writeFileSync(OUTPUT_FILE, outputContent, 'utf-8');
 
-    console.log('✅ Notion 数据获取完成！数据已保存到 src/data/webnav.js');
+    console.log(`✅ Notion 数据获取完成！网站: ${sites.length} 个, 分类: ${categories.length} 个`);
+    console.log('💾 数据已保存到 src/data/webnav.js');
     console.log('💡 提示：运行 "pnpm sync:icons" 可以自动获取和优化图标');
 
   } catch (error) {
