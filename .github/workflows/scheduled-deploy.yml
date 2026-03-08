@@ -40,37 +40,20 @@ jobs:
           echo "NOTION_CONFIG_DATABASE_ID=${{ secrets.NOTION_CONFIG_DATABASE_ID }}" >> .env.local
           echo "NOTION_WEBSITE_CONFIG_ID=${{ secrets.NOTION_WEBSITE_CONFIG_ID }}" >> .env.local
 
-      - name: Check if Notion has changes
-        id: check_notion
+      - name: Sync data from Notion
         continue-on-error: true
-        run: pnpm check:notion
-
-      - name: Save last check time
-        if: always()
-        run: |
-          git add .last-notion-check 2>/dev/null || true
-          git diff --staged --quiet || (git config --global user.name "github-actions[bot]" && git config --global user.email "github-actions[bot]@users.noreply.github.com" && git commit -m "chore: update last check time" && git push || true)
-
-      - name: Run sync from Notion
-        if: steps.check_notion.outcome == 'success'
         run: pnpm sync:notion
 
       - name: Sync to navLinks.js
-        if: steps.check_notion.outcome == 'success'
+        continue-on-error: true
         run: pnpm sync:navlinks
 
-      - name: Download and optimize icons
-        if: steps.check_notion.outcome == 'success'
-        run: pnpm sync:icons
-
       - name: Configure Git
-        if: steps.check_notion.outcome == 'success'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Check for content changes
-        if: steps.check_notion.outcome == 'success'
         id: check_changes
         run: |
           git add src/data/webnav.js src/data/navLinks.js
@@ -81,17 +64,17 @@ jobs:
           fi
 
       - name: Commit and push changes
-        if: steps.check_notion.outcome == 'success' && steps.check_changes.outputs.changes == 'true'
+        if: steps.check_changes.outputs.changes == 'true'
         run: |
           git commit -m "chore: auto-update data from Notion"
           git push
 
       - name: Set up deploy hook
-        if: steps.check_notion.outcome == 'success' && steps.check_changes.outputs.changes == 'true'
+        if: steps.check_changes.outputs.changes == 'true'
         run: |
           echo "VERCEL_DEPLOY_HOOK=${{ secrets.VERCEL_DEPLOY_HOOK }}" >> $GITHUB_ENV
 
       - name: Trigger Vercel Deploy
-        if: steps.check_notion.outcome == 'success' && steps.check_changes.outputs.changes == 'true' && env.VERCEL_DEPLOY_HOOK != ''
+        if: steps.check_changes.outputs.changes == 'true' && env.VERCEL_DEPLOY_HOOK != ''
         run: |
           curl -X POST ${{ env.VERCEL_DEPLOY_HOOK }}
