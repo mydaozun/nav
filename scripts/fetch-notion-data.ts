@@ -10,7 +10,7 @@ dotenv.config({ path: path.join(__dirname, '..', '.env.local') });
 import { getLinks, getConfig, getWebsiteConfig } from '../lib/notion';
 import * as fs from 'fs';
 
-const OUTPUT_FILE = path.join(__dirname, '..', 'src', 'data', 'navLinks.js');
+const OUTPUT_FILE = path.join(__dirname, '..', 'src', 'data', 'webnav.js');
 
 async function main() {
   try {
@@ -99,11 +99,11 @@ async function main() {
       icon: link.icon || '/images/default.svg'
     }));
 
-    const outputContent = `export const websiteConfig = ${JSON.stringify(websiteConfig, null, 2)};
+    const outputContent = `export let categories = ${JSON.stringify(categories, null, 2)};
 
-export const categories = ${JSON.stringify(categories, null, 2)};
+export let sites = ${JSON.stringify(sites, null, 2)};
 
-export const sites = ${JSON.stringify(sites, null, 2)};
+export let websiteConfig = ${JSON.stringify(websiteConfig, null, 2)};
 
 export function searchSites(query) {
   if (!query) return sites;
@@ -141,6 +141,28 @@ export function sitesToHtml(sitesList) {
   return \`<div class="sites-grid">\${html}</div>\`;
 }
 
+export function getSitesByCategory(categoryId) {
+  return sites.filter(site => site.category === categoryId);
+}
+
+export function getCategoryById(categoryId) {
+  return categories.find(cat => cat.id === categoryId);
+}
+
+export function getAllCategories() {
+  return categories;
+}
+
+export function getAllSites() {
+  return sites;
+}
+
+export function refreshData(newCategories, newSites, newWebsiteConfig) {
+  if (newCategories) categories = newCategories;
+  if (newSites) sites = newSites;
+  if (newWebsiteConfig) websiteConfig = newWebsiteConfig;
+}
+
 function escapeHtml(str) {
   if (!str) return '';
   return str
@@ -154,7 +176,7 @@ function escapeHtml(str) {
 
     fs.writeFileSync(OUTPUT_FILE, outputContent, 'utf-8');
 
-    console.log('✅ Notion 数据获取完成！数据已保存到 src/data/navLinks.js');
+    console.log('✅ Notion 数据获取完成！数据已保存到 src/data/webnav.js');
     console.log('💡 提示：运行 "pnpm sync:icons" 可以自动获取和优化图标');
 
   } catch (error) {

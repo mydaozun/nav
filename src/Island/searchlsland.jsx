@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { sites, categories } from '../data/navLinks.js';
+import { sites, categories } from '../data/webnav.js';
 export default function SearchIsland() {
   const [isVisible, setIsVisible] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
