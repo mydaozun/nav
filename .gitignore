@@ -24,8 +24,8 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# Icons - don't commit to repo, generate with sync:icons
-public/icons/
+# Icons - committed to repo for easier deployment
+# public/icons/
 
 # Notion last check time - keep this in repo
 # .last-notion-check
