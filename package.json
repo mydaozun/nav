@@ -13,12 +13,13 @@
   "scripts": {
     "astro": "astro",
     "sync:notion": "tsx scripts/fetch-notion-data.ts",
+    "sync:navlinks": "tsx scripts/sync-to-navlinks.ts",
     "sync:icons": "tsx icon-system/0icon.ts",
-    "sync": "pnpm sync:notion && pnpm sync:icons",
+    "sync": "pnpm sync:notion && pnpm sync:navlinks && pnpm sync:icons",
+    "check:notion": "tsx scripts/check-notion-changes.ts",
     "build": "astro build",
     "dev": "astro dev",
-    "preview": "astro preview",
-    "sync": "astro sync"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/partytown": "^2.1.4",

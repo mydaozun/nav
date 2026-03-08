@@ -2,13 +2,101 @@ name: Scheduled Deploy
 
 on:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
-  deploy:
+  check-and-sync:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Create .env.local file
+        run: |
+          echo "NOTION_API_KEY=${{ secrets.NOTION_API_KEY }}" >> .env.local
+          echo "NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }}" >> .env.local
+          echo "NOTION_CONFIG_DATABASE_ID=${{ secrets.NOTION_CONFIG_DATABASE_ID }}" >> .env.local
+          echo "NOTION_WEBSITE_CONFIG_ID=${{ secrets.NOTION_WEBSITE_CONFIG_ID }}" >> .env.local
+
+      - name: Check if Notion has changes
+        id: check_notion
+        continue-on-error: true
+        run: pnpm check:notion
+
+      - name: Save last check time
+        if: always()
+        run: |
+          git add .last-notion-check 2>/dev/null || true
+          git diff --staged --quiet || (git config --global user.name "github-actions[bot]" && git config --global user.email "github-actions[bot]@users.noreply.github.com" && git commit -m "chore: update last check time" && git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }} || true)
+
+      - name: Run sync from Notion
+        if: steps.check_notion.outcome == 'success'
+        run: pnpm sync:notion
+
+      - name: Sync to navLinks.js
+        if: steps.check_notion.outcome == 'success'
+        run: pnpm sync:navlinks
+
+      - name: Download and optimize icons
+        if: steps.check_notion.outcome == 'success'
+        run: pnpm sync:icons
+
+      - name: Configure Git
+        if: steps.check_notion.outcome == 'success'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Check for content changes
+        if: steps.check_notion.outcome == 'success'
+        id: check_changes
+        run: |
+          git add src/data/webnav.js src/data/navLinks.js public/icons/
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_notion.outcome == 'success' && steps.check_changes.outputs.changes == 'true'
+        run: |
+          git commit -m "chore: auto-update data from Notion"
+          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
+
       - name: Trigger Vercel Deploy
+        if: steps.check_notion.outcome == 'success' && steps.check_changes.outputs.changes == 'true' && secrets.VERCEL_DEPLOY_HOOK != ''
         run: |
           curl -X POST ${{ secrets.VERCEL_DEPLOY_HOOK }}
