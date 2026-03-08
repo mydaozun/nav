@@ -36,10 +36,10 @@ jobs:
       - name: Create .env.local file
         run: |
           echo "=== 检查 Secrets ==="
-          echo "NOTION_API_KEY: ${{ secrets.NOTION_API_KEY != '' && secrets.NOTION_API_KEY != null && secrets.NOTION_API_KEY != 'null' && secrets.NOTION_API_KEY != 'undefined' ? '✓ 已设置' : '✗ 未设置' }}"
-          echo "NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID != '' && secrets.NOTION_DATABASE_ID != null && secrets.NOTION_DATABASE_ID != 'null' && secrets.NOTION_DATABASE_ID != 'undefined' ? '✓ 已设置' : '✗ 未设置' }}"
-          echo "NOTION_CONFIG_DATABASE_ID: ${{ secrets.NOTION_CONFIG_DATABASE_ID != '' && secrets.NOTION_CONFIG_DATABASE_ID != null && secrets.NOTION_CONFIG_DATABASE_ID != 'null' && secrets.NOTION_CONFIG_DATABASE_ID != 'undefined' ? '✓ 已设置' : '✗ 未设置' }}"
-          echo "NOTION_WEBSITE_CONFIG_ID: ${{ secrets.NOTION_WEBSITE_CONFIG_ID != '' && secrets.NOTION_WEBSITE_CONFIG_ID != null && secrets.NOTION_WEBSITE_CONFIG_ID != 'null' && secrets.NOTION_WEBSITE_CONFIG_ID != 'undefined' ? '✓ 已设置' : '✗ 未设置' }}"
+          if [ -n "${{ secrets.NOTION_API_KEY }}" ]; then echo "NOTION_API_KEY: ✓ 已设置"; else echo "NOTION_API_KEY: ✗ 未设置"; fi
+          if [ -n "${{ secrets.NOTION_DATABASE_ID }}" ]; then echo "NOTION_DATABASE_ID: ✓ 已设置"; else echo "NOTION_DATABASE_ID: ✗ 未设置"; fi
+          if [ -n "${{ secrets.NOTION_CONFIG_DATABASE_ID }}" ]; then echo "NOTION_CONFIG_DATABASE_ID: ✓ 已设置"; else echo "NOTION_CONFIG_DATABASE_ID: ✗ 未设置"; fi
+          if [ -n "${{ secrets.NOTION_WEBSITE_CONFIG_ID }}" ]; then echo "NOTION_WEBSITE_CONFIG_ID: ✓ 已设置"; else echo "NOTION_WEBSITE_CONFIG_ID: ✗ 未设置"; fi
           echo "=== 创建 .env.local ==="
           echo "NOTION_API_KEY=${{ secrets.NOTION_API_KEY }}" >> .env.local
           echo "NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }}" >> .env.local
