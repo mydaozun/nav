@@ -1,0 +1,43 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+const pageTitle = '隱私政策';
+const pageDescription = 'mmaiverse.com 的隱私政策';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">隱私政策</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <h2 class="text-xl font-semibold mb-4">隱私政策聲明</h2>
+      <p class="mb-4">本隱私政策描述了 mmaiverse.com 如何收集、使用和保護您的個人信息。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">信息收集</h2>
+      <p class="mb-4">我們可能收集以下類型的信息：</p>
+      <ul class="list-disc pl-6 mb-4">
+        <li>您的 IP 地址</li>
+        <li>瀏覽器類型和版本</li>
+        <li>訪問的頁面</li>
+        <li>訪問時間和日期</li>
+      </ul>
+      
+      <h2 class="text-xl font-semibold mb-4">信息使用</h2>
+      <p class="mb-4">我們收集的信息用於：</p>
+      <ul class="list-disc pl-6 mb-4">
+        <li>改進網站性能和用戶體驗</li>
+        <li>分析網站流量和使用情況</li>
+        <li>提供個性化內容和推薦</li>
+      </ul>
+      
+      <h2 class="text-xl font-semibold mb-4">信息保護</h2>
+      <p class="mb-4">我們採取適當的安全措施保護您的個人信息，防止未經授權的訪問、使用或披露。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">第三方鏈接</h2>
+      <p class="mb-4">本網站可能包含指向第三方網站的鏈接，我們對這些網站的隱私政策不承擔責任。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">政策更新</h2>
+      <p class="mb-4">我們可能隨時更新本隱私政策，請定期查看以了解最新變更。</p>
+    </div>
+  </div>
+</MainLayout>

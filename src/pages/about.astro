@@ -1,0 +1,26 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+const pageTitle = '關於本站';
+const pageDescription = '關於 mmaiverse.com 的介紹';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">關於本站</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <h2 class="text-xl font-semibold mb-4">站點介紹</h2>
+      <p class="mb-4">mmaiverse.com 是一個專注於 AI 工具和資源的導航網站，旨在為使用者提供優質的 AI 相關工具和服務推薦。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">建站目的</h2>
+      <p class="mb-4">隨著 AI 技術的快速發展，各種 AI 工具層出不窮。本網站旨在整合優質的 AI 工具資源，幫助使用者快速找到適合自己需求的工具，節省時間和精力。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">內容來源</h2>
+      <p class="mb-4">本站內容來源於網絡，經過精心篩選和整理，確保提供高質量的工具推薦。如有侵權請聯絡我們。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">技術架構</h2>
+      <p class="mb-4">本站基於 Astro 和 Notion 構建，採用現代前端技術，提供快速、響應式的用戶體驗。</p>
+    </div>
+  </div>
+</MainLayout>

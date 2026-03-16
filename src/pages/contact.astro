@@ -1,0 +1,35 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+const pageTitle = '聯絡我們';
+const pageDescription = '聯絡 mmaiverse.com 的方式';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">聯絡我們</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <h2 class="text-xl font-semibold mb-4">聯絡方式</h2>
+      <p class="mb-4">如果您有任何問題、建議或反饋，歡迎通過以下方式聯絡我們：</p>
+      
+      <div class="mb-6">
+        <h3 class="font-semibold mb-2">電子郵件</h3>
+        <p>contact@mmaiverse.com</p>
+      </div>
+      
+      <div class="mb-6">
+        <h3 class="font-semibold mb-2">GitHub</h3>
+        <p><a href="https://github.com/mydaozun" class="text-blue-700 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-200 transition-colors">https://github.com/mydaozun</a></p>
+      </div>
+      
+      <div class="mb-6">
+        <h3 class="font-semibold mb-2">反饋建議</h3>
+        <p>您可以通過 GitHub Issues 提交問題或建議，我們會儘快回覆。</p>
+      </div>
+      
+      <h2 class="text-xl font-semibold mb-4">處理時間</h2>
+      <p class="mb-4">我們通常會在 24-48 小時內回覆您的訊息，請耐心等待。</p>
+    </div>
+  </div>
+</MainLayout>

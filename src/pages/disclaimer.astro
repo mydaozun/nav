@@ -1,0 +1,29 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+const pageTitle = '免責聲明';
+const pageDescription = 'mmaiverse.com 的免責聲明';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">免責聲明</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <h2 class="text-xl font-semibold mb-4">免責聲明</h2>
+      <p class="mb-4">本免責聲明適用於 mmaiverse.com 網站的所有訪問者和使用者。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">內容聲明</h2>
+      <p class="mb-4">本站提供的工具和資源鏈接僅供參考，我們不對這些工具的安全性、可靠性或有效性做出任何保證。使用這些工具時，請自行承擔風險。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">侵權聲明</h2>
+      <p class="mb-4">本站內容來源於網絡，如有侵犯您的版權或其他權利，請立即聯絡我們，我們將在第一時間刪除相關內容。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">責任限制</h2>
+      <p class="mb-4">對於因使用本站或本站提供的鏈接而導致的任何損失或損害，我們不承擔任何責任。</p>
+      
+      <h2 class="text-xl font-semibold mb-4">修訂權利</h2>
+      <p class="mb-4">我們保留隨時修改本免責聲明的權利，修改後的聲明將在網站上公佈，請定期查看。</p>
+    </div>
+  </div>
+</MainLayout>
