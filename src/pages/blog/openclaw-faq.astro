@@ -1,0 +1,136 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'OpenClaw 常见问题排查手册';
+const pageDescription = 'OpenClaw 汉化版常见问题的解决方案';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">OpenClaw 常见问题排查手册</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">遇到问题？按错误消息搜索本页，或按场景分类查找解决方案。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">一、安装问题</h2>
+        
+        <div class="mb-6">
+          <h3 class="text-xl font-medium mb-2">安装卡住不动 / 下载很慢</h3>
+          <p class="mb-2">你会看到：运行安装脚本后长时间没有反应，或 npm install 进度条不动。</p>
+          <p class="mb-2">原因：npm 默认从国外源下载，中国大陆网络访问慢。</p>
+          <p class="mb-2">解决方案：</p>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+            <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 方法1：使用淘宝镜像源安装（推荐）
+npm install -g @qingchencloud/openclaw-zh@latest --registry=https://registry.npmmirror.com
+
+# 方法2：先切换全局镜像源，再安装
+npm config set registry https://registry.npmmirror.com
+npm install -g @qingchencloud/openclaw-zh@latest</code></pre>
+          </div>
+          <p class="mb-4">如果是 Docker 镜像拉取慢，参考 Docker 部署指南中的镜像加速方案。</p>
+        </div>
+        
+        <div class="mb-6">
+          <h3 class="text-xl font-medium mb-2">Control UI assets not found</h3>
+          <p class="mb-2">你会看到：终端输出类似：</p>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-2">
+            <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>Control UI assets not found. Build them with `pnpm ui:build` (auto-installs UI deps), or run `pnpm ui:dev` during development.</code></pre>
+          </div>
+          <p class="mb-2">原因：你可能安装了原版 openclaw 而不是汉化版，或者安装过程中断导致文件不完整。</p>
+          <p class="mb-2">解决方案：</p>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+            <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 第1步：卸载所有版本
+npm uninstall -g openclaw
+npm uninstall -g @qingchencloud/openclaw-zh
+
+# 第2步：清除 npm 缓存
+npm cache clean --force
+
+# 第3步：重新安装汉化版
+npm install -g @qingchencloud/openclaw-zh@latest
+
+# 第4步：验证安装
+openclaw --version</code></pre>
+          </div>
+          <p class="mb-4">如果仍然报错，检查你的 Node.js 版本是否 >= 22：node -v</p>
+        </div>
+        
+        <div class="mb-6">
+          <h3 class="text-xl font-medium mb-2">安装报错 Permission denied (publickey) / git error code 128</h3>
+          <p class="mb-2">你会看到：</p>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-2">
+            <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>npm error code 128
+npm error An unknown git error occurred
+npm error command git --no-replace-objects ls-remote ssh://git@github.com/whiskeysockets/libsignal-node.git
+npm error git@github.com: Permission denied (publickey).
+npm error fatal: 无法读取远程仓库。</code></pre>
+          </div>
+          <p class="mb-2">原因：OpenClaw 的某个依赖（WhatsApp 连接器）引用了一个 GitHub SSH 地址的子依赖。你的机器上没有配置 GitHub SSH 密钥，npm 无法通过 SSH 协议拉取代码。</p>
+          <p class="mb-2">解决方案：</p>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+            <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 让 git 自动把 SSH 地址转成 HTTPS（一行命令，永久生效）
+git config --global url."https://github.com/".insteadOf ssh://git@github.com/
+
+# 然后重新安装
+npm install -g @qingchencloud/openclaw-zh@latest</code></pre>
+          </div>
+          <p class="mb-4">这个配置只影响 ssh://git@github.com/ 开头的地址，不会影响你自己的 SSH 使用。</p>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">二、启动问题</h2>
+        
+        <div class="mb-6">
+          <h3 class="text-xl font-medium mb-2">Missing config. Run openclaw setup</h3>
+          <p class="mb-2">你会看到：启动时终端输出：</p>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-2">
+            <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>Missing config. Run `openclaw setup` or set gateway.mode=local (or pass --allow-unconfigured).</code></pre>
+          </div>
+          <p class="mb-2">原因：首次运行没有执行初始化，或配置文件被删除。</p>
+          <p class="mb-2">解决方案：</p>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+            <h4 class="font-medium mb-2">npm 环境：</h4>
+            <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 运行初始化向导
+openclaw onboard</code></pre>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+            <h4 class="font-medium mb-2">Docker 环境：</h4>
+            <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 在容器内执行初始化
+docker exec -it openclaw openclaw setup
+
+# 设置网关模式
+docker exec openclaw openclaw config set gateway.mode local
+
+# 重启容器
+docker restart openclaw</code></pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">三、Dashboard 连不上</h2>
+        <p class="mb-4">如果遇到 Dashboard 连接问题，请检查以下几点：</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>网关是否正在运行：openclaw status</li>
+          <li>端口是否正确：默认 18789</li>
+          <li>防火墙是否开放了对应端口</li>
+          <li>如果是远程访问，是否设置了 token 认证</li>
+        </ul>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">四、内网 / 远程访问</h2>
+        <p class="mb-4">关于内网和远程访问的详细配置，请参考远程访问指南。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">五、模型和对话</h2>
+        <p class="mb-4">如果遇到模型配置或对话相关问题，请参考国产模型配置指南。</p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

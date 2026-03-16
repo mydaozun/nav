@@ -1,0 +1,207 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+const pageTitle = '文章';
+const pageDescription = 'mmaiverse.com 的文章页面';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <a href="/" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6 transition-colors duration-200">返回首页</a>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <h2 class="text-xl font-semibold mb-4">文章列表</h2>
+      <p class="mb-4">这里是 mmaiverse.com 的文章页面，我们将定期发布关于 AI 工具、技术趋势和使用技巧的文章。</p>
+      
+  
+      
+
+      
+      <div class="mt-8">
+        <h3 class="font-semibold mb-4 text-lg">openclaw汉化版</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <a href="/blog/openclaw-install-guide" target="_blank" class="block bg-indigo-50 dark:bg-indigo-900/40 border border-indigo-200 dark:border-indigo-800 rounded-lg p-4 hover:bg-indigo-100 dark:hover:bg-indigo-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-indigo-700 dark:text-indigo-300">OpenClaw 安装指南</h4>
+            <p class="text-sm text-indigo-600 dark:text-indigo-400">详细的 OpenClaw 汉化版安装和配置指南</p>
+          </a>
+          <a href="/blog/openclaw-docker-guide" target="_blank" class="block bg-cyan-50 dark:bg-cyan-900/40 border border-cyan-200 dark:border-cyan-800 rounded-lg p-4 hover:bg-cyan-100 dark:hover:bg-cyan-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-cyan-700 dark:text-cyan-300">Docker 部署指南</h4>
+            <p class="text-sm text-cyan-600 dark:text-cyan-400">使用 Docker 部署 OpenClaw 汉化版的详细教程</p>
+          </a>
+          <a href="/blog/openclaw-faq" target="_blank" class="block bg-yellow-50 dark:bg-yellow-900/40 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 hover:bg-yellow-100 dark:hover:bg-yellow-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-yellow-700 dark:text-yellow-300">常见问题排查</h4>
+            <p class="text-sm text-yellow-600 dark:text-yellow-400">OpenClaw 常见问题的解决方案</p>
+          </a>
+          <a href="/blog/openclaw-models-guide" target="_blank" class="block bg-purple-50 dark:bg-purple-900/40 border border-purple-200 dark:border-purple-800 rounded-lg p-4 hover:bg-purple-100 dark:hover:bg-purple-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-purple-700 dark:text-purple-300">国产模型配置</h4>
+            <p class="text-sm text-purple-600 dark:text-purple-400">OpenClaw 支持的国产 AI 模型配置方法</p>
+          </a>
+          <a href="/blog/openclaw-nas-deploy" target="_blank" class="block bg-green-50 dark:bg-green-900/40 border border-green-200 dark:border-green-800 rounded-lg p-4 hover:bg-green-100 dark:hover:bg-green-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-green-700 dark:text-green-300">NAS 部署详解</h4>
+            <p class="text-sm text-green-600 dark:text-green-400">在各品牌 NAS 设备上部署 OpenClaw</p>
+          </a>
+          <a href="/blog/openclaw-feishu-guide" target="_blank" class="block bg-pink-50 dark:bg-pink-900/40 border border-pink-200 dark:border-pink-800 rounded-lg p-4 hover:bg-pink-100 dark:hover:bg-pink-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-pink-700 dark:text-pink-300">飞书渠道配置</h4>
+            <p class="text-sm text-pink-600 dark:text-pink-400">OpenClaw 飞书机器人配置详细指南</p>
+          </a>
+          <a href="/blog/nanobot-intro" target="_blank" class="block bg-teal-50 dark:bg-teal-900/40 border border-teal-200 dark:border-teal-800 rounded-lg p-4 hover:bg-teal-100 dark:hover:bg-teal-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-teal-700 dark:text-teal-300">nanobot 介绍</h4>
+            <p class="text-sm text-teal-600 dark:text-teal-400">超轻量级 OpenClaw 替代品，代码少 99%</p>
+          </a>
+          <a href="/blog/clawwork-intro" target="_blank" class="block bg-amber-50 dark:bg-amber-900/40 border border-amber-200 dark:border-amber-800 rounded-lg p-4 hover:bg-amber-100 dark:hover:bg-amber-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-amber-700 dark:text-amber-300">ClawWork 介绍</h4>
+            <p class="text-sm text-amber-600 dark:text-amber-400">将 AI 助手转变为真正的 AI 同事，创造经济价值</p>
+          </a>
+          <a href="/blog/picoclaw-intro" target="_blank" class="block bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-800 rounded-lg p-4 hover:bg-blue-100 dark:hover:bg-blue-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-blue-700 dark:text-blue-300">PicoClaw 介绍</h4>
+            <p class="text-sm text-blue-600 dark:text-blue-400">超轻量级 AI 助手，运行在 $10 硬件上，内存占用不到 10MB</p>
+          </a>
+          <a href="/blog/mimiclaw-intro" target="_blank" class="block bg-rose-50 dark:bg-rose-900/40 border border-rose-200 dark:border-rose-800 rounded-lg p-4 hover:bg-rose-100 dark:hover:bg-rose-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-rose-700 dark:text-rose-300">MimiClaw 介绍</h4>
+            <p class="text-sm text-rose-600 dark:text-rose-400">运行在 $5 芯片上的口袋 AI 助手，纯 C 语言实现</p>
+          </a>
+          <a href="/blog/zeroclaw-intro" target="_blank" class="block bg-violet-50 dark:bg-violet-900/40 border border-violet-200 dark:border-violet-800 rounded-lg p-4 hover:bg-violet-100 dark:hover:bg-violet-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-violet-700 dark:text-violet-300">ZeroClaw 介绍</h4>
+            <p class="text-sm text-violet-600 dark:text-violet-400">使用 Rust 开发的轻量级 AI 助手基础设施，内存占用不到 5MB</p>
+          </a>
+          <a href="/blog/nanoclaw-zh-intro" target="_blank" class="block bg-emerald-50 dark:bg-emerald-900/40 border border-emerald-200 dark:border-emerald-800 rounded-lg p-4 hover:bg-emerald-100 dark:hover:bg-emerald-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-emerald-700 dark:text-emerald-300">NanoClaw 介绍</h4>
+            <p class="text-sm text-emerald-600 dark:text-emerald-400">您的专属 Claude 助手，在容器中安全运行，支持智能体集群</p>
+          </a>
+        </div>
+      </div>
+        <h3 class="font-semibold mb-4 text-lg">提示词相关</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <a href="/blog/pyq" target="_blank" class="block bg-orange-50 dark:bg-orange-900/40 border border-orange-200 dark:border-orange-800 rounded-lg p-4 hover:bg-orange-100 dark:hover:bg-orange-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-orange-700 dark:text-orange-300">朋友圈软广文案生成指令</h4>
+            <p class="text-sm text-orange-600 dark:text-orange-400">AI 提示词的基本原理和最佳实践</p>
+          </a>
+          <a href="/blog/shudan" target="_blank" class="block bg-sky-50 dark:bg-sky-900/40 border border-sky-200 dark:border-sky-800 rounded-lg p-4 hover:bg-sky-100 dark:hover:bg-sky-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-sky-700 dark:text-sky-300">书单号爆款文案指令</h4>
+            <p class="text-sm text-sky-600 dark:text-sky-400">自媒体读书博主必备的书单号文案创作指南</p>
+          </a>
+          <a href="/blog/fenxi" target="_blank" class="block bg-lime-50 dark:bg-lime-900/40 border border-lime-200 dark:border-lime-800 rounded-lg p-4 hover:bg-lime-100 dark:hover:bg-lime-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-lime-700 dark:text-lime-300">对标博主账号拆解</h4>
+            <p class="text-sm text-lime-600 dark:text-lime-400">小红书账号分析和拆解专家，帮助你分析账号定位、选题策划等</p>
+          </a>
+          <a href="/blog/xiaohongshu" target="_blank" class="block bg-fuchsia-50 dark:bg-fuchsia-900/40 border border-fuchsia-200 dark:border-fuchsia-800 rounded-lg p-4 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-fuchsia-700 dark:text-fuchsia-300">小红书爆款文案指令</h4>
+            <p class="text-sm text-fuchsia-600 dark:text-fuchsia-400">小红书爆款标题、正文、标签创作指南，助你获得更多流量</p>
+          </a>
+
+          <a href="/blog/knowledge-sharing-article-modifier" target="_blank" class="block bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-800 rounded-lg p-4 hover:bg-blue-100 dark:hover:bg-blue-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-blue-700 dark:text-blue-300">知识分享类文章修改助手</h4>
+            <p class="text-sm text-blue-600 dark:text-blue-400">帮助你修改和优化知识分享类文章</p>
+          </a>
+          <a href="/blog/folk-tale-novel" target="_blank" class="block bg-green-50 dark:bg-green-900/40 border border-green-200 dark:border-green-800 rounded-lg p-4 hover:bg-green-100 dark:hover:bg-green-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-green-700 dark:text-green-300">民间故事小说</h4>
+            <p class="text-sm text-green-600 dark:text-green-400">创作民间故事和小说的提示词</p>
+          </a>
+          <a href="/blog/celebrity-quote-imitation" target="_blank" class="block bg-purple-50 dark:bg-purple-900/40 border border-purple-200 dark:border-purple-800 rounded-lg p-4 hover:bg-purple-100 dark:hover:bg-purple-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-purple-700 dark:text-purple-300">仿写名人语录指令</h4>
+            <p class="text-sm text-purple-600 dark:text-purple-400">模仿名人语录风格的创作指令</p>
+          </a>
+          <a href="/blog/viral-article-imitation" target="_blank" class="block bg-pink-50 dark:bg-pink-900/40 border border-pink-200 dark:border-pink-800 rounded-lg p-4 hover:bg-pink-100 dark:hover:bg-pink-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-pink-700 dark:text-pink-300">爆款文章仿写AI指令</h4>
+            <p class="text-sm text-pink-600 dark:text-pink-400">模仿爆款文章风格的AI创作指令</p>
+          </a>
+          <a href="/blog/long-article-to-viral-script" target="_blank" class="block bg-yellow-50 dark:bg-yellow-900/40 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 hover:bg-yellow-100 dark:hover:bg-yellow-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-yellow-700 dark:text-yellow-300">长文章变爆款口播文案指令</h4>
+            <p class="text-sm text-yellow-600 dark:text-yellow-400">将长文章转化为爆款口播文案的指令</p>
+          </a>
+          <a href="/blog/xiaohongshu-product-review" target="_blank" class="block bg-orange-50 dark:bg-orange-900/40 border border-orange-200 dark:border-orange-800 rounded-lg p-4 hover:bg-orange-100 dark:hover:bg-orange-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-orange-700 dark:text-orange-300">小红书种草类文案指令</h4>
+            <p class="text-sm text-orange-600 dark:text-orange-400">创作小红书种草类文案的指令</p>
+          </a>
+          <a href="/blog/xiaohongshu-viral-content-analysis" target="_blank" class="block bg-teal-50 dark:bg-teal-900/40 border border-teal-200 dark:border-teal-800 rounded-lg p-4 hover:bg-teal-100 dark:hover:bg-teal-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-teal-700 dark:text-teal-300">小红书爆款文案拆解指令</h4>
+            <p class="text-sm text-teal-600 dark:text-teal-400">拆解和分析小红书爆款文案的指令</p>
+          </a>
+          <a href="/blog/toutiao-article-imitation" target="_blank" class="block bg-indigo-50 dark:bg-indigo-900/40 border border-indigo-200 dark:border-indigo-800 rounded-lg p-4 hover:bg-indigo-100 dark:hover:bg-indigo-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-indigo-700 dark:text-indigo-300">头条号大文章仿写指令</h4>
+            <p class="text-sm text-indigo-600 dark:text-indigo-400">模仿头条号大文章风格的创作指令</p>
+          </a>
+          <a href="/blog/niche-keyword-combination" target="_blank" class="block bg-rose-50 dark:bg-rose-900/40 border border-rose-200 dark:border-rose-800 rounded-lg p-4 hover:bg-rose-100 dark:hover:bg-rose-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-rose-700 dark:text-rose-300">赛道关键词组合选题指令</h4>
+            <p class="text-sm text-rose-600 dark:text-rose-400">组合赛道关键词生成选题的指令</p>
+          </a>
+          <a href="/blog/comment-section-quotes" target="_blank" class="block bg-sky-50 dark:bg-sky-900/40 border border-sky-200 dark:border-sky-800 rounded-lg p-4 hover:bg-sky-100 dark:hover:bg-sky-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-sky-700 dark:text-sky-300">评论区金句引导回复指令</h4>
+            <p class="text-sm text-sky-600 dark:text-sky-400">引导评论区产生金句回复的指令</p>
+          </a>
+          <a href="/blog/heartwarming-emotional-copywriter" target="_blank" class="block bg-lime-50 dark:bg-lime-900/40 border border-lime-200 dark:border-lime-800 rounded-lg p-4 hover:bg-lime-100 dark:hover:bg-lime-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-lime-700 dark:text-lime-300">暖心治愈情感文案创作助手</h4>
+            <p class="text-sm text-lime-600 dark:text-lime-400">创作暖心治愈情感文案的助手</p>
+          </a>
+          <a href="/blog/viral-content-optimal-posting-time" target="_blank" class="block bg-fuchsia-50 dark:bg-fuchsia-900/40 border border-fuchsia-200 dark:border-fuchsia-800 rounded-lg p-4 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-fuchsia-700 dark:text-fuchsia-300">爆款作品黄金发布时间指令</h4>
+            <p class="text-sm text-fuchsia-600 dark:text-fuchsia-400">确定爆款作品最佳发布时间的指令</p>
+          </a>
+          <a href="/blog/xiaohongshu-viral-prompts" target="_blank" class="block bg-amber-50 dark:bg-amber-900/40 border border-amber-200 dark:border-amber-800 rounded-lg p-4 hover:bg-amber-100 dark:hover:bg-amber-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-amber-700 dark:text-amber-300">爆款小红书提示词</h4>
+            <p class="text-sm text-amber-600 dark:text-amber-400">创作小红书爆款内容的提示词</p>
+          </a>
+          <a href="/blog/wechat-public-account-imitation" target="_blank" class="block bg-violet-50 dark:bg-violet-900/40 border border-violet-200 dark:border-violet-800 rounded-lg p-4 hover:bg-violet-100 dark:hover:bg-violet-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-violet-700 dark:text-violet-300">爆款公众号仿写专家</h4>
+            <p class="text-sm text-violet-600 dark:text-violet-400">模仿爆款公众号文章风格的专家</p>
+          </a>
+          <a href="/blog/historical-article-imitation" target="_blank" class="block bg-emerald-50 dark:bg-emerald-900/40 border border-emerald-200 dark:border-emerald-800 rounded-lg p-4 hover:bg-emerald-100 dark:hover:bg-emerald-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-emerald-700 dark:text-emerald-300">历史类文章仿写提示词</h4>
+            <p class="text-sm text-emerald-600 dark:text-emerald-400">模仿历史类文章风格的提示词</p>
+          </a>
+          <a href="/blog/angel-baby-prompt-1" target="_blank" class="block bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-800 rounded-lg p-4 hover:bg-blue-100 dark:hover:bg-blue-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-blue-700 dark:text-blue-300">天使萌宝指令1</h4>
+            <p class="text-sm text-blue-600 dark:text-blue-400">创作天使萌宝相关内容的指令</p>
+          </a>
+          <a href="/blog/angel-baby-prompt-2" target="_blank" class="block bg-green-50 dark:bg-green-900/40 border border-green-200 dark:border-green-800 rounded-lg p-4 hover:bg-green-100 dark:hover:bg-green-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-green-700 dark:text-green-300">天使萌宝指令2</h4>
+            <p class="text-sm text-green-600 dark:text-green-400">创作天使萌宝相关内容的指令</p>
+          </a>
+          <a href="/blog/doubao-panda-daily-prompts" target="_blank" class="block bg-purple-50 dark:bg-purple-900/40 border border-purple-200 dark:border-purple-800 rounded-lg p-4 hover:bg-purple-100 dark:hover:bg-purple-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-purple-700 dark:text-purple-300">豆包熊猫日常提示词</h4>
+            <p class="text-sm text-purple-600 dark:text-purple-400">创作熊猫日常相关内容的提示词</p>
+          </a>
+          <a href="/blog/animal-army-prompts" target="_blank" class="block bg-pink-50 dark:bg-pink-900/40 border border-pink-200 dark:border-pink-800 rounded-lg p-4 hover:bg-pink-100 dark:hover:bg-pink-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-pink-700 dark:text-pink-300">动物军团提示词</h4>
+            <p class="text-sm text-pink-600 dark:text-pink-400">创作动物军团相关内容的提示词</p>
+          </a>
+          <a href="/blog/deepseek-nezha-prompt" target="_blank" class="block bg-yellow-50 dark:bg-yellow-900/40 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 hover:bg-yellow-100 dark:hover:bg-yellow-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-yellow-700 dark:text-yellow-300">deepseek哪吒指令</h4>
+            <p class="text-sm text-yellow-600 dark:text-yellow-400">创作哪吒相关内容的指令</p>
+          </a>
+          <a href="/blog/doubao-children-book-prompt" target="_blank" class="block bg-orange-50 dark:bg-orange-900/40 border border-orange-200 dark:border-orange-800 rounded-lg p-4 hover:bg-orange-100 dark:hover:bg-orange-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-orange-700 dark:text-orange-300">豆包儿童绘本指令</h4>
+            <p class="text-sm text-orange-600 dark:text-orange-400">创作儿童绘本相关内容的指令</p>
+          </a>
+          <a href="/blog/doubao-fashion-girl-prompt" target="_blank" class="block bg-teal-50 dark:bg-teal-900/40 border border-teal-200 dark:border-teal-800 rounded-lg p-4 hover:bg-teal-100 dark:hover:bg-teal-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-teal-700 dark:text-teal-300">豆包时尚性感女孩提示词</h4>
+            <p class="text-sm text-teal-600 dark:text-teal-400">创作时尚性感女孩相关内容的提示词</p>
+          </a>
+          <a href="/blog/doubao-girl-giant-animal-prompt" target="_blank" class="block bg-indigo-50 dark:bg-indigo-900/40 border border-indigo-200 dark:border-indigo-800 rounded-lg p-4 hover:bg-indigo-100 dark:hover:bg-indigo-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-indigo-700 dark:text-indigo-300">豆包女孩与巨大动物提示词</h4>
+            <p class="text-sm text-indigo-600 dark:text-indigo-400">创作女孩与巨大动物相关内容的提示词</p>
+          </a>
+          <a href="/blog/doubao-beauty-prompt-1" target="_blank" class="block bg-rose-50 dark:bg-rose-900/40 border border-rose-200 dark:border-rose-800 rounded-lg p-4 hover:bg-rose-100 dark:hover:bg-rose-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-rose-700 dark:text-rose-300">豆包生成美女的提示词1</h4>
+            <p class="text-sm text-rose-600 dark:text-rose-400">创作美女相关内容的提示词</p>
+          </a>
+          <a href="/blog/doubao-beauty-prompt-2" target="_blank" class="block bg-sky-50 dark:bg-sky-900/40 border border-sky-200 dark:border-sky-800 rounded-lg p-4 hover:bg-sky-100 dark:hover:bg-sky-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-sky-700 dark:text-sky-300">豆包生成真实感更强的美女的提示词</h4>
+            <p class="text-sm text-sky-600 dark:text-sky-400">创作真实感美女相关内容的提示词</p>
+          </a>
+          <a href="/blog/doubao-beauty-prompt-3" target="_blank" class="block bg-lime-50 dark:bg-lime-900/40 border border-lime-200 dark:border-lime-800 rounded-lg p-4 hover:bg-lime-100 dark:hover:bg-lime-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-lime-700 dark:text-lime-300">豆包生成美女的提示词3</h4>
+            <p class="text-sm text-lime-600 dark:text-lime-400">创作美女相关内容的提示词</p>
+          </a>
+          <a href="/blog/doubao-beauty-prompt-4-cos" target="_blank" class="block bg-fuchsia-50 dark:bg-fuchsia-900/40 border border-fuchsia-200 dark:border-fuchsia-800 rounded-lg p-4 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-fuchsia-700 dark:text-fuchsia-300">豆包生成美女的提示词第四期cos</h4>
+            <p class="text-sm text-fuchsia-600 dark:text-fuchsia-400">创作cosplay美女相关内容的提示词</p>
+          </a>
+          <a href="/blog/doubao-beauty-prompt-5-cos" target="_blank" class="block bg-amber-50 dark:bg-amber-900/40 border border-amber-200 dark:border-amber-800 rounded-lg p-4 hover:bg-amber-100 dark:hover:bg-amber-800/60 transition-colors duration-200">
+            <h4 class="text-lg font-medium mb-2 text-amber-700 dark:text-amber-300">豆包生成美女的提示词第五期cos</h4>
+            <p class="text-sm text-amber-600 dark:text-amber-400">创作cosplay美女相关内容的提示词</p>
+          </a>
+        </div>
+    </div>
+  </div>
+</MainLayout>

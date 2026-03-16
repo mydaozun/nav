@@ -1,0 +1,171 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'OpenClaw 飞书渠道配置指南';
+const pageDescription = 'OpenClaw 汉化版飞书机器人配置详细指南';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">OpenClaw 飞书渠道配置指南</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">飞书（Lark）是 OpenClaw 支持的插件渠道之一，本文介绍如何完整配置飞书机器人。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">前提条件</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li>已安装 OpenClaw 汉化版并完成初始化</li>
+          <li>拥有飞书管理员账号（用于创建应用）</li>
+          <li>Gateway 网关正在运行</li>
+        </ul>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">第一步：创建飞书应用</h2>
+        <ol class="list-decimal pl-6 mb-4">
+          <li>访问 <a href="https://open.feishu.cn/" class="text-blue-600 dark:text-blue-400 hover:underline">飞书开放平台</a> → 点击「创建企业自建应用」</li>
+          <li>填写应用名称（如 "OpenClaw 助手"）和描述</li>
+          <li>进入应用设置，记下以下信息：
+            <ul class="list-disc pl-6 mt-2">
+              <li>App ID</li>
+              <li>App Secret</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">第二步：配置应用能力</h2>
+        
+        <h3 class="text-xl font-medium mb-2">启用机器人</h3>
+        <p class="mb-4">在应用管理页 → 「应用能力」→ 「机器人」→ 开启，设置机器人名称和头像。</p>
+        
+        <h3 class="text-xl font-medium mb-2">配置事件订阅</h3>
+        <p class="mb-4">进入「事件订阅」页面</p>
+        <p class="mb-4">设置请求地址（Webhook URL）：</p>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>http://你的服务器IP:18789/webhooks/feishu</code></pre>
+        </div>
+        <p class="mb-4">飞书需要能访问到你的 Gateway 地址。如果是内网部署，需要通过 Nginx 反代或 Tailscale 暴露。</p>
+        <p class="mb-4">添加以下事件：</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>im.message.receive_v1（接收消息）</li>
+          <li>im.message.message_read_v1（消息已读，可选）</li>
+        </ul>
+        
+        <h3 class="text-xl font-medium mb-2">配置权限</h3>
+        <p class="mb-4">进入「权限管理」，添加以下权限：</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>im:message（发送消息）</li>
+          <li>im:message:send_as_bot（以机器人身份发送）</li>
+          <li>im:chat（获取会话信息）</li>
+          <li>im:resource（获取资源文件）</li>
+        </ul>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">第三步：安装飞书插件</h2>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">通过 onboard 安装（推荐）</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>openclaw onboard
+# 在插件选择中勾选「飞书 (Feishu)」</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">或手动安装</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>openclaw plugins install feishu</code></pre>
+        </div>
+        <p class="mb-4">安装时可能出现安全警告，这是正常的——插件需要访问环境变量和网络来与飞书 API 通信。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">第四步：配置飞书凭证</h2>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 设置飞书 App ID 和 App Secret
+openclaw config set channels.feishu.appId 你的AppID
+openclaw config set channels.feishu.appSecret 你的AppSecret
+
+# 或通过环境变量
+export FEISHU_APP_ID=你的AppID
+export FEISHU_APP_SECRET=你的AppSecret</code></pre>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">第五步：发布应用</h2>
+        <ol class="list-decimal pl-6 mb-4">
+          <li>回到飞书开放平台 → 「版本管理」→ 「创建版本」</li>
+          <li>填写更新说明 → 提交审核</li>
+          <li>审核通过后，企业成员即可在飞书中搜索并使用机器人</li>
+        </ol>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">第六步：验证</h2>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 检查飞书渠道状态
+openclaw channels status feishu
+
+# 重启 Gateway 生效
+openclaw gateway restart</code></pre>
+        </div>
+        <p class="mb-4">在飞书中找到机器人，发送一条消息，应该能收到 AI 回复。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">飞书多维表格（Bitable）</h2>
+        <p class="mb-4">OpenClaw 的飞书插件还支持多维表格功能，可以让 AI 读写飞书多维表格。</p>
+        
+        <h3 class="text-xl font-medium mb-2">启用</h3>
+        <p class="mb-4">在 openclaw.json 中配置：</p>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>{'{\n  "plugins": {\n    "feishu": {\n      "bitable": {\n        "enabled": true\n      }\n    }\n  }\n}'}</code></pre>
+        </div>
+        
+        <h3 class="text-xl font-medium mb-2">使用</h3>
+        <p class="mb-4">在对话中告诉 AI：</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>"帮我读取多维表格 xxx 的数据"</li>
+          <li>"在多维表格中新增一行记录"</li>
+          <li>"更新多维表格中的某个字段"</li>
+        </ul>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">常见问题</h2>
+        
+        <h3 class="text-xl font-medium mb-2">插件安装后报 Cannot find module 'lodash.identity'</h3>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>cd ~/.openclaw/extensions/feishu
+npm install</code></pre>
+        </div>
+        
+        <h3 class="text-xl font-medium mb-2">飞书 Webhook 验证失败</h3>
+        <p class="mb-4">确保：</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Webhook URL 是飞书可以访问的公网地址</li>
+          <li>Gateway 已启动且端口开放</li>
+          <li>如果在 Docker 中，确保端口映射正确</li>
+        </ul>
+        
+        <h3 class="text-xl font-medium mb-2">机器人收不到消息</h3>
+        <p class="mb-4">检查：</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>应用是否已发布（审核通过）</li>
+          <li>事件订阅是否正确配置</li>
+          <li>权限是否已全部授予</li>
+          <li>Gateway 日志：openclaw logs --follow</li>
+        </ul>
+        
+        <h3 class="text-xl font-medium mb-2">Docker 环境配置</h3>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>docker exec openclaw openclaw config set channels.feishu.appId 你的AppID
+docker exec openclaw openclaw config set channels.feishu.appSecret 你的AppSecret
+docker restart openclaw</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

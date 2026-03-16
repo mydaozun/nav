@@ -1,0 +1,228 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'OpenClaw 国产模型配置指南';
+const pageDescription = 'OpenClaw 汉化版支持的国产 AI 模型配置方法';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">OpenClaw 国产模型配置指南</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">OpenClaw 汉化版支持多种国产 AI 模型，本文介绍如何配置和使用这些模型。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">胜算云（推荐）</h2>
+        <p class="mb-4">胜算云是国内 API 聚合平台，一个密钥即可访问多种国产和国际模型。</p>
+        
+        <h3 class="text-xl font-medium mb-2">一键配置</h3>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 安装时直接配置（最简单）
+curl -fsSL https://openclaw.qt.cool/install.sh | bash -s -- --shengsuanyun-key sk-你的密钥
+
+# 或安装后手动配置
+openclaw onboard
+# 在认证选项中选择「胜算云 (国产模型)」</code></pre>
+        </div>
+        
+        <h3 class="text-xl font-medium mb-2">手动配置</h3>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>openclaw config set agents.defaults.model openai/gpt-4.1-nano
+openclaw config set models.providers.shengsuanyun.baseURL https://api.shengsuanyun.com/v1
+openclaw config set auth.shengsuanyun.apiKey sk-你的密钥</code></pre>
+        </div>
+        
+        <h3 class="text-xl font-medium mb-2">支持的模型</h3>
+        <div class="overflow-x-auto mb-4">
+          <table class="min-w-full bg-white dark:bg-gray-700 rounded-lg overflow-hidden">
+            <thead class="bg-gray-100 dark:bg-gray-600">
+              <tr>
+                <th class="py-2 px-4 text-left">模型</th>
+                <th class="py-2 px-4 text-left">ID</th>
+                <th class="py-2 px-4 text-left">特点</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">GPT-4.1 Nano</td>
+                <td class="py-2 px-4">openai/gpt-4.1-nano</td>
+                <td class="py-2 px-4">快速、经济</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">O4 Mini</td>
+                <td class="py-2 px-4">openai/o4-mini</td>
+                <td class="py-2 px-4">推理能力强</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">DeepSeek V3.2</td>
+                <td class="py-2 px-4">deepseek/deepseek-v3.2</td>
+                <td class="py-2 px-4">中文优化</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">Claude Sonnet 4.5</td>
+                <td class="py-2 px-4">anthropic/claude-sonnet-4.5</td>
+                <td class="py-2 px-4">综合能力强</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mb-4">获取 API 密钥：https://shengsuanyun.com — 新用户注册送 10 元体验金</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">通义千问 (Qwen)</h2>
+        <p class="mb-4">通过阿里云百炼平台或 Ollama 本地运行。</p>
+        
+        <h3 class="text-xl font-medium mb-2">方式1：阿里云百炼 (ModelStudio)</h3>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 初始化时选择 Alibaba Cloud Model Studio
+openclaw onboard
+# 选择「Alibaba Cloud Model Studio」→ 输入 API Key
+
+# 或手动配置
+openclaw config set agents.defaults.model openai/qwen3.5-plus
+openclaw config set auth.modelstudio.apiKey sk-你的密钥</code></pre>
+        </div>
+        <p class="mb-4">获取密钥：https://bailian.console.aliyun.com/</p>
+        
+        <h3 class="text-xl font-medium mb-2">方式2：Ollama 本地运行</h3>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 安装 Ollama（https://ollama.com）
+ollama pull qwen2.5:14b
+
+# 配置 OpenClaw
+openclaw config set agents.defaults.model openai/qwen2.5:14b
+openclaw config set auth.openai.baseURL http://localhost:11434/v1
+openclaw config set auth.openai.apiKey ollama</code></pre>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Kimi (Moonshot)</h2>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">.ai 国际版</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>openclaw onboard
+# 选择「Moonshot AI (Kimi K2.5)」→ 输入 API Key</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">.cn 国内版</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>openclaw onboard
+# 选择「Kimi API key (.cn)」→ 输入国内版 API Key</code></pre>
+        </div>
+        <p class="mb-4">获取密钥：</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>国际版：https://platform.moonshot.ai/</li>
+          <li>国内版：https://platform.moonshot.cn/</li>
+        </ul>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">MiniMax</h2>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>openclaw onboard
+# 选择「MiniMax」→ 选择 OAuth 或 API Key</code></pre>
+        </div>
+        
+        <h3 class="text-xl font-medium mb-2">版本选择</h3>
+        <div class="overflow-x-auto mb-4">
+          <table class="min-w-full bg-white dark:bg-gray-700 rounded-lg overflow-hidden">
+            <thead class="bg-gray-100 dark:bg-gray-600">
+              <tr>
+                <th class="py-2 px-4 text-left">选项</th>
+                <th class="py-2 px-4 text-left">说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">MiniMax M2.5</td>
+                <td class="py-2 px-4">标准版</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">MiniMax M2.5 (CN)</td>
+                <td class="py-2 px-4">国内端点 (api.minimaxi.com)</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">MiniMax M2.5 Highspeed</td>
+                <td class="py-2 px-4">官方快速层级</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">智谱 GLM / Z.AI</h2>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>openclaw onboard
+# 选择「Z.AI」→ 选择端点（国际版或国内版）→ 输入 API Key</code></pre>
+        </div>
+        
+        <h3 class="text-xl font-medium mb-2">端点</h3>
+        <div class="overflow-x-auto mb-4">
+          <table class="min-w-full bg-white dark:bg-gray-700 rounded-lg overflow-hidden">
+            <thead class="bg-gray-100 dark:bg-gray-600">
+              <tr>
+                <th class="py-2 px-4 text-left">端点</th>
+                <th class="py-2 px-4 text-left">域名</th>
+                <th class="py-2 px-4 text-left">说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">国际版</td>
+                <td class="py-2 px-4">api.z.ai</td>
+                <td class="py-2 px-4">GLM Coding Plan Global</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">国内版</td>
+                <td class="py-2 px-4">open.bigmodel.cn</td>
+                <td class="py-2 px-4">GLM Coding Plan CN</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mb-4">获取密钥：https://open.bigmodel.cn/</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">DeepSeek</h2>
+        <p class="mb-4">通过 OpenAI 兼容接口接入。</p>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>openclaw config set agents.defaults.model openai/deepseek-chat
+openclaw config set auth.openai.baseURL https://api.deepseek.com/v1
+openclaw config set auth.openai.apiKey sk-你的密钥</code></pre>
+        </div>
+        <p class="mb-4">获取密钥：https://platform.deepseek.com/</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Ollama 本地模型</h2>
+        <p class="mb-4">适用于希望完全本地运行、无需 API Key 的用户。</p>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 安装 Ollama
+# Windows: 访问 https://ollama.com 下载安装包
+# Linux: curl -fsSL https://ollama.com/install.sh | sh
+# macOS: brew install ollama
+
+# 下载模型
+ollama pull llama3.2
+ollama pull qwen2.5:14b
+
+# 配置 OpenClaw
+openclaw onboard
+# 选择「Ollama」→ 按提示配置</code></pre>
+        </div>
+        
+        <h3 class="text-xl font-medium mb-2">Docker 环境注意事项</h3>
+        <p class="mb-4">如果 Ollama 在宿主机运行，OpenClaw 在 Docker 中运行：</p>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 用 host.docker.internal 替代 localhost
+docker exec openclaw openclaw config set auth.openai.baseURL http://host.docker.internal:11434/v1</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

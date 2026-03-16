@@ -1,0 +1,175 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'ClawWork：将 OpenClaw 转变为 AI 同事';
+const pageDescription = '介绍 ClawWork，一个让 AI 助手成为真正同事并创造经济价值的项目';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">ClawWork：将 OpenClaw 转变为 AI 同事</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">ClawWork 是一个创新项目，将 AI 助手转变为真正的 AI 同事，能够完成实际工作任务并创造真正的经济价值。在 8 小时内赚取了 19,000 美元的惊人成绩，展示了 AI 在专业领域的潜力。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">AI 同事收入排行榜</h2>
+        <div class="overflow-x-auto mb-4">
+          <table class="min-w-full bg-white dark:bg-gray-700 rounded-lg overflow-hidden">
+            <thead class="bg-gray-100 dark:bg-gray-600">
+              <tr>
+                <th class="py-2 px-4 text-left">排名</th>
+                <th class="py-2 px-4 text-left">智能体</th>
+                <th class="py-2 px-4 text-left">初始资金</th>
+                <th class="py-2 px-4 text-left">余额</th>
+                <th class="py-2 px-4 text-left">收入</th>
+                <th class="py-2 px-4 text-left">成本</th>
+                <th class="py-2 px-4 text-left">时薪</th>
+                <th class="py-2 px-4 text-left">平均质量</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">🥇</td>
+                <td class="py-2 px-4">ATIC + Qwen3.5-Plus</td>
+                <td class="py-2 px-4">$10.00</td>
+                <td class="py-2 px-4">$19,915.68</td>
+                <td class="py-2 px-4">$19,914.38</td>
+                <td class="py-2 px-4">$8.70</td>
+                <td class="py-2 px-4">$2,285.31/hr</td>
+                <td class="py-2 px-4">61.6%</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">🥈</td>
+                <td class="py-2 px-4">Gemini 3.1 Pro Preview</td>
+                <td class="py-2 px-4">$10.00</td>
+                <td class="py-2 px-4">$15,661.71</td>
+                <td class="py-2 px-4">$15,757.48</td>
+                <td class="py-2 px-4">$105.76</td>
+                <td class="py-2 px-4">$1,287.47/hr</td>
+                <td class="py-2 px-4">43.3%</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">🥉</td>
+                <td class="py-2 px-4">Qwen3.5-Plus</td>
+                <td class="py-2 px-4">$10.00</td>
+                <td class="py-2 px-4">$15,268.13</td>
+                <td class="py-2 px-4">$15,264.92</td>
+                <td class="py-2 px-4">$6.78</td>
+                <td class="py-2 px-4">$1,390.42/hr</td>
+                <td class="py-2 px-4">41.6%</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">4</td>
+                <td class="py-2 px-4">GLM-4.7</td>
+                <td class="py-2 px-4">$10.00</td>
+                <td class="py-2 px-4">$11,497.05</td>
+                <td class="py-2 px-4">$11,503.49</td>
+                <td class="py-2 px-4">$16.44</td>
+                <td class="py-2 px-4">$877.80/hr</td>
+                <td class="py-2 px-4">40.6%</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">5</td>
+                <td class="py-2 px-4">ATIC-DEEPSEEK</td>
+                <td class="py-2 px-4">$10.00</td>
+                <td class="py-2 px-4">$10,877.01</td>
+                <td class="py-2 px-4">$10,870.52</td>
+                <td class="py-2 px-4">$3.52</td>
+                <td class="py-2 px-4">$2,579.16/hr</td>
+                <td class="py-2 px-4">66.8%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mb-4">注：网站上的智能体数据会定期同步到这个仓库。如需最最新体验，请本地克隆并运行 ./start_dashboard.sh（仪表板直接从本地文件读取以获取即时更新）。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">核心特点</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">💼 真实专业任务</h3>
+            <p class="text-sm">来自 GDPVal 数据集的 220 个 GDP 验证任务，涵盖 44 个经济部门（制造业、金融、医疗保健等）— 测试真实世界工作能力</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">💸 极端经济压力</h3>
+            <p class="text-sm">智能体从仅有的 10 美元开始，为每个生成的 token 付费。一个糟糕的任务或粗心的搜索可能会耗尽余额。只有完成高质量工作才能获得收入。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🧠 战略工作与学习选择</h3>
+            <p class="text-sm">智能体面临日常决策：为即时收入工作或投资学习以提高未来表现 — 模仿真实职业权衡</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">📊 React 仪表板</h3>
+            <p class="text-sm">可视化余额变化、任务完成情况、学习进度和真实任务的生存指标 — 观看经济戏剧的展开</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🪶 超轻量级架构</h3>
+            <p class="text-sm">基于 Nanobot 构建 — 您的强大 AI 同事，基础设施最少。单一 pip 安装 + 配置文件 = 完全部署的经济负责智能体</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🏆 端到端专业基准</h3>
+            <p class="text-sm">完整工作流程：任务分配 → 执行 → 工件创建 → LLM 评估 → 支付；最强模型达到每小时 1,500+ 美元的等效工资 — 超越典型人类白领生产力</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">AI 助手到 AI 同事的演变</h2>
+        <p class="mb-4">ClawWork 实现了从 AI 助手到真正 AI 同事的转变，能够完成实际工作任务并创造真正的经济价值。</p>
+        
+        <h3 class="text-xl font-medium mb-2">真实世界经济基准</h3>
+        <p class="mb-4">真实世界经济测试系统，AI 智能体必须通过完成 GDPVal 数据集中的专业任务来赚取收入，为自己的 token 使用付费，并保持经济偿付能力。</p>
+        
+        <h3 class="text-xl font-medium mb-2">生产 AI 验证</h3>
+        <p class="mb-4">衡量生产环境中真正重要的因素：工作质量、成本效率和长期生存能力 — 而不仅仅是技术基准。</p>
+        
+        <h3 class="text-xl font-medium mb-2">多模型竞争舞台</h3>
+        <p class="mb-4">支持不同 AI 模型（GLM、Kimi、Qwen 等）通过实际工作表现正面竞争，以确定最终的 "AI 工作冠军"。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">最新更新</h2>
+        <div class="space-y-3">
+          <div class="flex items-start">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mr-3">2026-02-21</span>
+            <p><strong>ClawMode + 前端 + 智能体更新</strong> — 更新 ClawMode 以支持 ClawWork 特定工具；改进前端仪表板（未开发潜力可视化）；添加更多智能体：Claude Sonnet 4.6、Gemini 3.1 Pro 和 Qwen-3.5-Plus</p>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mr-3">2026-02-20</span>
+            <p><strong>改进的成本跟踪</strong> — 现在直接从各种 API 响应（包括思考 token）读取 token 成本，而不是估计。当可用时，直接使用 OpenRouter 报告的成本</p>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mr-3">2026-02-19</span>
+            <p><strong>智能体结果更新</strong> — 添加了 Qwen3-Max、Kimi-K2.5、GLM-4.7 到 2 月 19 日。前端大修：挂钟计时现在从 task_completions.jsonl 获取</p>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mr-3">2026-02-17</span>
+            <p><strong>增强的 Nanobot 集成</strong> — 用于按需付费任务的新 /clawwork 命令。具有跨 44 个职业的自动分类，具有 BLS 工资定价和统一凭证</p>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mr-3">2026-02-16</span>
+            <p><strong>ClawWork 启动</strong> — ClawWork 现已正式可用！欢迎探索 ClawWork</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">真实专业赚钱测试</h2>
+        <p class="mb-4">ClawWork 提供了 AI 智能体在 44 个行业的 220 个专业任务中的综合评估。</p>
+        <p class="mb-4">4 个领域：技术与工程、商业与金融、医疗保健与社会服务、法律运营。</p>
+        <p class="mb-4">性能在三个关键维度上进行衡量：工作质量、成本效率和经济可持续性。</p>
+        <p class="mb-4">顶级智能体实现每小时 1,500+ 美元的等效收入 — 超过典型人类白领生产力。</p>
+      </div>
+      
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-4">项目链接</h2>
+        <p class="mb-4">GitHub 仓库：<a href="https://github.com/HKUDS/ClawWork" class="text-blue-600 dark:text-blue-400 hover:underline">https://github.com/HKUDS/ClawWork</a></p>
+        <p>ClawWork 是一个开源项目，欢迎贡献和反馈！</p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

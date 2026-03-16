@@ -1,0 +1,158 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'ZeroClaw：快速、小巧、完全自主的 AI 助手基础设施';
+const pageDescription = '介绍 ZeroClaw，一个使用 Rust 开发的轻量级 AI 助手基础设施，运行在 $10 硬件上，内存占用不到 5MB';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">ZeroClaw：快速、小巧、完全自主的 AI 助手基础设施</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">ZeroClaw 是一个由哈佛、MIT 和 Sundai.Club 社区的学生和成员构建的 AI 助手基础设施。它采用 100% Rust 开发，100% 不可知论设计，实现了零开销、零妥协的性能。</p>
+        <p class="mb-4">ZeroClaw 的最大特点是能够在仅需 $10 的硬件上运行，内存占用不到 5MB，比 OpenClaw 少 99% 的内存，比 Mac mini 便宜 98%！</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">公告</h2>
+        <div class="space-y-4 mb-4">
+          <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="text-sm font-medium">2026-02-19</span>
+              <span class="text-sm font-medium text-red-600 dark:text-red-400">Critical</span>
+            </div>
+            <p><strong>重要警告：</strong>我们与 openagen/zeroclaw、zeroclaw.org 或 zeroclaw.net 没有关联。zeroclaw.org 和 zeroclaw.net 域名目前指向 openagen/zeroclaw 分支，该域名/仓库正在冒充我们的官方网站/项目。</p>
+            <p class="mt-2">不要信任来自这些来源的信息、二进制文件、筹款或公告。仅使用此仓库和我们已验证的社交账户。</p>
+          </div>
+          
+          <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="text-sm font-medium">2026-02-21</span>
+              <span class="text-sm font-medium text-blue-600 dark:text-blue-400">Important</span>
+            </div>
+            <p><strong>官方网站上线：</strong>我们的官方网站现已上线：zeroclawlabs.ai。感谢您在我们准备发布期间的耐心等待。我们仍然看到冒充尝试，因此除非通过我们的官方渠道发布，否则不要加入任何声称 ZeroClaw 名称的投资或筹款活动。</p>
+            <p class="mt-2">使用此仓库作为单一事实来源。关注 X (@zeroclawlabs)、Facebook (Group) 和 Reddit (r/zeroclawlabs) 获取官方更新。</p>
+          </div>
+          
+          <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+            <div class="flex justify-between items-start mb-2">
+              <span class="text-sm font-medium">2026-02-19</span>
+              <span class="text-sm font-medium text-blue-600 dark:text-blue-400">Important</span>
+            </div>
+            <p><strong>Anthropic 认证和凭证使用条款更新：</strong>Anthropic 于 2026-02-19 更新了认证和凭证使用条款。Claude Code OAuth 令牌（免费、专业、Max）专用于 Claude Code 和 Claude.ai；在任何其他产品、工具或服务（包括 Agent SDK）中使用来自 Claude Free/Pro/Max 的 OAuth 令牌是不允许的，可能违反消费者服务条款。</p>
+            <p class="mt-2">请暂时避免 Claude Code OAuth 集成，以防止潜在损失。原始条款：Authentication and Credential Use。</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">核心特点</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🏎️ 默认精简运行时</h3>
+            <p class="text-sm">常见的 CLI 和状态工作流在发布构建中仅占用几兆字节的内存。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">💰 成本效益部署</h3>
+            <p class="text-sm">专为低成本开发板和小型云实例设计，无需重量级运行时依赖。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">⚡ 快速冷启动</h3>
+            <p class="text-sm">单一二进制 Rust 运行时使命令和守护进程启动几乎即时，适用于日常操作。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🌍 可移植架构</h3>
+            <p class="text-sm">跨 ARM、x86 和 RISC-V 的单一二进制优先工作流，可交换提供商/渠道/工具。</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">团队选择 ZeroClaw 的原因</h2>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>默认精简：</strong>小型 Rust 二进制文件，快速启动，低内存占用。</li>
+          <li><strong>设计安全：</strong>配对、严格的沙箱、明确的允许列表、工作区范围界定。</li>
+          <li><strong>完全可交换：</strong>核心系统是特征（提供商、渠道、工具、内存、隧道）。</li>
+          <li><strong>无锁定：</strong>OpenAI 兼容的提供商支持 + 可插拔的自定义端点。</li>
+        </ul>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">基准测试快照（ZeroClaw vs OpenClaw，可重现）</h2>
+        <p class="mb-4">本地机器快速基准测试（macOS arm64，2026 年 2 月）针对 0.8GHz 边缘硬件进行了标准化。</p>
+        
+        <div class="overflow-x-auto mb-4">
+          <table class="min-w-full bg-white dark:bg-gray-700 rounded-lg overflow-hidden">
+            <thead class="bg-gray-100 dark:bg-gray-600">
+              <tr>
+                <th class="py-2 px-4 text-left">项目</th>
+                <th class="py-2 px-4 text-left">语言</th>
+                <th class="py-2 px-4 text-left">内存</th>
+                <th class="py-2 px-4 text-left">启动时间 (0.8GHz 核心)</th>
+                <th class="py-2 px-4 text-left">二进制大小</th>
+                <th class="py-2 px-4 text-left">成本</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">OpenClaw</td>
+                <td class="py-2 px-4">TypeScript</td>
+                <td class="py-2 px-4">{'> 1GB'}</td>
+                <td class="py-2 px-4">{'> 500s'}</td>
+                <td class="py-2 px-4">~28MB (dist)</td>
+                <td class="py-2 px-4">Mac Mini $599</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">NanoBot</td>
+                <td class="py-2 px-4">Python</td>
+                <td class="py-2 px-4">{'> 100MB'}</td>
+                <td class="py-2 px-4">{'> 30s'}</td>
+                <td class="py-2 px-4">N/A (Scripts)</td>
+                <td class="py-2 px-4">Linux SBC ~$50</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">PicoClaw</td>
+                <td class="py-2 px-4">Go</td>
+                <td class="py-2 px-4">{'< 10MB'}</td>
+                <td class="py-2 px-4">{'< 1s'}</td>
+                <td class="py-2 px-4">~8MB</td>
+                <td class="py-2 px-4">Linux Board $10</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">ZeroClaw 🦀</td>
+                <td class="py-2 px-4">Rust</td>
+                <td class="py-2 px-4">{'< 5MB'}</td>
+                <td class="py-2 px-4">{'< 10ms'}</td>
+                <td class="py-2 px-4">~8.8 MB</td>
+                <td class="py-2 px-4">Any hardware $10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <p class="mb-4"><strong>注意：</strong>ZeroClaw 结果是在发布构建上使用 /usr/bin/time -l 测量的。OpenClaw 需要 Node.js 运行时（通常额外占用 ~390MB 内存开销），而 NanoBot 需要 Python 运行时。PicoClaw 和 ZeroClaw 是静态二进制文件。上面的内存数字是运行时内存；构建时编译要求更高。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">可重现的本地测量</h2>
+        <p class="mb-4">随着代码和工具链的发展，基准测试声明可能会漂移，因此请始终在本地测量您当前的构建：</p>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>cargo build --release</p>
+          <p>ls -lh target/release/zeroclaw</p>
+          <p></p>
+          <p>/usr/bin/time -l target/release/zeroclaw --help</p>
+          <p>/usr/bin/time -l target/release/zeroclaw status</p>
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-4">项目链接</h2>
+        <p class="mb-4">GitHub 仓库：<a href="https://github.com/zeroclaw-labs/zeroclaw" class="text-blue-600 dark:text-blue-400 hover:underline">https://github.com/zeroclaw-labs/zeroclaw</a></p>
+        <p>官方网站：<a href="https://zeroclawlabs.ai" class="text-blue-600 dark:text-blue-400 hover:underline">https://zeroclawlabs.ai</a></p>
+        <p class="mt-4">ZeroClaw 是一个开源项目，欢迎贡献和反馈！</p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

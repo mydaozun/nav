@@ -1,0 +1,195 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'MimiClaw：运行在 $5 芯片上的口袋 AI 助手';
+const pageDescription = '介绍 MimiClaw，世界上第一个运行在 $5 芯片上的 AI 助手，无需 Linux，无需 Node.js，纯 C 语言实现';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">MimiClaw：运行在 $5 芯片上的口袋 AI 助手</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">MimiClaw 是世界上第一个运行在 $5 芯片上的 AI 助手，无需 Linux，无需 Node.js，纯 C 语言实现。它将一个微小的 ESP32-S3 开发板变成个人 AI 助手，只需插入 USB 电源，连接 WiFi，通过 Telegram 与之对话，它就能处理你交给它的任何任务，并通过本地记忆随时间进化 — 所有这些都在一个拇指大小的芯片上完成。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">MimiClaw 特点</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🐣 小巧玲珑</h3>
+            <p class="text-sm">无需 Linux，无需 Node.js，无臃肿代码 — 纯 C 语言实现</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🤌 方便实用</h3>
+            <p class="text-sm">通过 Telegram 发送消息，它处理其余所有事情</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🤝 忠诚可靠</h3>
+            <p class="text-sm">从记忆中学习，重启后仍能记住</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">⚡ 精力充沛</h3>
+            <p class="text-sm">USB 供电，0.5 W，24/7 运行</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">❤️ 可爱亲民</h3>
+            <p class="text-sm">只需一个 ESP32-S3 开发板，$5，无需其他设备</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">工作原理</h2>
+        <p class="mb-4">你在 Telegram 上发送消息。ESP32-S3 通过 WiFi 接收消息，将其送入代理循环 — LLM 思考、调用工具、读取记忆 — 然后发送回复。支持 Anthropic (Claude) 和 OpenAI (GPT) 作为提供商，可在运行时切换。所有操作都在单个 $5 芯片上运行，所有数据都存储在本地闪存中。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">快速开始</h2>
+        
+        <h3 class="text-xl font-medium mb-2">所需物品</h3>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>一个带有 16 MB 闪存和 8 MB PSRAM 的 ESP32-S3 开发板（例如小芝 AI 板，约 $10）</li>
+          <li>一根 USB Type-C 电缆</li>
+          <li>一个 Telegram 机器人令牌 — 在 Telegram 上与 @BotFather 交谈以创建一个</li>
+          <li>一个 Anthropic API 密钥 — 来自 console.anthropic.com，或一个 OpenAI API 密钥 — 来自 platform.openai.com</li>
+        </ul>
+        
+        <h3 class="text-xl font-medium mb-2">安装</h3>
+        <p class="mb-2">首先需要安装 ESP-IDF v5.5+：</p>
+        <p class="mb-4"><a href="https://docs.espressif.com/projects/esp-idf/en/v5.5.2/esp32s3/get-started/" class="text-blue-600 dark:text-blue-400 hover:underline">https://docs.espressif.com/projects/esp-idf/en/v5.5.2/esp32s3/get-started/</a></p>
+        
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>git clone https://github.com/memovai/mimiclaw.git</p>
+          <p>cd mimiclaw</p>
+          <p></p>
+          <p>idf.py set-target esp32s3</p>
+        </div>
+        
+        <h4 class="text-lg font-medium mb-2">Ubuntu 安装</h4>
+        <p class="mb-2">推荐基准：</p>
+        <ul class="list-disc pl-6 mb-4 space-y-1">
+          <li>Ubuntu 22.04/24.04</li>
+          <li>Python >= 3.10</li>
+          <li>CMake >= 3.16</li>
+          <li>Ninja >= 1.10</li>
+          <li>Git >= 2.34</li>
+          <li>flex >= 2.6</li>
+          <li>bison >= 3.8</li>
+          <li>gperf >= 3.1</li>
+          <li>dfu-util >= 0.11</li>
+          <li>libusb-1.0-0, libffi-dev, libssl-dev</li>
+        </ul>
+        
+        <p class="mb-2">在 Ubuntu 上安装和构建：</p>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>sudo apt-get update</p>
+          <p>sudo apt-get install -y git wget flex bison gperf python3 python3-pip python3-venv \
+  cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0</p>
+          <p></p>
+          <p>./scripts/setup_idf_ubuntu.sh</p>
+          <p>./scripts/build_ubuntu.sh</p>
+        </div>
+        
+        <h4 class="text-lg font-medium mb-2">macOS 安装</h4>
+        <p class="mb-2">推荐基准：</p>
+        <ul class="list-disc pl-6 mb-4 space-y-1">
+          <li>macOS 12/13/14</li>
+          <li>Xcode 命令行工具</li>
+          <li>Homebrew</li>
+          <li>Python >= 3.10</li>
+          <li>CMake >= 3.16</li>
+          <li>Ninja >= 1.10</li>
+          <li>Git >= 2.34</li>
+          <li>flex >= 2.6</li>
+          <li>bison >= 3.8</li>
+          <li>gperf >= 3.1</li>
+          <li>dfu-util >= 0.11</li>
+          <li>libusb, libffi, openssl</li>
+        </ul>
+        
+        <p class="mb-2">在 macOS 上安装和构建：</p>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>xcode-select --install</p>
+          <p>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</p>
+          <p></p>
+          <p>./scripts/setup_idf_macos.sh</p>
+          <p>./scripts/build_macos.sh</p>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">配置</h2>
+        <p class="mb-4">MimiClaw 使用两层配置系统：mimi_secrets.h 中的构建时默认值，以及通过串行 CLI 的运行时覆盖。CLI 值存储在 NVS 闪存中，优先级高于构建时值。</p>
+        
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>cp main/mimi_secrets.h.example main/mimi_secrets.h</p>
+        </div>
+        
+        <p class="mb-2">编辑 main/mimi_secrets.h：</p>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>#define MIMI_SECRET_WIFI_SSID       "YourWiFiName"</p>
+          <p>#define MIMI_SECRET_WIFI_PASS       "YourWiFiPassword"</p>
+          <p>#define MIMI_SECRET_TG_TOKEN        "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"</p>
+          <p>#define MIMI_SECRET_API_KEY         "sk-ant-api03-xxxxx"</p>
+          <p>#define MIMI_SECRET_MODEL_PROVIDER  "anthropic"     // "anthropic" or "openai"</p>
+          <p>#define MIMI_SECRET_SEARCH_KEY      ""              // optional: Brave Search API key</p>
+          <p>#define MIMI_SECRET_TAVILY_KEY      ""              // optional: Tavily API key (preferred)</p>
+          <p>#define MIMI_SECRET_PROXY_HOST      ""              // optional: e.g. "10.0.0.1"</p>
+          <p>#define MIMI_SECRET_PROXY_PORT      ""              // optional: e.g. "7897"</p>
+        </div>
+        
+        <p class="mb-2">然后构建并烧录：</p>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p># 清理构建（修改 mimi_secrets.h 后必需）</p>
+          <p>idf.py fullclean && idf.py build</p>
+          <p></p>
+          <p># 查找你的串行端口</p>
+          <p>ls /dev/cu.usb*          # macOS</p>
+          <p>ls /dev/ttyACM*          # Linux</p>
+          <p></p>
+          <p># 烧录并监控（将 PORT 替换为你的端口）</p>
+          <p># USB 适配器：可能是 /dev/cu.usbmodem11401 (macOS) 或 /dev/ttyACM0 (Linux)</p>
+          <p>idf.py -p PORT flash monitor</p>
+        </div>
+        
+        <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-4">
+          <p><strong>重要：</strong>插入正确的 USB 端口！大多数 ESP32-S3 开发板有两个 USB-C 端口。你必须使用标记为 USB（原生 USB Serial/JTAG）的端口，而不是标记为 COM（外部 UART 桥）的端口。插入错误的端口会导致烧录/监控失败。</p>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">CLI 命令（通过 UART/COM 端口）</h2>
+        <p class="mb-4">通过串行连接进行配置或调试。配置命令允许你更改设置而无需重新编译 — 只需在任何地方插入 USB 电缆。</p>
+        
+        <h3 class="text-xl font-medium mb-2">运行时配置（保存到 NVS，覆盖构建时默认值）：</h3>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>mimi> wifi_set MySSID MyPassword   # 更改 WiFi 网络</p>
+          <p>mimi> set_tg_token 123456:ABC...   # 更改 Telegram 机器人令牌</p>
+          <p>mimi> set_api_key sk-ant-api03-... # 更改 API 密钥（Anthropic 或 OpenAI）</p>
+          <p>mimi> set_model_provider openai    # 切换提供商 (anthropic|openai)</p>
+          <p>mimi> set_model gpt-4o             # 更改 LLM 模型</p>
+          <p>mimi> set_proxy 127.0.0.1 7897  # 设置 HTTP 代理</p>
+          <p>mimi> clear_proxy                  # 移除代理</p>
+          <p>mimi> set_search_key BSA...        # 设置 Brave Search API 密钥</p>
+          <p>mimi> set_tavily_key tvly-...      # 设置 Tavily API 密钥（首选）</p>
+          <p>mimi> config_show                  # 显示所有配置（掩码）</p>
+          <p>mimi> config_reset                 # 清除 NVS，恢复为构建时默认值</p>
+        </div>
+        
+        <h3 class="text-xl font-medium mb-2">调试和维护：</h3>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>mimi> wifi_status              # 我是否已连接？</p>
+          <p>mimi> memory_read              # 查看机器人记得什么</p>
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-4">项目链接</h2>
+        <p class="mb-4">GitHub 仓库：<a href="https://github.com/memovai/mimiclaw" class="text-blue-600 dark:text-blue-400 hover:underline">https://github.com/memovai/mimiclaw</a></p>
+        <p>MimiClaw 是一个开源项目，欢迎贡献和反馈！</p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

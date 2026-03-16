@@ -1,0 +1,180 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'OpenClaw Docker 部署指南';
+const pageDescription = '详细的 OpenClaw 汉化版 Docker 部署指南';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">OpenClaw Docker 部署指南</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">本文档详细介绍如何使用 Docker 部署 OpenClaw 汉化版，包括一键部署、本地快速启动、服务器远程部署等多种方式。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">一键部署脚本（推荐）</h2>
+        <p class="mb-4">自动完成初始化、配置远程访问、启动容器：</p>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">Linux / macOS：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>curl -fsSL https://cdn.jsdelivr.net/gh/1186258278/OpenClawChineseTranslation@main/docker-deploy.sh | bash</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">Windows PowerShell：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>irm https://cdn.jsdelivr.net/gh/1186258278/OpenClawChineseTranslation@main/docker-deploy.ps1 | iex</code></pre>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">镜像地址</h2>
+        <div class="overflow-x-auto mb-4">
+          <table class="min-w-full bg-white dark:bg-gray-700 rounded-lg overflow-hidden">
+            <thead class="bg-gray-100 dark:bg-gray-600">
+              <tr>
+                <th class="py-2 px-4 text-left">镜像源</th>
+                <th class="py-2 px-4 text-left">地址</th>
+                <th class="py-2 px-4 text-left">适用场景</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">Docker Hub</td>
+                <td class="py-2 px-4">1186258278/openclaw-zh</td>
+                <td class="py-2 px-4">国内用户推荐，速度快</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">ghcr.io</td>
+                <td class="py-2 px-4">ghcr.io/1186258278/openclaw-zh</td>
+                <td class="py-2 px-4">海外用户 / 默认</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mb-4">以下命令默认使用 ghcr.io 地址。国内用户将 ghcr.io/1186258278/openclaw-zh 替换为 1186258278/openclaw-zh 即可加速。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">本地快速启动</h2>
+        <p class="mb-4">适用于在本机运行并通过 localhost 访问：</p>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">镜像地址（国内用户推荐使用 Docker Hub 加速）：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 海外: ghcr.io/1186258278/openclaw-zh:latest
+# 国内: 1186258278/openclaw-zh:latest
+IMAGE=ghcr.io/1186258278/openclaw-zh:latest</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">1. 初始化配置（首次运行，需要交互式配置 AI 模型和 API 密钥）：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># Linux/macOS:
+docker run --rm -it -v openclaw-data:/root/.openclaw \
+  $IMAGE openclaw onboard
+
+# Windows (PowerShell):
+docker run --rm -it -v openclaw-data:/root/.openclaw `
+  $IMAGE openclaw onboard</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">2. 配置网关模式（本地访问）：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># Linux/macOS:
+docker run --rm -v openclaw-data:/root/.openclaw \
+  $IMAGE openclaw config set gateway.mode local
+
+# Windows (PowerShell):
+docker run --rm -v openclaw-data:/root/.openclaw `
+  $IMAGE openclaw config set gateway.mode local</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">3. 启动容器（守护进程模式，容器会一直运行）：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># Linux/macOS:
+docker run -d \
+  --name openclaw \
+  -p 18789:18789 \
+  -v openclaw-data:/root/.openclaw \
+  --restart unless-stopped \
+  $IMAGE \
+  openclaw gateway run
+
+# Windows (PowerShell):
+docker run -d --name openclaw -p 18789:18789 -v openclaw-data:/root/.openclaw --restart unless-stopped $IMAGE openclaw gateway run</code></pre>
+        </div>
+        <p class="mb-4">访问：http://localhost:18789</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">服务器远程部署</h2>
+        <p class="mb-4">部署到服务器并从其他设备访问时，需要额外配置：</p>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">1. 创建数据卷：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code>docker volume create openclaw-data</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">2. 初始化配置（首次运行，需要交互式配置 AI 模型和 API 密钥）：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># Linux/macOS:
+docker run --rm -it -v openclaw-data:/root/.openclaw \
+  $IMAGE openclaw onboard
+
+# Windows (PowerShell):
+docker run --rm -it -v openclaw-data:/root/.openclaw `
+  $IMAGE openclaw onboard</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">3. 配置远程访问参数：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># Linux/macOS:
+docker run --rm -v openclaw-data:/root/.openclaw \
+  $IMAGE openclaw config set gateway.mode local
+docker run --rm -v openclaw-data:/root/.openclaw \
+  $IMAGE openclaw config set gateway.bind lan
+
+# Windows (PowerShell):
+docker run --rm -v openclaw-data:/root/.openclaw `
+  $IMAGE openclaw config set gateway.mode local
+docker run --rm -v openclaw-data:/root/.openclaw `
+  $IMAGE openclaw config set gateway.bind lan</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">4. 设置访问令牌（推荐）：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># Linux/macOS:
+docker run --rm -v openclaw-data:/root/.openclaw \
+  $IMAGE openclaw config set gateway.auth.token your-secure-token
+
+# Windows (PowerShell):
+docker run --rm -v openclaw-data:/root/.openclaw `
+  $IMAGE openclaw config set gateway.auth.token your-secure-token</code></pre>
+        </div>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <h4 class="font-medium mb-2">5. 启动容器（守护进程模式，容器会一直运行）：</h4>
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># Linux/macOS:
+docker run -d \
+  --name openclaw \
+  -p 18789:18789 \
+  -v openclaw-data:/root/.openclaw \
+  --restart unless-stopped \
+  $IMAGE \
+  openclaw gateway run
+
+# Windows (PowerShell):
+docker run -d --name openclaw -p 18789:18789 -v openclaw-data:/root/.openclaw --restart unless-stopped $IMAGE openclaw gateway run</code></pre>
+        </div>
+        <p class="mb-4">访问：http://服务器IP:18789 → 在 Dashboard 输入 token 连接</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">远程访问与 Token 认证</h2>
+        <p class="mb-4">通过 HTTP 从非 localhost 访问时，浏览器会阻止设备身份验证（Web Crypto API 需要 secure context）。</p>
+        <h3 class="text-xl font-medium mb-2">推荐解决方案：设置 Token 认证</h3>
+        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 mb-4">
+          <pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded text-sm"><code># 1. 设置访问令牌
+docker exec openclaw openclaw config set gateway.auth.token YOUR_TOKEN
+docker restart openclaw
+
+# 2. 在浏览器访问远程地址
+http://服务器IP:18789/overview
+
+# 3. 在「网关令牌」输入框填入 YOUR_TOKEN，点击「连接」</code></pre>
+        </div>
+        <p class="mb-4">设置 gateway.auth.token 后，即使通过远程 HTTP 访问，只要在 Dashboard 输入正确的 token 就能连接成功。</p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

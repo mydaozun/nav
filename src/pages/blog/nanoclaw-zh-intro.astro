@@ -1,0 +1,129 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'NanoClaw：您的专属 Claude 助手，在容器中安全运行';
+const pageDescription = '介绍 NanoClaw，一个轻巧易懂、安全隔离的 Claude 助手，支持智能体集群和多渠道消息';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">NanoClaw：您的专属 Claude 助手，在容器中安全运行</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">NanoClaw 是一个专属 Claude 助手，在容器中安全运行。它轻巧易懂，并能根据您的个人需求灵活定制。通过 Claude Code，NanoClaw 可以动态重写自身代码，根据您的需求定制功能。</p>
+        <p class="mb-4">新功能：首个支持 Agent Swarms（智能体集群）的 AI 助手。可轻松组建智能体团队，在您的聊天中高效协作。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">项目背景</h2>
+        <p class="mb-4">OpenClaw 是一个令人印象深刻的项目，但创建者无法安心使用一个不了解却能访问个人隐私的软件。OpenClaw 有近 50 万行代码、53 个配置文件和 70+ 个依赖项。其安全性是应用级别的（通过白名单、配对码实现），而非操作系统级别的隔离。所有东西都在一个共享内存的 Node 进程中运行。</p>
+        <p class="mb-4">NanoClaw 用一个您能快速理解的代码库，为您提供了同样的核心功能。只有一个进程，少数几个文件。智能体（Agent）运行在具有文件系统隔离的真实 Linux 容器中，而不是依赖于权限检查。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">快速开始</h2>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>git clone https://github.com/qwibitai/nanoclaw.git</p>
+          <p>cd nanoclaw</p>
+          <p>claude</p>
+        </div>
+        <p class="mb-4">然后运行 <code>/setup</code>。Claude Code 会处理一切：依赖安装、身份验证、容器设置、服务配置。</p>
+        <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-4">
+          <p><strong>注意：</strong>以 / 开头的命令（如 /setup、/add-whatsapp）是 Claude Code 技能。请在 claude CLI 提示符中输入，而非在普通终端中。</p>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">设计哲学</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">小巧易懂</h3>
+            <p class="text-sm">单一进程，少量源文件。无微服务、无消息队列、无复杂抽象层。让 Claude Code 引导您轻松上手。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">通过隔离保障安全</h3>
+            <p class="text-sm">智能体运行在 Linux 容器（在 macOS 上是 Apple Container，或 Docker）中。它们只能看到被明确挂载的内容。即便通过 Bash 访问也十分安全，因为所有命令都在容器内执行，不会直接操作您的宿主机。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">为单一用户打造</h3>
+            <p class="text-sm">这不是一个框架，是一个完全符合您个人需求的、可工作的软件。您可以 Fork 本项目，然后让 Claude Code 根据您的精确需求进行修改和适配。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">定制即代码修改</h3>
+            <p class="text-sm">没有繁杂的配置文件。想要不同的行为？直接修改代码。代码库足够小，这样做是安全的。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">AI 原生</h3>
+            <p class="text-sm">无安装向导（由 Claude Code 指导安装）。无需监控仪表盘，直接询问 Claude 即可了解系统状况。无调试工具（描述问题，Claude 会修复它）。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">技能（Skills）优于功能（Features）</h3>
+            <p class="text-sm">贡献者不应该向代码库添加新功能（例如支持 Telegram）。相反，他们应该贡献像 /add-telegram 这样的 Claude Code 技能，这些技能可以改造您的 fork。最终，您得到的是只做您需要事情的整洁代码。</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">最好的工具套件，最好的模型</h3>
+            <p class="text-sm">本项目运行在 Claude Agent SDK 之上，这意味着您直接运行的就是 Claude Code。Claude Code 高度强大，其编码和问题解决能力使其能够修改和扩展 NanoClaw，为每个用户量身定制。</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">功能支持</h2>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>多渠道消息</strong> - 通过 WhatsApp、Telegram、Discord、Slack 或 Gmail 与您的助手对话。使用 /add-whatsapp 或 /add-telegram 等技能添加渠道，可同时运行一个或多个。</li>
+          <li><strong>隔离的群组上下文</strong> - 每个群组都拥有独立的 CLAUDE.md 记忆和隔离的文件系统。它们在各自的容器沙箱中运行，且仅挂载所需的文件系统。</li>
+          <li><strong>主频道</strong> - 您的私有频道（self-chat），用于管理控制；其他所有群组都完全隔离</li>
+          <li><strong>计划任务</strong> - 运行 Claude 的周期性作业，并可以给您回发消息</li>
+          <li><strong>网络访问</strong> - 搜索和抓取网页内容</li>
+          <li><strong>容器隔离</strong> - 智能体在 Apple Container (macOS) 或 Docker (macOS/Linux) 的沙箱中运行</li>
+          <li><strong>智能体集群（Agent Swarms）</strong> - 启动多个专业智能体团队，协作完成复杂任务（首个支持此功能的个人 AI 助手）</li>
+          <li><strong>可选集成</strong> - 通过技能添加 Gmail (/add-gmail) 等更多功能</li>
+        </ul>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">使用方法</h2>
+        <p class="mb-4">使用触发词（默认为 @Andy）与您的助手对话：</p>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>@Andy 每周一到周五早上9点，给我发一份销售渠道的概览（需要访问我的 Obsidian vault 文件夹）</p>
+          <p>@Andy 每周五回顾过去一周的 git 历史，如果与 README 有出入，就更新它</p>
+          <p>@Andy 每周一早上8点，从 Hacker News 和 TechCrunch 收集关于 AI 发展的资讯，然后发给我一份简报</p>
+        </div>
+        
+        <p class="mb-4">在主频道（您的self-chat）中，可以管理群组和任务：</p>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>@Andy 列出所有群组的计划任务</p>
+          <p>@Andy 暂停周一简报任务</p>
+          <p>@Andy 加入"家庭聊天"群组</p>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">定制</h2>
+        <p class="mb-4">没有需要学习的配置文件。直接告诉 Claude Code 您想要什么：</p>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>"把触发词改成 @Bob"</p>
+          <p>"记住以后回答要更简短直接"</p>
+          <p>"当我说早上好的时候，加一个自定义的问候"</p>
+          <p>"每周存储一次对话摘要"</p>
+        </div>
+        <p class="mb-4">或者运行 <code>/customize</code> 进行引导式修改。</p>
+        <p class="mb-4">代码库足够小，Claude 可以安全地修改它。</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">贡献</h2>
+        <p class="mb-4">不要添加功能，而是添加技能。</p>
+        <p class="mb-4">如果您想添加 Telegram 支持，不要创建一个 PR 同时添加 Telegram 和 WhatsApp。而是贡献一个技能文件 (.claude/skills/add-telegram/SKILL.md)，教 Claude Code 如何改造一个 NanoClaw</p>
+      </div>
+      
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-4">项目链接</h2>
+        <p class="mb-4">GitHub 仓库：<a href="https://github.com/qwibitai/nanoclaw" class="text-blue-600 dark:text-blue-400 hover:underline">https://github.com/qwibitai/nanoclaw</a></p>
+        <p>官方网站：<a href="https://nanoclaw.dev" class="text-blue-600 dark:text-blue-400 hover:underline">https://nanoclaw.dev</a></p>
+        <p class="mt-4">NanoClaw 是一个开源项目，欢迎贡献和反馈！</p>
+      </div>
+    </div>
+  </div>
+</MainLayout>

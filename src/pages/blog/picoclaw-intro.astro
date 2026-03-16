@@ -1,0 +1,194 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+const pageTitle = 'PicoClaw：超轻量级个人 AI 助手';
+const pageDescription = '介绍 PicoClaw，一款运行在 $10 硬件上的超轻量级 AI 助手，内存占用不到 10MB';
+---
+<MainLayout
+  title={pageTitle}
+  description={pageDescription}
+>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">PicoClaw：超轻量级个人 AI 助手</h1>
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+      <div class="mb-6">
+        <p class="mb-4">PicoClaw 是一款超轻量级个人 AI 助手，灵感来自 nanobot，通过自举过程使用 Go 语言从头重构。这款 AI 助手由 AI 代理本身驱动整个架构迁移和代码优化，实现了极致的轻量化设计。</p>
+        <p class="mb-4">PicoClaw 的最大特点是能够在仅需 $10 的硬件上运行，内存占用不到 10MB，比 OpenClaw 少 99% 的内存，比 Mac mini 便宜 98%！</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">安全声明</h2>
+        <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-4">
+          <p class="mb-2"><strong>无加密货币：</strong>PicoClaw 没有官方代币/硬币。所有在 pump.fun 或其他交易平台上的声明都是骗局。</p>
+          <p class="mb-2"><strong>官方域名：</strong>唯一的官方网站是 picoclaw.io，公司网站是 sipeed.com</p>
+          <p class="mb-2"><strong>警告：</strong>许多 .ai/.org/.com/.net/... 域名由第三方注册。</p>
+          <p class="mb-2"><strong>警告：</strong>picoclaw 目前处于早期开发阶段，可能存在未解决的网络安全问题。在 v1.0 发布之前，请勿部署到生产环境。</p>
+          <p><strong>注意：</strong>picoclaw 最近合并了许多 PR，这可能导致最新版本的内存占用更大（10–20MB）。我们计划在当前功能集达到稳定状态后优先进行资源优化。</p>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">最新动态</h2>
+        <div class="space-y-3">
+          <div class="flex items-start">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mr-3">2026-02-16</span>
+            <p><strong>PicoClaw 在一周内获得 12K 星标！</strong>感谢大家的支持！PicoClaw 的增长速度超出了我们的想象。鉴于大量的 PR，我们迫切需要社区维护者。我们的志愿者角色和路线图已正式发布 — 我们期待您的加入！</p>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mr-3">2026-02-13</span>
+            <p><strong>PicoClaw 在 4 天内获得 5000 星标！</strong>感谢社区！在春节期间，有如此多的 PR 和问题提交，我们正在最终确定项目路线图并建立开发者小组以加速 PicoClaw 的开发。</p>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sm text-gray-500 dark:text-gray-400 mr-3">2026-02-09</span>
+            <p><strong>PicoClaw 正式发布！</strong>仅用 1 天时间构建，将 AI 代理带到 $10 硬件上，内存占用不到 10MB。🦐 PicoClaw，出发！</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">核心特点</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🪶 超轻量级</h3>
+            <p class="text-sm">内存占用不到 10MB — 比 Clawdbot 核心功能小 99%</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">💰 最低成本</h3>
+            <p class="text-sm">效率高到可以在 $10 硬件上运行 — 比 Mac mini 便宜 98%</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">⚡️ 闪电般快速</h3>
+            <p class="text-sm">启动时间快 400 倍，即使在 0.6GHz 单核处理器上也能在 1 秒内启动</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🌍 真正的可移植性</h3>
+            <p class="text-sm">跨 RISC-V、ARM、MIPS 和 x86 的单一自包含二进制文件，一键启动！</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🤖 AI 自举</h3>
+            <p class="text-sm">自主 Go 原生实现 — 95% 代理生成核心，人工在环优化</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">与其他项目比较</h2>
+        <div class="overflow-x-auto mb-4">
+          <table class="min-w-full bg-white dark:bg-gray-700 rounded-lg overflow-hidden">
+            <thead class="bg-gray-100 dark:bg-gray-600">
+              <tr>
+                <th class="py-2 px-4 text-left">项目</th>
+                <th class="py-2 px-4 text-left">语言</th>
+                <th class="py-2 px-4 text-left">内存</th>
+                <th class="py-2 px-4 text-left">启动时间 (0.8GHz 核心)</th>
+                <th class="py-2 px-4 text-left">成本</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">OpenClaw</td>
+                <td class="py-2 px-4">TypeScript</td>
+                <td class="py-2 px-4">{'>1GB'}</td>
+                <td class="py-2 px-4">{'>500s'}</td>
+                <td class="py-2 px-4">Mac Mini 599$</td>
+              </tr>
+              <tr class="border-b border-gray-200 dark:border-gray-600">
+                <td class="py-2 px-4">NanoBot</td>
+                <td class="py-2 px-4">Python</td>
+                <td class="py-2 px-4">{'>100MB'}</td>
+                <td class="py-2 px-4">{'>30s'}</td>
+                <td class="py-2 px-4">大多数 Linux SBC ~50$</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">PicoClaw</td>
+                <td class="py-2 px-4">Go</td>
+                <td class="py-2 px-4">{'< 10MB'}</td>
+                <td class="py-2 px-4">{'<1s'}</td>
+                <td class="py-2 px-4">任何 Linux 板，低至 10$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">标准助手工作流程</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🧩 全栈工程师</h3>
+            <p class="text-sm">开发 • 部署 • 扩展</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🗂️ 日志和计划管理</h3>
+            <p class="text-sm">调度 • 自动化 • 记忆</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+            <h3 class="font-medium mb-2">🔎 网络搜索和学习</h3>
+            <p class="text-sm">发现 • 洞察 • 趋势</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">在旧安卓手机上运行</h2>
+        <p class="mb-4">给你的十年老手机第二次生命！使用 PicoClaw 将其变成智能 AI 助手。快速开始：</p>
+        <ol class="list-decimal pl-6 mb-4 space-y-2">
+          <li>安装 Termux（可在 F-Droid 或 Google Play 上获得）。</li>
+          <li>执行命令：</li>
+        </ol>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p># 注意：将 v0.1.1 替换为发布页面上的最新版本</p>
+          <p>wget https://github.com/sipeed/picoclaw/releases/download/v0.1.1/picoclaw-linux-arm64</p>
+          <p>chmod +x picoclaw-linux-arm64</p>
+          <p>pkg install proot</p>
+          <p>termux-chroot ./picoclaw-linux-arm64 onboard</p>
+        </div>
+        <p>然后按照「快速开始」部分的说明完成配置！</p>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">创新的低占用部署</h2>
+        <p class="mb-4">PicoClaw 可以部署在几乎任何 Linux 设备上！</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>$9.9 LicheeRV-Nano E（以太网）或 W（WiFi6）版本，用于最小化家庭助手</li>
+          <li>$30~50 NanoKVM，或 $100 NanoKVM-Pro 用于自动服务器维护</li>
+          <li>$50 MaixCAM 或 $100 MaixCAM2 用于智能监控</li>
+        </ul>
+      </div>
+      
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">安装方法</h2>
+        
+        <h3 class="text-xl font-medium mb-2">使用预编译二进制文件安装</h3>
+        <p class="mb-4">从发布页面下载适合您平台的固件。</p>
+        
+        <h3 class="text-xl font-medium mb-2">从源代码安装（最新功能，推荐用于开发）</h3>
+        <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 font-mono text-sm mb-4">
+          <p>git clone https://github.com/sipeed/picoclaw.git</p>
+          <p></p>
+          <p>cd picoclaw</p>
+          <p>make deps</p>
+          <p></p>
+          <p># 构建，无需安装</p>
+          <p>make build</p>
+          <p></p>
+          <p># 为多个平台构建</p>
+          <p>make build-all</p>
+          <p></p>
+          <p># 为树莓派 Zero 2 W 构建（32 位：make build-linux-arm；64 位：make build-linux-arm64）</p>
+          <p>make build-pi-zero</p>
+          <p></p>
+          <p># 构建并安装</p>
+          <p>make install</p>
+        </div>
+        <p class="mb-4">树莓派 Zero 2 W：使用与您的操作系统匹配的二进制文件：32 位树莓派</p>
+      </div>
+      
+      <div class="mb-6">
+        <h2 class="text-2xl font-semibold mb-4">项目链接</h2>
+        <p class="mb-4">GitHub 仓库：<a href="https://github.com/sipeed/picoclaw" class="text-blue-600 dark:text-blue-400 hover:underline">https://github.com/sipeed/picoclaw</a></p>
+        <p>官方网站：<a href="https://picoclaw.io" class="text-blue-600 dark:text-blue-400 hover:underline">https://picoclaw.io</a></p>
+        <p class="mt-4">PicoClaw 是一个开源项目，欢迎贡献和反馈！</p>
+      </div>
+    </div>
+  </div>
+</MainLayout>
