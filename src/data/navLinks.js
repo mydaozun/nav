@@ -1,5 +1,5 @@
 export const websiteConfig = {
-  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466W6WNBC3T%2F20260321%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260321T054926Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEH0aCXVzLXdlc3QtMiJHMEUCIGQPYu%2FK4WGIUiS9WAzmwwCZna0610%2B1RD2uBJ7Rxi2nAiEA9ii%2FSu%2BwxsUG5ofMsg7fyVK62PkdFNdRLyiNQO1UUoMq%2FwMIRRAAGgw2Mzc0MjMxODM4MDUiDGwSuU9Nm306uCWw%2FSrcA5bkPkDDDqbuxdHfi3h4oKNvAmPnQd6JYCoXRG7C7cqFtx7drwdgIJ2JIuH5fCoYH0Bs%2FJiJ1G1g27r0c3OMI543iLTvYO8RUYFpnKfyhPpZN9JbvKz6N5E%2FwshlFVQKWLKLb4xltBzIvJI5V06pdVeMWtpmrZ7FGzi3Rwmpf44NVI6dR4CyPdENDGpvjJfbgekoU2roN6NAyg%2FIcGM9c54a%2FNfQvMskCNKr1N7Rh5qCw20wIajqUS62%2Fy9l5g8ljchbAchWNvdZWiBjxsNlNsCe%2FUUu0cqT5kLIScbbZ7K1BRG2ckcwodKNIKGBHQoP7Dwf%2FicD5TDnIPMN4TbeO3SsGrF8Q2tS7cIX%2BNetba2meytPv1RXEFTvP6Z7T4VcLKR1h6JtAPbI%2BFx3L01pEqCsn4Bq8UR7ZVXdNiJfNZUWTT4xKfQtbs4DLFx3U6kImEUqEuN7wGxt4FuIXzHULYWJ1%2BkcuHucellQYfKXjG2RhdBLZc17T1HD3gVaAUFPruWYdDRkAGk5j6CVXN36isCmLuhe3HjA6BONW8f%2FRc99uhiF1s1UTU1qK0Cp6AjTOrpaIGslgvM9tqIRqjalZbccyI1PCiNwWUC3O%2BJJvJ7xj7VxJ4iCBTSy5KMQMNy6%2BM0GOqUB6KPHgDHZ1jj2UUgmUQmu3Qu%2FAB1eXCqJEqfkkB980IgEVSQBzn4E%2BFGzziyRY2mjh6IoWrvgTfHEwwphBRCAVmqx4I9AroXweg4oYDaDhylO%2Flu3MURMBM0wnUJtcl6a4D3ea3HMIGRxCvofUVZ4zaNm4BuQ87dq73WTBbXsvHtKfHft7o%2Fy%2FeT8SLE84ExgzBpQbg050qrLaWV4nKXM%2FQsWp5lY&X-Amz-Signature=54aac467d863441243b4b0a6b3bc2d053335e09ef2baa238c583519064557c91&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664T4OA36C%2F20260321%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260321T065719Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEH4aCXVzLXdlc3QtMiJHMEUCIQD8yNtqwoFvf%2FwLzAWkJeJA1l6UpC1dIDw3xJ9tudacXQIgevZoO%2Fk2ADgMa%2F0AVAw0jFuvTx3sVNF4854li69i3R0q%2FwMIRxAAGgw2Mzc0MjMxODM4MDUiDDts8wSl5VnX2rUBNircA1osjgr1hWJWNgrCfn0G0s3t2FIHEKqYucWFypDSvJT4yQ6FJfzzGop55fvP1aMrDyuR%2B6w2pR9IBV0CP8ZOklhvQ8Ievspfolqqb%2Fzivw%2BUepOIGbmA%2BURT4K2mNqOgxPaBCLUa8C9JQCTQUwmmRaAQBMH8ql5qh4n%2FyHIZG0nznwyY80FjpyXEDulnHtg%2BNnbcM3Zhu%2BO1U%2BmyxNvCLtPnfmFB2ZXOAe6oei67u7nNetgMBqBpe0VqTl6pM96Dk3Vt6qkdAzqb5rMRDbngHU05EKyv0g6wvlrbD6bQ%2BT675%2Ffs8mDxD4f5UWP0Jl5ka0i3Wmhf9%2FR7DMMl0LpArvaRaw7YIfTopmo89XA0pl0nbEmNhXEB6GhIsxDBJe9V7RIMXQIopDodw41CJ2MvkPCSVp%2FsxX%2BMtUZo2CRp0V0gCW7waOocFjNIl9r8DzxE0gBd%2FFwQF8Xhm037WHrE4AqKpaZK%2FH7vb7b8VSX49QTelKjKMqBOMGUUWrVDQjzOXu%2BBBC72wZx0mKhq4LvBIrG%2FuFXPURnXDJKSKueoYdmu3srROJdzjaKMO0BHNXbZmGQa3AkHV64W8ULJbGRvwCyk6Nhczsb5q7q2sz981MZXbXR9yFTGYX%2FagogzMPLl%2BM0GOqUBOES7%2BDx1woF7ux6%2FgBJXkgiD93nvQ9QgOacyyDAIMzrhzceF1%2FwntAIt9qEhT3NJnWuoxFaYS0CsyCHTKkdgviKJjLAfh5kfIhsevwzCQBGOpk9s8%2FB70wdsxubQmeIohHxBufuJixwvU0rCjWmaSqTP4rcbtjFqPXQyq%2Bu%2F62bHyO1HvSHpQ9UrVVqbwvkQ32p4No58LT9dAI0Q6rjn7MKm%2BO2z&X-Amz-Signature=6a7b3ec8671f273f136466e20f3ca372a305c4d185202dfa36c349ae011fa9f0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
   "author": "mydaozun",
   "site_monetag": "<script src=\"https://5gvci.com/act/files/tag.min.js?z=10688447\" data-cfasync=\"false\" async></script>",
   "site_google": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643\"\ncrossorigin=\"anonymous\"></script>",
@@ -226,6 +226,15 @@ export const sites = [
     "description": "",
     "shortDesc": "",
     "url": "https://nanoclaw.dev",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "3a981255-bbca-472c-84d6-1761e643aaa3",
+    "title": "QClaw - 微信远程办公 AI 助手 | 腾讯出品",
+    "description": "随时随地，微信一下，QClaw 帮你高效干活",
+    "shortDesc": "随时随地，微信一下，QClaw 帮你高效干活",
+    "url": "https://qclaw.qq.com/",
     "category": "openclaw",
     "icon": ""
   },
