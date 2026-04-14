@@ -1,14 +1,4 @@
-export const websiteConfig = {
-  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466T7JKGWIL%2F20260414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260414T102204Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIA%2BTBbXlYyuomdOugDff0rF0Mkd5Ji0LAS0qWqw18GNIAiBMH4gNPulpBjO4smdawND9AYdkRBYpFpGUg2Uh4DaGvCqIBAiK%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM%2BWd52rULdMDntmv4KtwDlB1SMsCWZf0JYHcmSmmlZ%2B8BnIz48Ld8I7pwhqA70l2kE83ynt8cLeZVpJguJKdCrty6Tw3Z2EdsSebsQpzJd5fkvsxOgqQ69RBBmAQD9ufvTf3Wk9mPC0VDOjIPCQ11pHFhYiQ74kLiL3wvHQbE2nKfnDINRvvTgY9h9SNC2or9MyafEVv5b8T96NEf0iQxBgTtTVUAhDi3cepD%2BiwKdny8z95cG4q%2F%2F2%2B8LmayPpCReexJWHNeRuHYs9w0awVWvBYAnSrcqWP%2FW5wI2wKOLXJh2YO12b4eGgOFrYqlE%2FYWb9NM1bzrghDO3uIpszmQ2xlrJeW3r0Nz7YQtfGcwtl5N0phQ8WHrcgILudHOZpPY00agBv91br7u4rn%2Bk%2Btvvw7I8N1qgmbluo2cqhYf%2BOVssVeGld2L8cdlc%2BqRvSw0E5%2BDVYRFp2AIlh%2BVQe0rF7j%2B5MldwdM5x%2Fybrpb81pFguqoKnrUwLmkEfyKB9JJ2c%2FoJtHC2KNFbIDZHYX7SQL02OdlRTJetCDUUhbMkX5UeJarUQSuNLJ69gJmE44YuOQCsU1CM2lz06kgzWRiix0hwTERaQY%2Bef4LmhX2ilD0ccbN3QwpUNAwn5iQTRbZnVFGOkSizfdwCuUIw9v%2F3zgY6pgF9DVa7%2FdazYhZxL2jXIQWf%2BLELCSKO5ydyoFGzJ4XOPDxBAq1V63rgxQ%2F7k4LPFLpLDpxtQ2aRGsijJVI78jQ%2F3p%2FB9KCl6UzgBfLO1WupcPSSgPJnmArgpinpw8PI5TWS%2F7bqpUX%2FVzLvln0K9ZYs9ATHsNHhXn2UJPhyi5apWRozjAMKrLf3A5yFHwEV%2F9rHgbA5FHWFPeuVGsP5gj0%2F0gtZUaXZ&X-Amz-Signature=65aa0195ac765b4693f60e6687a1d9a986a44048759baf615acbb6f9660e1cf7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-  "title": "52DH导航 - 开源、自部署的私人化书签首页，打造专属你的极简导航站",
-  "description": "免费开源的个人导航站模板，轻量部署、自动化更新，支持个性化定制，快速访问你的常用工具、书签和在线服务。适合开发者、极客、内容创作者和自托管爱好者。",
-  "keywords": "导航站, 个人导航, 收藏夹, 自部署书签, 开源导航, 轻量工具, 开发者工具, 自托管, 极简首页, 书签管理, 在线工具, 自定义导航,,导航网站,前端资源,社区站点,设计师,实用工具,学习资源,运营,网络安全,node.js,AI工具,AI写作,AI论文,AI画图,AI转换,豆包,DeepSeek,ChatGPT,Grok,OPENCLAW",
-  "author": "mydaozun",
-  "site_google": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643\"\ncrossorigin=\"anonymous\"></script>",
-  "site_monetag": "<script src=\"https://5gvci.com/act/files/tag.min.js?z=10688447\" data-cfasync=\"false\" async></script>",
-  "social_github": "https://github.com/mydaozun",
-  "social_blog": "https://52dh.cc.cd"
-};
+export const websiteConfig = {};
 
 /**
  * 网站分类列表
