@@ -1,5 +1,5 @@
 export const websiteConfig = {
-  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RYHX3M56%2F20260503%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260503T115454Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDND9RtqQ2Yi2iPvZc88F0l450sSBZX5zqBoMAvTUOTyAiEAhdZVatfIu1%2B%2FU%2BhXQZDUGh7cYgkpPRc%2FlMvbjZTwII8q%2FwMIVBAAGgw2Mzc0MjMxODM4MDUiDCy%2B4%2FepRrdjI6zAVircA8IYw4ondM%2FF0ehmVHxxZVijx9IqEL1Sr6NMjxY1b7%2F0bly4Z1qwVgc4xHXF6IjstqF%2BPPPJl9DoCP1vIHVgs2fICYOSLu7k%2BVSqBfwOosR1PUkufWCjK5rG8CRm9gMzOwLvGuM2L5PJMTLSMhVaqrazT2JmW8VrFbF38uIGlZSflWXaxRFsRHT7gA16H30v4uDmyX64nvPCAUa7oWevGaFL0Jk7DaGFMryCEhkENW1K6iBJk%2BZ9WooDDs%2BJN0tOkdBSGM1Lk01%2FVIYtIC3b6EfOTNt%2Btgs4e%2FdTYPejQRkky8W%2B1OLAvZxzbhDsHLGbAti9QzXBq0%2FCUzC637RrKx321e%2Fu6LKfA5H9evCfnoGn4QwGyYR9G2V4TFaWUBzYBjrhUuKrEDBFeArr54FXGCVMQYHjcaSa5L9PoIIRZSPVctgOrDcIHANUUIfWwvV09Gr63x%2BUYQ4%2Fg3R2nEiI89XVAofInRQYlJgeYvGXGeizrvnw4yalsjAs0dcQip3LXGwRqHBi2jRUH%2BBiMfJDUrxLsDxtYCuCitc%2BnIaPP4%2BUhcKsFoqKoUkngPfIJHMDN%2F5QPidbM9fulhexYh7wGYMm6VDdDZJaFQbqV81G5QPiD%2BysSWZvsL8KjuSzMInW3M8GOqUBFd%2B2r0AWqrqNW5RUk2mDeiK4eTu8iClPR3gtvAjKDDu8APw1fNLY9w8sZ%2FcAR6nrKZCIvIDYrnjibmZvteAVGkPtTu6Slt5RSj9OgpJOkseAvKsC5akxEQwuo3VwRLO1x9fFi1JpUqw9Uk%2Bh%2B01ojnAWEBcV0R5YO%2FizQbIcup6oq9Envxu%2FoLQ7gNPwRdvgzDQyeZW6%2Bw%2Fcupv2TLizy73746IR&X-Amz-Signature=b57558afdbb0fa9fd6d7caa9fe2d1b001243cfc1d3a01ff77311aa58e80545f3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WLA5PNYN%2F20260503%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260503T134005Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIE1bxS2a2Zt9VGa44ZzHVIyjoTSuGGPF38XKVxB7Ylv1AiBkPn9xaSeI6B44Zn3hMh4ybgJ%2FCZEh0DV%2FaG1OTBFk4Sr%2FAwhVEAAaDDYzNzQyMzE4MzgwNSIMBONNC2%2Bw2Q5Q0Ah2KtwDtJbkPAva%2BEYkJ6D%2Fj8237QTa60P9oZGoiYzklpMXATeKQ2okZzH%2Bnj8TUsd7McdQDXyw6SeO5aMC4r%2FS%2FDJovdYnr1hrgA6ULG7wVLTAqdzS2KJWiB7MIunShT4YHDPQkkUdXEsS8VKqPsiN6Xahn4mtAt5J%2FRX9aTpIv1xfPT%2Boq7jubLosmFYm2weHw5kf1YCBD9ZUjUhgKjCYL%2Fm8IOxsWkOOTfwRXP3cXRgR0ZysF0x4fxg7E1%2FD5SDCphERNazTlJqJxH1MgpqmYVaEcIEPStvPnhBfIQ7zEdvkL2gp68dJH0eHDz7r31Dgu94lqiSSOLQ6TiTLXThzJmq9LFqPBAP5QdrCv4w6wKHyXpdjijRi0%2Bif93lOK74Ak%2Be9r8d0vRHCMAxU9%2FVZfkI5DMR4ifE5mmr6904jXZXbmFHcYqsEYOoLwcs9fv12VKKK2SPOiGeT4tRhR5kk0YCRSMXQvNWIxofHIs%2F%2BIP4%2BmhMdGXELT5nWShNz0vsTK43JoywvxpwSoBuSrmEx%2FC7fPY1g5c9V6pwHnT9wldlO6poCtvHSkhN5PokcFfdDCTNDksLoH8Spj7ckC5Nksakp401zqQ0sr72I06LcpPFROJo22KmdLINemDg24HAw1fPczwY6pgH2YOrrXbtJZrYi0JS1qfrWp1b4YjZpbd1Y%2FNMmpY0nE4JBZO2mjfAHHI7x3Zlxz2VvUwWdNR6UVVl8TOG4Ee6atxJY3M%2FjsSx4S0aK%2F9FrGnNfeQdbclLB9ojgK7v3%2FXEko6COrZ511R%2BoHRxrGFhHSkpkuq8GfubRvrxkZWq%2B5h%2B%2B86v2EUO7MOCwojZVyIJwCqjI8bZFbYzjt0ebtIGH5alCF6oT&X-Amz-Signature=f2b94596bf2599abbd5e1f8ed78988025772564b761d3faf31ea413b9188f3a9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
   "title": "52DH导航 - 开源、自部署的私人化书签首页，打造专属你的极简导航站",
   "description": "免费开源的个人导航站模板，轻量部署、自动化更新，支持个性化定制，快速访问你的常用工具、书签和在线服务。适合开发者、极客、内容创作者和自托管爱好者。",
   "keywords": "导航站, 个人导航, 收藏夹, 自部署书签, 开源导航, 轻量工具, 开发者工具, 自托管, 极简首页, 书签管理, 在线工具, 自定义导航,,导航网站,前端资源,社区站点,设计师,实用工具,学习资源,运营,网络安全,node.js,AI工具,AI写作,AI论文,AI画图,AI转换,豆包,DeepSeek,ChatGPT,Grok,OPENCLAW",
@@ -16,28 +16,8 @@ export const websiteConfig = {
  */
 export const categories = [
   {
-    "id": "在线小工具",
-    "name": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "openclaw",
-    "name": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "AI工具",
-    "name": "AI工具",
-    "icon": ""
-  },
-  {
-    "id": "设计资源",
-    "name": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "文字处理",
-    "name": "文字处理",
+    "id": "3D打印",
+    "name": "3D打印",
     "icon": ""
   },
   {
@@ -46,8 +26,28 @@ export const categories = [
     "icon": ""
   },
   {
+    "id": "设计资源",
+    "name": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "未分类",
+    "name": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "文字处理",
+    "name": "文字处理",
+    "icon": ""
+  },
+  {
     "id": "信息源",
     "name": "信息源",
+    "icon": ""
+  },
+  {
+    "id": "在线小工具",
+    "name": "在线小工具",
     "icon": ""
   },
   {
@@ -56,18 +56,18 @@ export const categories = [
     "icon": ""
   },
   {
-    "id": "3D打印",
-    "name": "3D打印",
-    "icon": ""
-  },
-  {
     "id": "桌面软件",
     "name": "桌面软件",
     "icon": ""
   },
   {
-    "id": "未分类",
-    "name": "未分类",
+    "id": "AI工具",
+    "name": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "openclaw",
+    "name": "openclaw",
     "icon": ""
   }
 ];
@@ -77,165 +77,12 @@ export const categories = [
  */
 export const sites = [
   {
-    "id": "3c83f36a-7d3e-426e-80de-63df95a0752d",
-    "title": "免费在线 Photoshop 工具_网页版 PS 在线修图抠图去水印_无需下载直接使用",
-    "description": "FreePS，在线图像编辑器，一款使用HTML5+Vue技术开发的开源在线图像编辑器，具有图像编辑、画笔、滤镜、调整大小、文本、缩放、图层和截图等功能。该编辑器模仿了Photoshop的大部分功能..",
-    "shortDesc": "FreePS，在线图像编辑器，一款使用HTML5+Vue技术开发的开源在线图像编辑器，具有图像编辑、...",
-    "url": "https://ps.mmaiverse.com/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "653e8ca5-a8e8-4b72-ba8a-42e1d1aafeaf",
-    "title": "免费IP归属地查询工具 - 快速查询IP地址归属地信息",
-    "description": "免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。",
-    "shortDesc": "免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。",
-    "url": "https://ip.mmaiverse.com/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "1a1133f0-52c0-4d8d-803d-fae8238de4da",
-    "title": "免费在线M3U8Player播放器，用于m3u8文件的在线播放器",
-    "description": "M3U8Player 是一款实现 HTTP 实时流客户端的 Chrome 浏览器扩展工具。你可以播放 .m3u8 HTTP Live Streaming (HLS)。它依靠 HTML5 视频和媒体源扩展进行播放。它的工作原理是将 MPEG-2 传输流和 AAC/MP3 流转换成 ISO BMFF (MP4) 片段。如果浏览器中有 Web Worker，可使用它异步执行转码。它还支持 HLS + fmp4。",
-    "shortDesc": "M3U8Player 是一款实现 HTTP 实时流客户端的 Chrome 浏览器扩展工具。你可以播放...",
-    "url": "https://m3u8.mmaiverse.com/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "cefabb80-d2e8-407f-b17b-0e213a8bd1a3",
-    "title": "在线画图_在线画画_免费在线画图工具, 在线画图让你创意满满",
-    "description": "在线画图工具，您的创意绘图助手！我们提供简单易用的在线画图软件，支持多种画图功能，让您轻松创建精美的图形、插图和设计。无论是专业设计师还是业余爱好者，都能在这里找到灵感和工具。立即体验我们的在线画图工具，释放您的创意，轻松分享您的作品！",
-    "shortDesc": "在线画图工具，您的创意绘图助手！我们提供简单易用的在线画图软件，支持多种画图功能，让您轻松创建精美的...",
-    "url": "https://ht.mmaiverse.com/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "17a95065-e81d-4a11-8933-9d379629e549",
-    "title": "房贷计算器2026年 - 房贷计算在线工具",
-    "description": "买房是人生中的大事，选择合适的房贷是关键。房贷计算器官网开发的房贷计算器2026是一款非常受欢迎的工具，每天超过88万人使用它来计算和咨询房屋贷款，包括提前还款计算器和公积金贷款计算器。无论您是想要了解房贷利率、首付比例、贷款期限等，房贷计算器都能为您提供详细的数据和计算结果。此外，如果您在线咨询贷款时遇到任何问题或疑虑，也可以使用贷款计算器进行详细咨询和了解。总之，选择合适的房贷产品，根据自己的实际情况选择最合适的还款方式，合理规划自己的财务，是买房前必须要做的一项重要准备工作。",
-    "shortDesc": "买房是人生中的大事，选择合适的房贷是关键。房贷计算器官网开发的房贷计算器2026是一款非常受欢迎的工...",
-    "url": "https://fd.mmaiverse.com/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "657cd62e-65b8-4060-9e5e-7f510edb6f47",
-    "title": "IT工具 - 开发人员的在线工具",
-    "description": "为开发者提供的方便的在线工具集合，具有出色的用户界面。IT 工具是一个免费且开源的为开发者和 IT 工作者提供的方便的在线工具集合",
-    "shortDesc": "为开发者提供的方便的在线工具集合，具有出色的用户界面。IT 工具是一个免费且开源的为开发者和 IT ...",
-    "url": "https://it.mmaiverse.com/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "60449d73-ae3a-42c9-aae5-5090617debef",
-    "title": "PDFCraft - 专业 PDF 工具",
-    "description": "在浏览器中免费、私密、强大的PDF处理",
-    "shortDesc": "在浏览器中免费、私密、强大的PDF处理",
-    "url": "https://pdf.mmaiverse.com/zh/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "b29153c2-b715-4add-b316-50fd0ae286bd",
-    "title": "中国传统颜色手册 | 中国色 | 中国古典颜色 | Chinese Color Cheat sheet",
-    "description": "全网最全的中国传统颜色数据库，包含600+国风色卡精准色值、命名由来与使用场景。一键获取CMYK/RGB/HEX色彩代码，提升设计效率与专业度。中国色，中国风，中国传统颜色，设计，Chinese color cheat sheet online",
-    "shortDesc": "全网最全的中国传统颜色数据库，包含600+国风色卡精准色值、命名由来与使用场景。一键获取CMYK/R...",
-    "url": "https://se.mmaiverse.com/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "4986fd37-c81a-40e7-8eec-a7c41e34c5ee",
-    "title": "DOCX转Markdown在线转换器 - 免费DOCX到MD格式转换工具",
-    "description": "D2M是一个免费的在线工具，可将DOCX文件快速转换为Markdown格式，支持浏览器本地转换，保护隐私，无需上传文件到服务器。",
-    "shortDesc": "D2M是一个免费的在线工具，可将DOCX文件快速转换为Markdown格式，支持浏览器本地转换，保护...",
-    "url": "https://d2m.mmaiverse.com/",
-    "category": "在线小工具",
-    "icon": ""
-  },
-  {
-    "id": "31bc9a03-6b07-80b9-9f44-e8610a38970d",
-    "title": "openclaw【小龙虾】",
+    "id": "14cc9a03-6b07-834d-a3c2-01781bc0218d",
+    "title": "DietPlan - 个性化饮食方案",
     "description": "",
     "shortDesc": "",
-    "url": "https://openclaw.ai/",
-    "category": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "28cbc333-4c66-4acc-93d2-cac94458294d",
-    "title": "OpenClaw 汉化版 - 开源 AI 助手「龙虾爪」中文版",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://openclaw.qt.cool/",
-    "category": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "81f8821d-7310-4570-ba94-92107754761f",
-    "title": "HKUDS/nanobot: \"🐈 nanobot: The Ultra-Lightweight OpenClaw\"",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://github.com/HKUDS/nanobot",
-    "category": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "0d9fa051-c17b-4b17-b583-9a4b4897daae",
-    "title": "HKUDS/ClawWork: \"ClawWork: OpenClaw as Your AI Coworker - 💰 $15K earned in 11 Hours\"",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://github.com/HKUDS/ClawWork",
-    "category": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "cda9f183-fc5c-4f91-86e8-651e2dc16d2a",
-    "title": "PicoClaw",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://picoclaw.io/",
-    "category": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "839205f0-71d3-4f12-8e33-33097e9f4d7d",
-    "title": "MimiClaw — Run OpenClaw on $5 Chips",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://mimiclaw.io/",
-    "category": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "b2ecdfa1-6912-4e4b-aabf-fd2316f00827",
-    "title": "ZeroClaw — Private AI Assistant | Local, Secure",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://www.zeroclawlabs.ai/",
-    "category": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "5666132a-92dd-4f4e-b590-b84d5b919b86",
-    "title": "NanoClaw - Secure AI Agent for WhatsApp, Telegram & More",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://nanoclaw.dev",
-    "category": "openclaw",
-    "icon": ""
-  },
-  {
-    "id": "3a981255-bbca-472c-84d6-1761e643aaa3",
-    "title": "QClaw - 微信远程办公 AI 助手 | 腾讯出品",
-    "description": "随时随地，微信一下，QClaw 帮你高效干活",
-    "shortDesc": "随时随地，微信一下，QClaw 帮你高效干活",
-    "url": "https://qclaw.qq.com/",
-    "category": "openclaw",
+    "url": "https://eat4fit.online/",
+    "category": "桌面软件",
     "icon": ""
   },
   {
@@ -320,12 +167,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "93cc9a03-6b07-839b-9aef-011f66273e67",
+    "title": "Free stock photos - Kaboompics",
+    "description": "Find the best free stock images. Download all images and use them in your projects.",
+    "shortDesc": "Find the best free stock images. Download all imag...",
+    "url": "https://kaboompics.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
     "id": "53cc9a03-6b07-8371-ad4b-81454f9df216",
     "title": "扣子空间",
     "description": "扣子是新一代 AI 大模型智能体开发平台。整合了插件、长短期记忆、工作流、卡片等丰富能力，扣子能帮你低门槛、快速搭建个性化或具备商业价值的智能体，并发布到豆包、飞书等各个平台。",
     "shortDesc": "扣子是新一代 AI 大模型智能体开发平台。整合了插件、长短期记忆、工作流、卡片等丰富能力，扣子能帮你...",
     "url": "https://www.coze.cn/space-preview",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "ce3c9a03-6b07-8213-b819-815fb8686078",
+    "title": "Free Stock Photos - How to Start an LLC.org",
+    "description": "Finda.Photo Free Stock Photos has a simple and clean search engine to find CC0 licensed stock photos. They have options to search by keyword in the",
+    "shortDesc": "Finda.Photo Free Stock Photos has a simple and cle...",
+    "url": "https://www.howtostartanllc.org/free-stock-photos/",
+    "category": "设计资源",
     "icon": ""
   },
   {
@@ -338,12 +203,66 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "a68c9a03-6b07-8374-bae6-0157c0cf5c65",
+    "title": "Stock Image Search Engine - More Than 50 Best Sources | Everypixel",
+    "description": "Stock image finder for all who hate bad stock photos. Use it to find the best licensed images for the lowest price. More than 50 image sources.",
+    "shortDesc": "Stock image finder for all who hate bad stock phot...",
+    "url": "https://www.everypixel.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "4bbc9a03-6b07-83b5-a555-81529c4945e2",
+    "title": "moyuguy/sidenote2obsidian: 已上架Chrome应用商店",
+    "description": "在任何网页上写卡片笔记，一键发布到obsidian上。",
+    "shortDesc": "在任何网页上写卡片笔记，一键发布到obsidian上。",
+    "url": "https://github.com/moyuguy/sidenote2obsidian",
+    "category": "知识管理",
+    "icon": ""
+  },
+  {
+    "id": "352c9a03-6b07-83d0-8452-81364dba7c60",
+    "title": "VisualHunt",
+    "description": "Visually search the best products and ideas. Curated by experts, powered by community.",
+    "shortDesc": "Visually search the best products and ideas. Curat...",
+    "url": "https://visualhunt.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "a12c9a03-6b07-83e0-8979-813f196c161e",
+    "title": "moyuguy/notion_bookmarks: Notion个人导航站",
+    "description": "Notion个人导航站. Contribute to moyuguy/notion_bookmarks development by creating an account on GitHub.",
+    "shortDesc": "Notion个人导航站. Contribute to moyuguy/notion_bookmark...",
+    "url": "https://github.com/moyuguy/notion_bookmarks",
+    "category": "知识管理",
+    "icon": ""
+  },
+  {
+    "id": "a66c9a03-6b07-82f7-ba9a-81cd339db838",
+    "title": "Librestock Photos - Free Stock Photo Search Engine",
+    "description": "We scan and index the best free photos from the top stock sites. All photos are free for personal and commercial. No attribution required. CC0.",
+    "shortDesc": "We scan and index the best free photos from the to...",
+    "url": "https://librestock.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
     "id": "1d9c9a03-6b07-8240-8c3c-810453da8f5e",
     "title": "火山引擎-云上增长新动力",
     "description": "火山引擎是字节跳动旗下的云服务平台，将字节跳动快速发展过程中积累的增长方法、技术能力和应用工具开放给外部企业，提供云基础、视频与内容分发、数智平台VeDI、人工智能、开发与运维等服务，帮助企业在数字化升级中实现持续增长。",
     "shortDesc": "火山引擎是字节跳动旗下的云服务平台，将字节跳动快速发展过程中积累的增长方法、技术能力和应用工具开放给...",
     "url": "https://www.volcengine.com/mcp-marketplace",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "b0ac9a03-6b07-83ad-ac9a-0129143594c0",
+    "title": "免费素材图片",
+    "description": "免费素材图片和视频，可以在任何地方使用。✓ 高质量 ✓ 100% 免费✓ 无需注明归属",
+    "shortDesc": "免费素材图片和视频，可以在任何地方使用。✓ 高质量 ✓ 100% 免费✓ 无需注明归属",
+    "url": "https://www.pexels.com/zh-cn/",
+    "category": "设计资源",
     "icon": ""
   },
   {
@@ -356,6 +275,33 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "e07c9a03-6b07-83ad-8d77-8186c25e080d",
+    "title": "Beautiful Free Images & Pictures | Unsplash",
+    "description": "Beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos.",
+    "shortDesc": "Beautiful, free images and photos that you can dow...",
+    "url": "https://unsplash.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "ed5c9a03-6b07-827a-aee1-8154d5d09929",
+    "title": "The AI workspace that works for you. | Notion",
+    "description": "A tool that connects everyday work into one space. It gives you and your teams AI tools—search, writing, note-taking—inside an all-in-one, flexible workspace.",
+    "shortDesc": "A tool that connects everyday work into one space....",
+    "url": "https://www.notion.so",
+    "category": "知识管理",
+    "icon": ""
+  },
+  {
+    "id": "a6dc9a03-6b07-8382-97fa-812d2b1b33df",
+    "title": "库存图片、照片、矢量图、视频和音乐 | Shutterstock",
+    "description": "从 Shutterstock 下载最好的免版税图片，包括照片、矢量图和插图。享受简单直接的定价和便捷的许可。",
+    "shortDesc": "从 Shutterstock 下载最好的免版税图片，包括照片、矢量图和插图。享受简单直接的定价和便捷...",
+    "url": "https://www.shutterstock.com/zh/?dd_referrer=https%3A%2F%2Fwww.google.com%2F",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
     "id": "840c9a03-6b07-824d-8015-815005cc7a03",
     "title": "LiblibAI-哩布哩布AI - 中国领先的AI创作平台",
     "description": "AI绘画原创模型分享社区，10万+模型免费下载;原汁原味的webUI、comfyUI，在线AI绘图工具免费使用;还可在线进行模型训练。欢迎每一位创作者加入，共同探索AI绘画",
@@ -365,12 +311,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "d92c9a03-6b07-8253-b793-018fa88cc2fd",
+    "title": "免费正版高清图片素材库 超过5.5百万张优质图片和视频素材可供免费使用和下载 - Pixabay",
+    "description": "寻找完美的免版税图片或视频，下载之后使用。 ✓ 免版税 ✓ 不要求署名 ✓ 高质量图片.",
+    "shortDesc": "寻找完美的免版税图片或视频，下载之后使用。 ✓ 免版税 ✓ 不要求署名 ✓ 高质量图片.",
+    "url": "https://pixabay.com/zh/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
     "id": "080c9a03-6b07-8271-a340-01628b459a16",
     "title": "Cherry Studio - 全能的AI助手",
     "description": "Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Windows 平台。快速切换多个先进的 LLM 模型，提升工作学习效率。",
     "shortDesc": "Cherry Studio AI 是一款强大的多模型 AI 助手，支持 iOS、macOS 和 Wi...",
     "url": "https://www.cherry-ai.com/",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "e8bc9a03-6b07-82c0-82e4-81a483f86d53",
+    "title": "Obsidian-Pkmer",
+    "description": "obsidian——如果你是刚安装 Obsidian 担心上手进阶教程较难，可以参考这里 如何使用Obsidian笔记-一步一步的指南Obsidian 是一款本地文档型纯文本笔记软...",
+    "shortDesc": "obsidian——如果你是刚安装 Obsidian 担心上手进阶教程较难，可以参考这里 如何使用O...",
+    "url": "https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian/",
+    "category": "知识管理",
     "icon": ""
   },
   {
@@ -419,12 +383,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "e38c9a03-6b07-832b-9c0d-815706841949",
+    "title": "Artefacts.ai",
+    "description": "Artefacts is a 3D AI toolkit that enables users to effortlessly transform text or 2D images into 3D assets. Unleash your creativity with Artefacts - the future of 3D content creation.",
+    "shortDesc": "Artefacts is a 3D AI toolkit that enables users to...",
+    "url": "https://artefacts.ai/",
+    "category": "3D打印",
+    "icon": ""
+  },
+  {
     "id": "c08c9a03-6b07-8289-a1fa-81f7f32f70ee",
     "title": "Stable Diffusion Prompt Book ",
     "description": "Free AI image generator. Free AI art generator. Free AI video generator. 100+ models and styles to choose from. Train your personalized model. Most popular AI apps: sketch to image, image to video, inpainting, outpainting, model fine-tuning, real-time drawing, text to image, image to image, image to text and more!",
     "shortDesc": "Free AI image generator. Free AI art generator. Fr...",
     "url": "https://openart.ai/promptbook",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "d22c9a03-6b07-83cd-b0e6-8162341de94c",
+    "title": "Tripo 网页版 | 随心设计、个性定制，打造属于您的 3D 世界",
+    "description": "Tripo 网页版，轻松上传图片或文字，秒变高质量3D模型，随地随地设计、编辑和定制 3D 作品，所有创作者的不二之选。",
+    "shortDesc": "Tripo 网页版，轻松上传图片或文字，秒变高质量3D模型，随地随地设计、编辑和定制 3D 作品，所...",
+    "url": "https://www.tripo3d.ai/app/home",
+    "category": "3D打印",
     "icon": ""
   },
   {
@@ -437,12 +419,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "597c9a03-6b07-831b-b9d9-014d3ea3a34d",
+    "title": "Meshy AI - 创作者首选的#1 AI 3D模型生成器",
+    "description": "Meshy是一个AI 3D模型生成器，可以帮助轻松地将图像和文本转化为3D模型，仅需几秒钟。",
+    "shortDesc": "Meshy是一个AI 3D模型生成器，可以帮助轻松地将图像和文本转化为3D模型，仅需几秒钟。",
+    "url": "https://www.meshy.ai/?utm_source=google&utm_medium=cpc&utm_campaign=2025-purchase&utm_term=&gad_source=1&gad_campaignid=22366628367&gbraid=0AAAAApPWZYgnTy23rCjVoESpHbIDGWiiI&gclid=Cj0KCQjwotDBBhCQARIsAG5pinNOWA8NqXYDcvupqyBvhiGGXM1OjMgoeFHqJSrMmR7i3ok_y_G_3xwaAjzGEALw_wcB",
+    "category": "3D打印",
+    "icon": ""
+  },
+  {
     "id": "8d6c9a03-6b07-8313-9edd-81454cfe7157",
     "title": "心流AI助手 | 让知识随心流动",
     "description": "心流是一款AI助手，帮助你高效获取知识，无论是日常娱乐生活百科还是专业学术论文知识，都可以轻松解答，让你快速进入心流状态，让知识随心流动！",
     "shortDesc": "心流是一款AI助手，帮助你高效获取知识，无论是日常娱乐生活百科还是专业学术论文知识，都可以轻松解答，...",
     "url": "https://iflow.cn/",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "819c9a03-6b07-8359-acb1-014b130204ac",
+    "title": "Discover STL files for 3D printing ideas and high-quality 3D printer models. | MyMiniFactory",
+    "description": "STL files for 3D designers and makers, share free and paid guaranteed 3D printable models. Download high-quality 3D print files for tabletop gaming, toys, gadgets and more for your 3D printers.",
+    "shortDesc": "STL files for 3D designers and makers, share free ...",
+    "url": "https://www.myminifactory.com/",
+    "category": "3D打印",
     "icon": ""
   },
   {
@@ -455,12 +455,48 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "9d2c9a03-6b07-826d-a3f3-81f50f0f51b8",
+    "title": "Free 3D Printable Files and Designs | Pinshape",
+    "description": "Pinshape is a thriving 3D printing community &amp; marketplace full of quality 3D printable files. Sell &amp; share your designs, or download 3D files to print now!",
+    "shortDesc": "Pinshape is a thriving 3D printing community &amp;...",
+    "url": "https://pinshape.com/",
+    "category": "3D打印",
+    "icon": ""
+  },
+  {
+    "id": "eb2c9a03-6b07-8254-8d62-814d28524f3f",
+    "title": "Vector Logos, PNG Images, Templates Free Download | seeklogo",
+    "description": "seeklogo.com is the world's best vector logos, logo png images, logo templates, brand logos and icons source. You can download in PNG, SVG, AI, EPS, CDR formats",
+    "shortDesc": "seeklogo.com is the world's best vector logos, log...",
+    "url": "https://seeklogo.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "cbac9a03-6b07-83e3-a512-0181e3a0d7a1",
+    "title": "在线图片转SVG ",
+    "description": "使用Adobe Express的免费SVG转换工具，在线将图像转为SVG格式。快捷轻松地上传您的JPG或PNG图像，即可将它转为SVG文件。",
+    "shortDesc": "使用Adobe Express的免费SVG转换工具，在线将图像转为SVG格式。快捷轻松地上传您的JP...",
+    "url": "https://www.adobe.com/cn/express/feature/image/convert/svg",
+    "category": "3D打印",
+    "icon": ""
+  },
+  {
     "id": "424c9a03-6b07-8272-b39e-81b1fe34208e",
     "title": "Manus",
     "description": "Manus是一个将你的想法变为行动的通用AI助手。它在工作和生活中擅长各种任务，让你休息的同时完成一切工作。",
     "shortDesc": "Manus是一个将你的想法变为行动的通用AI助手。它在工作和生活中擅长各种任务，让你休息的同时完成一...",
     "url": "https://manus.im/",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "3aac9a03-6b07-82de-90f7-8137a660f7b0",
+    "title": "3D model community. Search & download free 3D models. Share 3D models",
+    "description": "3D Model Community for 3D model enthusiasts. Use geometric search to find over 1 million free 3D models. Download 3D models & upload models to collaborate.",
+    "shortDesc": "3D Model Community for 3D model enthusiasts. Use g...",
+    "url": "https://thangs.com/",
+    "category": "3D打印",
     "icon": ""
   },
   {
@@ -473,12 +509,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "bc6c9a03-6b07-82c8-8b3e-81291cb9b71e",
+    "title": "3D models database | Printables.com",
+    "description": "Community site for 3D printer users. Discover thousands of great printable 3D models, download them for free and read interesting articles about 3D printing.",
+    "shortDesc": "Community site for 3D printer users. Discover thou...",
+    "url": "https://www.printables.com/",
+    "category": "3D打印",
+    "icon": ""
+  },
+  {
     "id": "fd6c9a03-6b07-839c-8aba-011ea324e146",
     "title": "Open WebUI",
     "description": "Open WebUI is an extensible, self-hosted interface for AI that adapts to your workflow, all while operating entirely offline; Supported LLM runners include Ollama and OpenAI-compatible APIs.",
     "shortDesc": "Open WebUI is an extensible, self-hosted interface...",
     "url": "https://openwebui.com/",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "a0bc9a03-6b07-8288-9641-01bb1102fb35",
+    "title": "Cults・下载免费 3D 打印机模型・STL、OBJ、3MF、CAD",
+    "description": "世界领先的 3D 打印机文件独立网站・下载最佳 3D 打印对象・在最大的 DIY 社区 Cults3D 上分享您的设计。",
+    "shortDesc": "世界领先的 3D 打印机文件独立网站・下载最佳 3D 打印对象・在最大的 DIY 社区 Cults3...",
+    "url": "https://cults3d.com/",
+    "category": "3D打印",
     "icon": ""
   },
   {
@@ -491,12 +545,48 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "a4dc9a03-6b07-8386-bfe6-817d8a4c1ab2",
+    "title": "Thingiverse - Digital Designs for Physical Objects",
+    "description": "Download millions of 3D models and files for your 3D printer, laser cutter, or CNC. From custom parts to unique designs, you can find them on Thingive",
+    "shortDesc": "Download millions of 3D models and files for your ...",
+    "url": "https://www.thingiverse.com/",
+    "category": "3D打印",
+    "icon": ""
+  },
+  {
     "id": "49ac9a03-6b07-8202-aec7-0178e2d7bff2",
     "title": "Hugging Face – The AI community building the future.",
     "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
     "shortDesc": "We’re on a journey to advance and democratize arti...",
     "url": "https://huggingface.co/",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "a37c9a03-6b07-8383-8c28-813d8817d67c",
+    "title": "MakerWorld：免费下载 3D 模型",
+    "description": "行业领先的 3D 打印模型社区，为 3D 打印爱好者和设计师提供服务。免费提供海量 3D 模型和 STL 模型下载，是您寻找彩色 3D 模型的首选平台",
+    "shortDesc": "行业领先的 3D 打印模型社区，为 3D 打印爱好者和设计师提供服务。免费提供海量 3D 模型和 S...",
+    "url": "https://makerworld.com.cn/zh",
+    "category": "3D打印",
+    "icon": ""
+  },
+  {
+    "id": "2e7c9a03-6b07-8226-93c8-818e80228dc5",
+    "title": "Similarweb: AI-Powered Digital Data Intelligence Solutions",
+    "description": "Similarweb is an AI-powered digital data company providing real-time market intelligence, competitive insights, and consumer trends to accelerate business growth.",
+    "shortDesc": "Similarweb is an AI-powered digital data company p...",
+    "url": "https://www.similarweb.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "6c5c9a03-6b07-83f0-b3bb-017f9d3c29de",
+    "title": "QRCode Monkey - The free QR Code Generator to create custom QR Codes with Logo",
+    "description": "Create custom QR Codes with Logo, Color and Design for free. This QR Code Maker offers free vector formats for best print quality.",
+    "shortDesc": "Create custom QR Codes with Logo, Color and Design...",
+    "url": "https://www.qrcode-monkey.com/",
+    "category": "3D打印",
     "icon": ""
   },
   {
@@ -509,12 +599,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "bd9c9a03-6b07-82f1-9167-81b68c2245f0",
+    "title": "SVG 2 STL",
+    "description": "3D pringing SVG images made simple. Convert your SVG images to 3D printable STL models online and for free in just three simple steps.",
+    "shortDesc": "3D pringing SVG images made simple. Convert your S...",
+    "url": "https://svg2stl.com/",
+    "category": "3D打印",
+    "icon": ""
+  },
+  {
     "id": "0a2c9a03-6b07-825f-acaf-81feb68b4f19",
     "title": "Coze: Next-Gen AI Chatbot Developing Platform",
     "description": "Coze is a next-generation AI application and chatbot developing platform for everyone. Regardless of your programming experience, Coze enables you to effortlessly create various chatbots and deploy them across different social platforms and messaging apps.",
     "shortDesc": "Coze is a next-generation AI application and chatb...",
     "url": "https://www.coze.com/home",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "6b2c9a03-6b07-82af-9fb4-8108605ac1d4",
+    "title": "免费照片、剪贴画、矢量图、PSD 和图标 | FreeImages",
+    "description": "免费图片。照片、插图、模型和图形设计资源！ ✓ 免费和免版税的库存图片 [HD] 无版权",
+    "shortDesc": "免费图片。照片、插图、模型和图形设计资源！ ✓ 免费和免版税的库存图片 [HD] 无版权",
+    "url": "https://www.freeimages.com/cn",
+    "category": "设计资源",
     "icon": ""
   },
   {
@@ -536,6 +644,15 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "634c9a03-6b07-83be-b250-8119e87d7fa3",
+    "title": "佐糖AI图片创作神器|免费在线图片编辑工具",
+    "description": "使用佐糖，无需其他繁杂操作，只需上传图片，即可实现一键抠图、照片修复、AI背景合成、制作证件照、图片压缩等超多丰富功能，轻松满足多样化作图需求！",
+    "shortDesc": "使用佐糖，无需其他繁杂操作，只需上传图片，即可实现一键抠图、照片修复、AI背景合成、制作证件照、图片...",
+    "url": "https://picwish.cn/create",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
     "id": "a59c9a03-6b07-828d-a0f0-01eba47f1671",
     "title": "即梦AI - 一站式AI创作平台",
     "description": "即梦AI是一个AI创作平台，可激发艺术创意、提升绘画和视频创作体验。您可以利用AI智能，将想象变为现实。即梦AI支持文字绘图、文字生成视频和图片生成视频，并提供创作灵感。让即梦AI开启您的AI生成艺术之旅，探索创造的无限可能！",
@@ -551,6 +668,33 @@ export const sites = [
     "shortDesc": "Transform text and images into immersive videos. A...",
     "url": "https://sora.chatgpt.com/explore",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "64cc9a03-6b07-8303-bfc8-81fa80f73f14",
+    "title": "Zarla's Free Logo Maker | Create a Free Logo Now",
+    "description": "免费AI生成logo，质量还不错",
+    "shortDesc": "免费AI生成logo，质量还不错",
+    "url": "https://www.zarla.com/free-logo-maker",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "341c9a03-6b07-820a-bc9c-81598adb1bc0",
+    "title": "Book Awards",
+    "description": "List of book awards: Goodreads Choice Award, Lambda Literary Award, Locus Award, RITA Award by Romance Writers of America, Independent Publisher Book Awa...",
+    "shortDesc": "List of book awards: Goodreads Choice Award, Lambd...",
+    "url": "https://www.goodreads.com/award",
+    "category": "知识管理",
+    "icon": ""
+  },
+  {
+    "id": "b79c9a03-6b07-82a5-8b07-01ddf5c5e15c",
+    "title": "The Greatest Books of All Time",
+    "description": "The Greatest Books of All Time. This list is generated by aggregating 534 lists from various critics, authors, experts, and readers.",
+    "shortDesc": "The Greatest Books of All Time. This list is gener...",
+    "url": "https://thegreatestbooks.org/",
+    "category": "知识管理",
     "icon": ""
   },
   {
@@ -572,12 +716,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "15cc9a03-6b07-82d5-864b-81d8c2ddf72c",
+    "title": "PhotoFunia",
+    "description": "PhotoFunia是一个领先的免费照片编辑网站，其中包含大量的图片编辑器效果和照片滤镜库。使用在线图片编辑器编辑图片。",
+    "shortDesc": "PhotoFunia是一个领先的免费照片编辑网站，其中包含大量的图片编辑器效果和照片滤镜库。使用在线...",
+    "url": "https://photofunia.com/cn/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
     "id": "ca0c9a03-6b07-83b2-b15d-01459c34f84b",
     "title": "海螺语音：让文字栩栩如“声”",
     "description": "MiniMax 旗下的声音创作工具产品，用先进的AI技术生成你想要的声音，支持多种语种、情绪和效果。",
     "shortDesc": "MiniMax 旗下的声音创作工具产品，用先进的AI技术生成你想要的声音，支持多种语种、情绪和效果。",
     "url": "https://hailuoai.com/audio",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "abac9a03-6b07-83fc-806f-01d87b4759a3",
+    "title": "百度指数",
+    "description": "百度指数是以百度海量网民行为数据为基础的数据分享平台。在这里，你可以研究关键词搜索趋势、洞察网民兴趣和需求、监测舆情动向、定位受众特征。",
+    "shortDesc": "百度指数是以百度海量网民行为数据为基础的数据分享平台。在这里，你可以研究关键词搜索趋势、洞察网民兴趣...",
+    "url": "https://index.baidu.com/v2/#/",
+    "category": "开发工具",
     "icon": ""
   },
   {
@@ -590,6 +752,15 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "dffc9a03-6b07-82c3-b821-01eb8a330999",
+    "title": "Ubersuggest: Free Keyword Research Tool - Neil Patel",
+    "description": "Ubersuggest is a FREE SEO tool that enables you to do keyword research, analyze competitors, do site audits and more! Level up your marketing today.",
+    "shortDesc": "Ubersuggest is a FREE SEO tool that enables you to...",
+    "url": "https://neilpatel.com/ubersuggest/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
     "id": "131c9a03-6b07-828f-8003-013532f09887",
     "title": "魔音工坊--达人热推的短视频/有声书AI配音平台",
     "description": "魔音工坊是一款可以在线将文字转成语音的智能配音产品。提供不同性别、不同口音的真人声音，在你输入文字后直接配音。你可快速对短视频等需要配音的内容进行配音。是一款功能强大AI语音合成神器。",
@@ -599,12 +770,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "da6c9a03-6b07-822f-9dae-813c71d59287",
+    "title": "Search listening tool for market, customer & content research - AnswerThePublic",
+    "description": "Use our free tool to get instant, raw search insights, direct from the minds of your customers. Upgrade to a paid plan to monitor for new ways that people talk & ask questions about your brand, product or topic.",
+    "shortDesc": "Use our free tool to get instant, raw search insig...",
+    "url": "https://answerthepublic.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
     "id": "983c9a03-6b07-8387-9014-01340e4fd708",
     "title": "讯飞听见-在线语音转文字-录音转文字",
     "description": "讯飞听见依托科大讯飞的语音识别技术，为用户提供语音转文字、录音转文字等服务。把录音转成文字选讯飞听见，1小时音频最快5分钟出稿，高效安全。",
     "shortDesc": "讯飞听见依托科大讯飞的语音识别技术，为用户提供语音转文字、录音转文字等服务。把录音转成文字选讯飞听见...",
     "url": "https://www.iflyrec.com/zhuanwenzi.html",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "8a3c9a03-6b07-8228-a912-8134c2df96a2",
+    "title": "Google 趋势",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://trends.google.com/trends/",
+    "category": "开发工具",
     "icon": ""
   },
   {
@@ -635,6 +824,60 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "557c9a03-6b07-8220-a182-0152391130ec",
+    "title": "Ezho | Ezho记录读书、思考、创业的心得",
+    "description": "Ezho记录读书、思考、创业的心得",
+    "shortDesc": "Ezho记录读书、思考、创业的心得",
+    "url": "https://ezho.top/",
+    "category": "信息源",
+    "icon": ""
+  },
+  {
+    "id": "ad2c9a03-6b07-83ae-83bc-01c630931744",
+    "title": "tailwind-config-viewer",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://rogden.github.io/tailwind-config-viewer/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "aa6c9a03-6b07-8211-965e-8188108bdb76",
+    "title": "在线图片转SVG ",
+    "description": "使用Adobe Express的免费SVG转换工具，在线将图像转为SVG格式。快捷轻松地上传您的JPG或PNG图像，即可将它转为SVG文件。",
+    "shortDesc": "使用Adobe Express的免费SVG转换工具，在线将图像转为SVG格式。快捷轻松地上传您的JP...",
+    "url": "https://www.adobe.com/cn/express/feature/image/convert/svg",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "517c9a03-6b07-83f0-b0b0-013f5f83097f",
+    "title": "Ahrefs—Marketing Intelligence Tools Powered by Big Data.",
+    "description": "Unlock data to make effective decisions across digital marketing. SEO, content marketing, PPC, digital PR, and more.",
+    "shortDesc": "Unlock data to make effective decisions across dig...",
+    "url": "https://ahrefs.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "b29c9a03-6b07-8259-b187-01ae33f6e9cb",
+    "title": "React Icons",
+    "description": "Include popular icons in your React projects easly with react-icons.",
+    "shortDesc": "Include popular icons in your React projects easly...",
+    "url": "https://react-icons.github.io/react-icons/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "a61c9a03-6b07-83dd-967d-015737290da6",
+    "title": "Semrush SEO Toolkit: Check Website SEO with Analysis Tools",
+    "description": "From research to reporting, take your SEO to the next level with Semrush tools. Keyword research, backlink audit, rank tracking, competitor analysis & more.",
+    "shortDesc": "From research to reporting, take your SEO to the n...",
+    "url": "https://www.semrush.com/projects/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
     "id": "c5bc9a03-6b07-8200-91b4-813b5407d935",
     "title": "Trae - Ship Faster with Trae",
     "description": "字节跳动的AI IDE",
@@ -644,12 +887,354 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "9f2c9a03-6b07-822d-b533-81ae52aefe34",
+    "title": "站长工具 - 站长之家",
+    "description": "站长工具是站长的必备工具。经常上站长工具可以了解SEO数据变化。还可以检测网站死链接、蜘蛛访问、HTML格式检测、网站速度测试、友情链接检查、网站域名IP查询、PR、权重查询、alexa、whois查询等等。",
+    "shortDesc": "站长工具是站长的必备工具。经常上站长工具可以了解SEO数据变化。还可以检测网站死链接、蜘蛛访问、HT...",
+    "url": "https://tool.chinaz.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "4bac9a03-6b07-82da-a97c-0145482033f1",
+    "title": "最新免费字体下载大全",
+    "description": "2025最新免费字体，自由字体整理发布免费可商用字体合集，全部免费字体，自由字体仓库提供免费字体大全及无版权字体合集打包下载",
+    "shortDesc": "2025最新免费字体，自由字体整理发布免费可商用字体合集，全部免费字体，自由字体仓库提供免费字体大全...",
+    "url": "https://ziyouziti.com/index-index-all.html",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "c69c9a03-6b07-834c-99bc-8153a0fb51d9",
+    "title": "站长工具-百度权重排名查询-站长seo查询 - 爱站网",
+    "description": "爱站网站长工具提供网站收录查询和站长查询以及百度权重值查询等多个站长工具，免费查询各种工具，包括有关键词排名查询，百度收录查询等。",
+    "shortDesc": "爱站网站长工具提供网站收录查询和站长查询以及百度权重值查询等多个站长工具，免费查询各种工具，包括有关...",
+    "url": "https://www.aizhan.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "8aac9a03-6b07-836a-a41a-81ccd12a5219",
+    "title": "中文商用免费字体",
+    "description": "大概是2020年最全的免费可商用字体，这里收录的商免字体都能找到明确的授权出处，可以放心使用。来源：https://github.com/wordshub/free-font",
+    "shortDesc": "大概是2020年最全的免费可商用字体，这里收录的商免字体都能找到明确的授权出处，可以放心使用。来源：...",
+    "url": "https://wordshub.github.io/free-font/index.html",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "0b3c9a03-6b07-8351-b59c-8155cfc822eb",
+    "title": "网站时光机",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://web.archive.org/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "caec9a03-6b07-8355-8fde-010f7d269951",
+    "title": " Google Fonts",
+    "description": "Making the web more beautiful, fast, and open through great typography",
+    "shortDesc": "Making the web more beautiful, fast, and open thro...",
+    "url": "https://fonts.google.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "c8fc9a03-6b07-82c8-9e8f-811950c980b9",
+    "title": "算数指数-巨量算数",
+    "description": "内容消费生态下的热度趋势查询。抖音、今日头条等多端热词指数查询，及相关热点关联分析、用户画像等深度下钻分析。",
+    "shortDesc": "内容消费生态下的热度趋势查询。抖音、今日头条等多端热词指数查询，及相关热点关联分析、用户画像等深度下...",
+    "url": "https://trendinsight.oceanengine.com/arithmetic-index",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "206c9a03-6b07-82fe-8907-0147e10e02d9",
+    "title": "字由官网 | 千款免费字体一键使用，设计师必备字体工具",
+    "description": "字由是免费的字体管理工具，为您提供900+字体免费商用，支持在PS、AI、ID、XD、Figma、Sketch、CDR等设计软件中一键应用字体，提供AI识字、字体特效等实用功能，为您的设计提质加速，超百万设计师正在使用字由",
+    "shortDesc": "字由是免费的字体管理工具，为您提供900+字体免费商用，支持在PS、AI、ID、XD、Figma、S...",
+    "url": "https://www.hellofont.cn/home",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "6dfc9a03-6b07-82f4-bb51-81964718fb49",
+    "title": "榜单订阅 - 新榜",
+    "description": "新榜每天发布更多榜单数据，覆盖新媒体平台、地区、行业等，通过新榜指数了解最新发展趋势",
+    "shortDesc": "新榜每天发布更多榜单数据，覆盖新媒体平台、地区、行业等，通过新榜指数了解最新发展趋势",
+    "url": "https://www.newrank.cn/ranksub",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "3aec9a03-6b07-82f6-87e8-016ba169d6b0",
+    "title": "中国色-传统颜色",
+    "description": "提供各种中国的传统颜色的名称，CMYK值，RGB值，16进制表示。AI制作中国色图片和视频",
+    "shortDesc": "提供各种中国的传统颜色的名称，CMYK值，RGB值，16进制表示。AI制作中国色图片和视频",
+    "url": "https://www.zhongguose.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "e81c9a03-6b07-8345-8392-0185008aabe3",
+    "title": "今日热榜",
+    "description": "今日热榜提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、抖音...追踪全网热点、简单高效阅读。",
+    "shortDesc": "今日热榜提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Git...",
+    "url": "https://tophub.today/c/news",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "3ebc9a03-6b07-8287-8e2f-014265d96555",
+    "title": "Color Hunt - Color Palettes for Designers and Artists",
+    "description": "Discover the newest hand-picked color palettes of Color Hunt. Get color inspiration for your design and art projects.",
+    "shortDesc": "Discover the newest hand-picked color palettes of ...",
+    "url": "https://colorhunt.co/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "2d4c9a03-6b07-8251-ad81-01c46561bffd",
+    "title": "百度热搜",
+    "description": "百度热搜以数亿用户海量的真实数据为基础，通过专业的数据挖掘方法，计算关键词的热搜指数，旨在建立权威、全面、热门、时效的各类关键词排行榜，引领热词阅读时代。",
+    "shortDesc": "百度热搜以数亿用户海量的真实数据为基础，通过专业的数据挖掘方法，计算关键词的热搜指数，旨在建立权威、...",
+    "url": "https://top.baidu.com/board",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "f3ac9a03-6b07-8346-9405-810a10a25589",
+    "title": "Flat UI Colors 2 - 14 Color Palettes, 280 colors 🎨",
+    "description": "280 handpicked colors ready for COPY & PASTE",
+    "shortDesc": "280 handpicked colors ready for COPY & PASTE",
+    "url": "https://flatuicolors.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
     "id": "083c9a03-6b07-828e-a544-017eee830fcb",
     "title": "Chatbox AI官网：办公学习的AI好助手，全平台AI客户端，官方免费下载",
     "description": "Chatbox AI 是一款 AI 客户端应用和智能助手，支持众多先进的 AI 模型和 API，可在 Windows、MacOS、Android、iOS、Linux 和网页版上使用。",
     "shortDesc": "Chatbox AI 是一款 AI 客户端应用和智能助手，支持众多先进的 AI 模型和 API，可在...",
     "url": "https://chatboxai.app/zh#",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "9dbc9a03-6b07-83d4-98e8-01aaa2437f57",
+    "title": "iconfont-阿里巴巴矢量图标库",
+    "description": "iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造，设计和前端开发的便捷工具",
+    "shortDesc": "iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等...",
+    "url": "https://www.iconfont.cn/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "63dc9a03-6b07-8296-884d-01652d137a18",
+    "title": "Follow",
+    "description": "Next-Gen Information Browser",
+    "shortDesc": "Next-Gen Information Browser",
+    "url": "https://follow.is/",
+    "category": "桌面软件",
+    "icon": ""
+  },
+  {
+    "id": "ee1c9a03-6b07-8247-9058-012c1d835848",
+    "title": "Free icons sets",
+    "description": "Exclusive collection of icon sets free for personal and commercial usage",
+    "shortDesc": "Exclusive collection of icon sets free for persona...",
+    "url": "https://www.graphberry.com/category/icons",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "f42c9a03-6b07-82b2-a077-8127dd06aa89",
+    "title": "top-rss-list/README.md at main · weekend-project-space/top-rss-list",
+    "description": "订阅人数最多的rss源，中文优质rss源. Contribute to weekend-project-space/top-rss-list development by creating an account on GitHub.",
+    "shortDesc": "订阅人数最多的rss源，中文优质rss源. Contribute to weekend-projec...",
+    "url": "https://github.com/weekend-project-space/top-rss-list/blob/main/README.md",
+    "category": "信息源",
+    "icon": ""
+  },
+  {
+    "id": "479c9a03-6b07-8310-b49c-01c38938887b",
+    "title": "logoEPS.com",
+    "description": "矢量Logo图 下载",
+    "shortDesc": "矢量Logo图 下载",
+    "url": "https://logoeps.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "e38c9a03-6b07-82bf-94d3-81b22bb55f24",
+    "title": "RSS订阅源推荐",
+    "description": "RSS订阅源推荐",
+    "shortDesc": "RSS订阅源推荐",
+    "url": "https://rss-source.com/",
+    "category": "信息源",
+    "icon": ""
+  },
+  {
+    "id": "5b3c9a03-6b07-8300-a7f8-01e9ab7a1921",
+    "title": "Font Awesome",
+    "description": "The internet's icon library + toolkit. Used by millions of designers, devs, & content creators. Open-source. Always free. Always awesome.",
+    "shortDesc": "The internet's icon library + toolkit. Used by mil...",
+    "url": "https://fontawesome.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "449c9a03-6b07-835b-9499-010779c3ee18",
+    "title": "Apple 播客热门排行榜",
+    "description": "人气最高的排行榜",
+    "shortDesc": "人气最高的排行榜",
+    "url": "https://podcasts.apple.com/cn/charts",
+    "category": "信息源",
+    "icon": ""
+  },
+  {
+    "id": "a56c9a03-6b07-8346-8372-0150d309aa12",
+    "title": "Diffchecker - Compare text online to find the difference between two text files",
+    "description": "在线免费文字差异对比",
+    "shortDesc": "在线免费文字差异对比",
+    "url": "https://www.diffchecker.com/",
+    "category": "文字处理",
+    "icon": ""
+  },
+  {
+    "id": "12ac9a03-6b07-83cb-856d-81696c707c3f",
+    "title": "中文播客榜",
+    "description": "榜单只是一种维度，愿你找到喜欢的节目",
+    "shortDesc": "榜单只是一种维度，愿你找到喜欢的节目",
+    "url": "https://xyzrank.com/#/",
+    "category": "信息源",
+    "icon": ""
+  },
+  {
+    "id": "a58c9a03-6b07-835d-8ac9-81804fccee1c",
+    "title": "Markdown 表格 编辑和生成器\n - 在线表格转换工具",
+    "description": "此生成器用于快速创建和在线生成 Markdown 表格，你也可以使用类似 Excel 的表格编辑器来编辑 Markdown 表格",
+    "shortDesc": "此生成器用于快速创建和在线生成 Markdown 表格，你也可以使用类似 Excel 的表格编辑器来...",
+    "url": "https://tableconvert.com/zh-cn/markdown-generator",
+    "category": "文字处理",
+    "icon": ""
+  },
+  {
+    "id": "402c9a03-6b07-8347-b950-812ef051e973",
+    "title": "Coverview-博客封面生成器",
+    "description": "Coverview是一个开源工具，可以快速轻松地为您的博客创建封面图片。使用不同的主题、颜色、字体等进行自定义。",
+    "shortDesc": "Coverview是一个开源工具，可以快速轻松地为您的博客创建封面图片。使用不同的主题、颜色、字体等...",
+    "url": "https://coverview.vercel.app/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "fd6c9a03-6b07-8242-97a6-817440191432",
+    "title": "可能吧公众号排版器",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://knb.im/mp/",
+    "category": "文字处理",
+    "icon": ""
+  },
+  {
+    "id": "0c3c9a03-6b07-83c1-b369-01667f64660e",
+    "title": "porkbun.com | An oddly satisfying experience.",
+    "description": "Porkbun是一个非常棒的ICANN认证域名注册商，总部位于太平洋西北部。我们与众不同，我们很容易，我们负担得起。使用我们，你不会后悔的。如果你不使用我们，我们会很难过，但我们仍然会爱你。",
+    "shortDesc": "Porkbun是一个非常棒的ICANN认证域名注册商，总部位于太平洋西北部。我们与众不同，我们很容易...",
+    "url": "https://porkbun.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "bd2c9a03-6b07-8260-bfb3-014ecfe3d28c",
+    "title": "在线图片优化器",
+    "description": "Optimizilla是一款压缩JPEG、GIF和PNG图片至尽可能小尺寸的终极的图像优化器。",
+    "shortDesc": "Optimizilla是一款压缩JPEG、GIF和PNG图片至尽可能小尺寸的终极的图像优化器。",
+    "url": "https://imagecompressor.com/zh/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "f6ac9a03-6b07-8268-9d2e-0179f12393cb",
+    "title": "Cheap Domain Names & Web Hosting Starting at $0.99!",
+    "description": "便宜的域名注册和负担得起的网站托管。我们提供免费的附加组件和好处，我们的竞争对手喜欢收费。24/7顶级支持！",
+    "shortDesc": "便宜的域名注册和负担得起的网站托管。我们提供免费的附加组件和好处，我们的竞争对手喜欢收费。24/7顶...",
+    "url": "https://www.namesilo.com/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "254c9a03-6b07-836b-9aca-01006bf264f4",
+    "title": "标小智LOGO设计神器 | 公司logo设计在线制作生成器 - 标小智",
+    "description": "标小智是一款智能LOGO在线设计生成器。只需输入品牌名称就能免费在线生成公司logo设计，商标设计，以及配套企业VI助您打造个性品牌。",
+    "shortDesc": "标小智是一款智能LOGO在线设计生成器。只需输入品牌名称就能免费在线生成公司logo设计，商标设计，...",
+    "url": "https://www.logosc.cn/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "483c9a03-6b07-8311-9dbc-81be6940b637",
+    "title": "Namecheap",
+    "description": "便宜的域名",
+    "shortDesc": "便宜的域名",
+    "url": "https://www.namecheap.com/domains/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
+    "id": "6bec9a03-6b07-83eb-ac8e-01c5d3295132",
+    "title": "Fotor懒设计_在线设计神器_免费设计素材模板_平面设计作图软件",
+    "description": "Fotor懒设计是全球最受欢迎的在线图片制作神器、平面设计工具和在线平面设计软件之一,提供海量海报,PPT,邀请函,banner,名片,logo等免费设计素材和模板,可在线一键稿定设计印刷,并能在线图片编辑、照片编辑。",
+    "shortDesc": "Fotor懒设计是全球最受欢迎的在线图片制作神器、平面设计工具和在线平面设计软件之一,提供海量海报,...",
+    "url": "https://www.fotor.com.cn/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "de8c9a03-6b07-836d-87d9-012950e1e415",
+    "title": "Canva可画_在线设计协作平台_平面设计作图软件_视觉办公套件 - Canva中文官网",
+    "description": "在线设计协作平台Canva可画提供了海量的设计模板，涵盖海报、简历、名片、Logo、PPT、手抄报、二维码、Banner等数十种平面设计场景，更有千款中英文字体及千万张正版图片素材可供使用。精彩设计，随时随地！",
+    "shortDesc": "在线设计协作平台Canva可画提供了海量的设计模板，涵盖海报、简历、名片、Logo、PPT、手抄报、...",
+    "url": "https://www.canva.cn/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "502c9a03-6b07-8317-a7da-8196f5e7482e",
+    "title": "稿定设计-在线设计平台_海报设计_图片设计_视频编辑_设计协作",
+    "description": "海量设计模板加持不会PS也能轻松搞定设计，在线设计海报、简历、PPT、名片、宣传单、邀请函、Logo等多种设计需求场景，3秒抠图、批量套版、AI辅助设计实用便捷。海量正版授权资源，商用无忧。",
+    "shortDesc": "海量设计模板加持不会PS也能轻松搞定设计，在线设计海报、简历、PPT、名片、宣传单、邀请函、Logo...",
+    "url": "https://www.gaoding.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "8b8c9a03-6b07-82e5-bca7-819da722a0dc",
+    "title": "花瓣网 - 陪你做生活的设计师（创意灵感天堂，搜索、发现设计灵感、设计素材）",
+    "description": "花瓣网, 设计师寻找灵感的天堂！图片素材领导者，帮你采集、发现网络上你喜欢的事物。你可以用它收集灵感,保存有用的素材,计划旅行,晒晒自己想要的东西",
+    "shortDesc": "花瓣网, 设计师寻找灵感的天堂！图片素材领导者，帮你采集、发现网络上你喜欢的事物。你可以用它收集灵感...",
+    "url": "https://huaban.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "a0ec9a03-6b07-837a-95e9-01cf4ca3b6a0",
+    "title": "Dribbble - Discover the World’s Top Designers & Creative Professionals",
+    "description": "Find Top Designers & Creative Professionals on Dribbble. We are where designers gain inspiration, feedback, community, and jobs. Your best resource to discover and connect with designers worldwide.",
+    "shortDesc": "Find Top Designers & Creative Professionals on Dri...",
+    "url": "https://dribbble.com/",
+    "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "a28c9a03-6b07-83c8-98ab-01934643c139",
+    "title": "RSSHub",
+    "description": "万物皆可 RSS 🧡",
+    "shortDesc": "万物皆可 RSS 🧡",
+    "url": "https://docs.rsshub.app/zh/",
+    "category": "信息源",
     "icon": ""
   },
   {
@@ -734,12 +1319,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "92fc9a03-6b07-837a-8da5-01512bbf8781",
+    "title": "Obsidian 微信读书同步插件",
+    "description": "Obsidian 微信读书同步插件",
+    "shortDesc": "Obsidian 微信读书同步插件",
+    "url": "https://github.com/zhaohongxuan/obsidian-weread-plugin",
+    "category": "知识管理",
+    "icon": ""
+  },
+  {
     "id": "fe2c9a03-6b07-836d-95bd-01a008dc4c11",
     "title": "ChatGPT",
     "description": "[OpenAI]A conversational AI system that listens, learns, and challenges",
     "shortDesc": "[OpenAI]A conversational AI system that listens, l...",
     "url": "https://chatgpt.com/",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "339c9a03-6b07-839c-8b31-81072d2da689",
+    "title": "豆瓣读书同步到Notion",
+    "description": "抓取豆瓣读书信息，基于Notion搭建私人图书管理系统",
+    "shortDesc": "抓取豆瓣读书信息，基于Notion搭建私人图书管理系统",
+    "url": "https://greasyfork.org/zh-CN/scripts/464467-%E8%B1%86%E7%93%A3%E8%AF%BB%E4%B9%A6%E5%90%8C%E6%AD%A5%E5%88%B0notion",
+    "category": "知识管理",
     "icon": ""
   },
   {
@@ -752,12 +1355,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "7d9c9a03-6b07-82f0-9d5c-8174203f71ed",
+    "title": "豆瓣资源下载大师：1秒搞定豆瓣电影|音乐|图书下载",
+    "description": "【装这一个脚本就够了！可能是你遇到的最好的豆瓣增强脚本】聚合数百家资源网站，通过右侧边栏1秒告诉你哪些网站能下载豆瓣页面上的电影|电视剧|纪录片|综艺|动画|音乐|图书等，有资源的网站显示绿色，没资源的网站显示黄色，就这么直观！所有豆瓣条目均提供在线播放|阅读、字幕|歌词下载及PT|NZB|BT|磁力|百度盘|115网盘等下载链接，加入官网打死也不出的豆列搜索功能，此外还能给豆瓣条目额外添加IMDB评分|IMDB TOP 250|Metascore评分|烂番茄评分|AniDB评分|Bgm评分|MAL|亚马逊评分等更多评分形式。官方电报群：@doubandown",
+    "shortDesc": "【装这一个脚本就够了！可能是你遇到的最好的豆瓣增强脚本】聚合数百家资源网站，通过右侧边栏1秒告诉你哪...",
+    "url": "https://greasyfork.org/zh-CN/scripts/329484-%E8%B1%86%E7%93%A3%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E5%A4%A7%E5%B8%88-1%E7%A7%92%E6%90%9E%E5%AE%9A%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1-%E9%9F%B3%E4%B9%90-%E5%9B%BE%E4%B9%A6%E4%B8%8B%E8%BD%BD",
+    "category": "知识管理",
+    "icon": ""
+  },
+  {
     "id": "b28c9a03-6b07-8292-9ae0-015936dbd099",
     "title": "天工AI - 聊天写作对话的全能AI助手，搜索更深度，阅读更多彩",
     "description": "[昆仑万维]天工是一款支持搜索、写作、对话、文档分析、画画、做PPT的全能型AI助手。你可以借助AI技术，检索信息、多语言翻译、写论文、写代码、写方案、写汇报、做PPT、归纳总结文档和音频视频，还可以智能编辑彩页和宝典，让AI生成高质量彩页内容，收获点赞关注。",
     "shortDesc": "[昆仑万维]天工是一款支持搜索、写作、对话、文档分析、画画、做PPT的全能型AI助手。你可以借助AI...",
     "url": "https://www.tiangong.cn/",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "396c9a03-6b07-83ab-bd84-012e84b00422",
+    "title": "Goodreads",
+    "description": "国外读书评分网站",
+    "shortDesc": "国外读书评分网站",
+    "url": "https://www.goodreads.com/",
+    "category": "知识管理",
     "icon": ""
   },
   {
@@ -770,12 +1391,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "4dac9a03-6b07-8227-997a-0177c8a81be4",
+    "title": "豆瓣读书",
+    "description": "豆瓣读书，看评分",
+    "shortDesc": "豆瓣读书，看评分",
+    "url": "https://book.douban.com/",
+    "category": "知识管理",
+    "icon": ""
+  },
+  {
     "id": "545c9a03-6b07-8227-9a17-816e09313ac5",
     "title": "Perplexity",
     "description": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question.",
     "shortDesc": "Perplexity is a free AI-powered answer engine that...",
     "url": "https://www.perplexity.ai/?login-source=oneTapHome",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "99ec9a03-6b07-83a0-b2c7-015ae8e8bdd3",
+    "title": "Z-Library – the world’s largest e-book library. Your gateway to knowledge and culture.",
+    "description": "Z-Library is an online library dedicated to enhancing global education through easy access to books. Recognizing books as a valuable source of knowledge throughout history, we aim to provide free literature access to those in need.",
+    "shortDesc": "Z-Library is an online library dedicated to enhanc...",
+    "url": "https://z-lib.fm/",
+    "category": "知识管理",
     "icon": ""
   },
   {
@@ -788,12 +1427,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "c81c9a03-6b07-83cb-8462-81231bd393ac",
+    "title": "微信读书",
+    "description": "微信读书提供海量正版书籍、小说、漫画、公众号、听书，多设备同步实现跨屏阅读。与微信好友一起发现更多精品好书，随时交流感想，让阅读不再孤独。",
+    "shortDesc": "微信读书提供海量正版书籍、小说、漫画、公众号、听书，多设备同步实现跨屏阅读。与微信好友一起发现更多精...",
+    "url": "https://weread.qq.com/",
+    "category": "知识管理",
+    "icon": ""
+  },
+  {
     "id": "bd5c9a03-6b07-8275-8c51-81c649c18f8f",
     "title": "Kimi.ai - 会推理解析，能深度思考的AI助手",
     "description": "[moonshot]Kimi是一款学生和职场人的新质生产力工具，帮你解读论文，策划方案，创作小说，写代码查BUG，多语言翻译，有问题问Kimi，一键解决你的所有难题",
     "shortDesc": "[moonshot]Kimi是一款学生和职场人的新质生产力工具，帮你解读论文，策划方案，创作小说，写...",
     "url": "https://kimi.moonshot.cn/",
     "category": "AI工具",
+    "icon": ""
+  },
+  {
+    "id": "fc1c9a03-6b07-8218-808d-813bf5f0a759",
+    "title": "PDFdir手动添加目录",
+    "description": "扫描版PDF手动添加目录",
+    "shortDesc": "扫描版PDF手动添加目录",
+    "url": "https://github.com/chroming/pdfdir",
+    "category": "知识管理",
     "icon": ""
   },
   {
@@ -806,309 +1463,12 @@ export const sites = [
     "icon": ""
   },
   {
-    "id": "015c9a03-6b07-83da-b664-81fba72e3b03",
-    "title": "Civitai: The Home of Open-Source Generative AI",
-    "description": "探索数千个高质量的 Stable Diffusion 和 Flux 模型，分享你由人工智能生成的艺术作品，并与充满活力的创作者社区互动。",
-    "shortDesc": "探索数千个高质量的 Stable Diffusion 和 Flux 模型，分享你由人工智能生成的艺术...",
-    "url": "https://civitai.com/",
-    "category": "AI工具",
-    "icon": ""
-  },
-  {
-    "id": "f5fc9a03-6b07-838f-a5eb-815d53a9ff75",
-    "title": "Midjourney",
-    "description": "一个独立的研究实验室，探索新的思维媒介，拓展人类的想象力。",
-    "shortDesc": "一个独立的研究实验室，探索新的思维媒介，拓展人类的想象力。",
-    "url": "https://www.midjourney.com/home",
-    "category": "AI工具",
-    "icon": ""
-  },
-  {
-    "id": "db5c9a03-6b07-82e7-88fc-819fd7bbc4d3",
-    "title": "Ideogram: Image Generation for Everyone",
-    "description": "Ideogram是一款免费使用的人工智能工具，可生成逼真的图像、海报、标志等。",
-    "shortDesc": "Ideogram是一款免费使用的人工智能工具，可生成逼真的图像、海报、标志等。",
-    "url": "https://ideogram.ai/",
-    "category": "AI工具",
-    "icon": ""
-  },
-  {
-    "id": "56ec9a03-6b07-8290-bdb7-010edce8cac5",
-    "title": "Google NotebookLM | Note Taking & Research Assistant Powered by AI",
-    "description": "利用人工智能的力量进行快速总结和记笔记，NotebookLM 是你强大的虚拟研究助手，其基础是你可以信赖的信息。",
-    "shortDesc": "利用人工智能的力量进行快速总结和记笔记，NotebookLM 是你强大的虚拟研究助手，其基础是你可以...",
-    "url": "https://notebooklm.google.com/",
-    "category": "AI工具",
-    "icon": ""
-  },
-  {
-    "id": "5a5c9a03-6b07-82dc-994a-01c033822b1b",
-    "title": "通义听悟",
-    "description": "很牛逼，可以直接转录播客，用AI概括视频和音频要点",
-    "shortDesc": "很牛逼，可以直接转录播客，用AI概括视频和音频要点",
-    "url": "https://tingwu.aliyun.com/home",
-    "category": "AI工具",
-    "icon": ""
-  },
-  {
-    "id": "93cc9a03-6b07-839b-9aef-011f66273e67",
-    "title": "Free stock photos - Kaboompics",
-    "description": "Find the best free stock images. Download all images and use them in your projects.",
-    "shortDesc": "Find the best free stock images. Download all imag...",
-    "url": "https://kaboompics.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "ce3c9a03-6b07-8213-b819-815fb8686078",
-    "title": "Free Stock Photos - How to Start an LLC.org",
-    "description": "Finda.Photo Free Stock Photos has a simple and clean search engine to find CC0 licensed stock photos. They have options to search by keyword in the",
-    "shortDesc": "Finda.Photo Free Stock Photos has a simple and cle...",
-    "url": "https://www.howtostartanllc.org/free-stock-photos/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "a68c9a03-6b07-8374-bae6-0157c0cf5c65",
-    "title": "Stock Image Search Engine - More Than 50 Best Sources | Everypixel",
-    "description": "Stock image finder for all who hate bad stock photos. Use it to find the best licensed images for the lowest price. More than 50 image sources.",
-    "shortDesc": "Stock image finder for all who hate bad stock phot...",
-    "url": "https://www.everypixel.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "352c9a03-6b07-83d0-8452-81364dba7c60",
-    "title": "VisualHunt",
-    "description": "Visually search the best products and ideas. Curated by experts, powered by community.",
-    "shortDesc": "Visually search the best products and ideas. Curat...",
-    "url": "https://visualhunt.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "a66c9a03-6b07-82f7-ba9a-81cd339db838",
-    "title": "Librestock Photos - Free Stock Photo Search Engine",
-    "description": "We scan and index the best free photos from the top stock sites. All photos are free for personal and commercial. No attribution required. CC0.",
-    "shortDesc": "We scan and index the best free photos from the to...",
-    "url": "https://librestock.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "b0ac9a03-6b07-83ad-ac9a-0129143594c0",
-    "title": "免费素材图片",
-    "description": "免费素材图片和视频，可以在任何地方使用。✓ 高质量 ✓ 100% 免费✓ 无需注明归属",
-    "shortDesc": "免费素材图片和视频，可以在任何地方使用。✓ 高质量 ✓ 100% 免费✓ 无需注明归属",
-    "url": "https://www.pexels.com/zh-cn/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "e07c9a03-6b07-83ad-8d77-8186c25e080d",
-    "title": "Beautiful Free Images & Pictures | Unsplash",
-    "description": "Beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos.",
-    "shortDesc": "Beautiful, free images and photos that you can dow...",
-    "url": "https://unsplash.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "a6dc9a03-6b07-8382-97fa-812d2b1b33df",
-    "title": "库存图片、照片、矢量图、视频和音乐 | Shutterstock",
-    "description": "从 Shutterstock 下载最好的免版税图片，包括照片、矢量图和插图。享受简单直接的定价和便捷的许可。",
-    "shortDesc": "从 Shutterstock 下载最好的免版税图片，包括照片、矢量图和插图。享受简单直接的定价和便捷...",
-    "url": "https://www.shutterstock.com/zh/?dd_referrer=https%3A%2F%2Fwww.google.com%2F",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "d92c9a03-6b07-8253-b793-018fa88cc2fd",
-    "title": "免费正版高清图片素材库 超过5.5百万张优质图片和视频素材可供免费使用和下载 - Pixabay",
-    "description": "寻找完美的免版税图片或视频，下载之后使用。 ✓ 免版税 ✓ 不要求署名 ✓ 高质量图片.",
-    "shortDesc": "寻找完美的免版税图片或视频，下载之后使用。 ✓ 免版税 ✓ 不要求署名 ✓ 高质量图片.",
-    "url": "https://pixabay.com/zh/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "eb2c9a03-6b07-8254-8d62-814d28524f3f",
-    "title": "Vector Logos, PNG Images, Templates Free Download | seeklogo",
-    "description": "seeklogo.com is the world's best vector logos, logo png images, logo templates, brand logos and icons source. You can download in PNG, SVG, AI, EPS, CDR formats",
-    "shortDesc": "seeklogo.com is the world's best vector logos, log...",
-    "url": "https://seeklogo.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "6b2c9a03-6b07-82af-9fb4-8108605ac1d4",
-    "title": "免费照片、剪贴画、矢量图、PSD 和图标 | FreeImages",
-    "description": "免费图片。照片、插图、模型和图形设计资源！ ✓ 免费和免版税的库存图片 [HD] 无版权",
-    "shortDesc": "免费图片。照片、插图、模型和图形设计资源！ ✓ 免费和免版税的库存图片 [HD] 无版权",
-    "url": "https://www.freeimages.com/cn",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "634c9a03-6b07-83be-b250-8119e87d7fa3",
-    "title": "佐糖AI图片创作神器|免费在线图片编辑工具",
-    "description": "使用佐糖，无需其他繁杂操作，只需上传图片，即可实现一键抠图、照片修复、AI背景合成、制作证件照、图片压缩等超多丰富功能，轻松满足多样化作图需求！",
-    "shortDesc": "使用佐糖，无需其他繁杂操作，只需上传图片，即可实现一键抠图、照片修复、AI背景合成、制作证件照、图片...",
-    "url": "https://picwish.cn/create",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "15cc9a03-6b07-82d5-864b-81d8c2ddf72c",
-    "title": "PhotoFunia",
-    "description": "PhotoFunia是一个领先的免费照片编辑网站，其中包含大量的图片编辑器效果和照片滤镜库。使用在线图片编辑器编辑图片。",
-    "shortDesc": "PhotoFunia是一个领先的免费照片编辑网站，其中包含大量的图片编辑器效果和照片滤镜库。使用在线...",
-    "url": "https://photofunia.com/cn/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "aa6c9a03-6b07-8211-965e-8188108bdb76",
-    "title": "在线图片转SVG ",
-    "description": "使用Adobe Express的免费SVG转换工具，在线将图像转为SVG格式。快捷轻松地上传您的JPG或PNG图像，即可将它转为SVG文件。",
-    "shortDesc": "使用Adobe Express的免费SVG转换工具，在线将图像转为SVG格式。快捷轻松地上传您的JP...",
-    "url": "https://www.adobe.com/cn/express/feature/image/convert/svg",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "4bac9a03-6b07-82da-a97c-0145482033f1",
-    "title": "最新免费字体下载大全",
-    "description": "2025最新免费字体，自由字体整理发布免费可商用字体合集，全部免费字体，自由字体仓库提供免费字体大全及无版权字体合集打包下载",
-    "shortDesc": "2025最新免费字体，自由字体整理发布免费可商用字体合集，全部免费字体，自由字体仓库提供免费字体大全...",
-    "url": "https://ziyouziti.com/index-index-all.html",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "8aac9a03-6b07-836a-a41a-81ccd12a5219",
-    "title": "中文商用免费字体",
-    "description": "大概是2020年最全的免费可商用字体，这里收录的商免字体都能找到明确的授权出处，可以放心使用。来源：https://github.com/wordshub/free-font",
-    "shortDesc": "大概是2020年最全的免费可商用字体，这里收录的商免字体都能找到明确的授权出处，可以放心使用。来源：...",
-    "url": "https://wordshub.github.io/free-font/index.html",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "caec9a03-6b07-8355-8fde-010f7d269951",
-    "title": " Google Fonts",
-    "description": "Making the web more beautiful, fast, and open through great typography",
-    "shortDesc": "Making the web more beautiful, fast, and open thro...",
-    "url": "https://fonts.google.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "206c9a03-6b07-82fe-8907-0147e10e02d9",
-    "title": "字由官网 | 千款免费字体一键使用，设计师必备字体工具",
-    "description": "字由是免费的字体管理工具，为您提供900+字体免费商用，支持在PS、AI、ID、XD、Figma、Sketch、CDR等设计软件中一键应用字体，提供AI识字、字体特效等实用功能，为您的设计提质加速，超百万设计师正在使用字由",
-    "shortDesc": "字由是免费的字体管理工具，为您提供900+字体免费商用，支持在PS、AI、ID、XD、Figma、S...",
-    "url": "https://www.hellofont.cn/home",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "3aec9a03-6b07-82f6-87e8-016ba169d6b0",
-    "title": "中国色-传统颜色",
-    "description": "提供各种中国的传统颜色的名称，CMYK值，RGB值，16进制表示。AI制作中国色图片和视频",
-    "shortDesc": "提供各种中国的传统颜色的名称，CMYK值，RGB值，16进制表示。AI制作中国色图片和视频",
-    "url": "https://www.zhongguose.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "3ebc9a03-6b07-8287-8e2f-014265d96555",
-    "title": "Color Hunt - Color Palettes for Designers and Artists",
-    "description": "Discover the newest hand-picked color palettes of Color Hunt. Get color inspiration for your design and art projects.",
-    "shortDesc": "Discover the newest hand-picked color palettes of ...",
-    "url": "https://colorhunt.co/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "f3ac9a03-6b07-8346-9405-810a10a25589",
-    "title": "Flat UI Colors 2 - 14 Color Palettes, 280 colors 🎨",
-    "description": "280 handpicked colors ready for COPY & PASTE",
-    "shortDesc": "280 handpicked colors ready for COPY & PASTE",
-    "url": "https://flatuicolors.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "402c9a03-6b07-8347-b950-812ef051e973",
-    "title": "Coverview-博客封面生成器",
-    "description": "Coverview是一个开源工具，可以快速轻松地为您的博客创建封面图片。使用不同的主题、颜色、字体等进行自定义。",
-    "shortDesc": "Coverview是一个开源工具，可以快速轻松地为您的博客创建封面图片。使用不同的主题、颜色、字体等...",
-    "url": "https://coverview.vercel.app/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "bd2c9a03-6b07-8260-bfb3-014ecfe3d28c",
-    "title": "在线图片优化器",
-    "description": "Optimizilla是一款压缩JPEG、GIF和PNG图片至尽可能小尺寸的终极的图像优化器。",
-    "shortDesc": "Optimizilla是一款压缩JPEG、GIF和PNG图片至尽可能小尺寸的终极的图像优化器。",
-    "url": "https://imagecompressor.com/zh/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "254c9a03-6b07-836b-9aca-01006bf264f4",
-    "title": "标小智LOGO设计神器 | 公司logo设计在线制作生成器 - 标小智",
-    "description": "标小智是一款智能LOGO在线设计生成器。只需输入品牌名称就能免费在线生成公司logo设计，商标设计，以及配套企业VI助您打造个性品牌。",
-    "shortDesc": "标小智是一款智能LOGO在线设计生成器。只需输入品牌名称就能免费在线生成公司logo设计，商标设计，...",
-    "url": "https://www.logosc.cn/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "6bec9a03-6b07-83eb-ac8e-01c5d3295132",
-    "title": "Fotor懒设计_在线设计神器_免费设计素材模板_平面设计作图软件",
-    "description": "Fotor懒设计是全球最受欢迎的在线图片制作神器、平面设计工具和在线平面设计软件之一,提供海量海报,PPT,邀请函,banner,名片,logo等免费设计素材和模板,可在线一键稿定设计印刷,并能在线图片编辑、照片编辑。",
-    "shortDesc": "Fotor懒设计是全球最受欢迎的在线图片制作神器、平面设计工具和在线平面设计软件之一,提供海量海报,...",
-    "url": "https://www.fotor.com.cn/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "de8c9a03-6b07-836d-87d9-012950e1e415",
-    "title": "Canva可画_在线设计协作平台_平面设计作图软件_视觉办公套件 - Canva中文官网",
-    "description": "在线设计协作平台Canva可画提供了海量的设计模板，涵盖海报、简历、名片、Logo、PPT、手抄报、二维码、Banner等数十种平面设计场景，更有千款中英文字体及千万张正版图片素材可供使用。精彩设计，随时随地！",
-    "shortDesc": "在线设计协作平台Canva可画提供了海量的设计模板，涵盖海报、简历、名片、Logo、PPT、手抄报、...",
-    "url": "https://www.canva.cn/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "502c9a03-6b07-8317-a7da-8196f5e7482e",
-    "title": "稿定设计-在线设计平台_海报设计_图片设计_视频编辑_设计协作",
-    "description": "海量设计模板加持不会PS也能轻松搞定设计，在线设计海报、简历、PPT、名片、宣传单、邀请函、Logo等多种设计需求场景，3秒抠图、批量套版、AI辅助设计实用便捷。海量正版授权资源，商用无忧。",
-    "shortDesc": "海量设计模板加持不会PS也能轻松搞定设计，在线设计海报、简历、PPT、名片、宣传单、邀请函、Logo...",
-    "url": "https://www.gaoding.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "8b8c9a03-6b07-82e5-bca7-819da722a0dc",
-    "title": "花瓣网 - 陪你做生活的设计师（创意灵感天堂，搜索、发现设计灵感、设计素材）",
-    "description": "花瓣网, 设计师寻找灵感的天堂！图片素材领导者，帮你采集、发现网络上你喜欢的事物。你可以用它收集灵感,保存有用的素材,计划旅行,晒晒自己想要的东西",
-    "shortDesc": "花瓣网, 设计师寻找灵感的天堂！图片素材领导者，帮你采集、发现网络上你喜欢的事物。你可以用它收集灵感...",
-    "url": "https://huaban.com/",
-    "category": "设计资源",
-    "icon": ""
-  },
-  {
-    "id": "a0ec9a03-6b07-837a-95e9-01cf4ca3b6a0",
-    "title": "Dribbble - Discover the World’s Top Designers & Creative Professionals",
-    "description": "Find Top Designers & Creative Professionals on Dribbble. We are where designers gain inspiration, feedback, community, and jobs. Your best resource to discover and connect with designers worldwide.",
-    "shortDesc": "Find Top Designers & Creative Professionals on Dri...",
-    "url": "https://dribbble.com/",
-    "category": "设计资源",
+    "id": "fe7c9a03-6b07-8324-9696-8182dbdbd435",
+    "title": "IconKitchen",
+    "description": "iOS/Android/Web Icon设计",
+    "shortDesc": "iOS/Android/Web Icon设计",
+    "url": "https://icon.kitchen/",
+    "category": "开发工具",
     "icon": ""
   },
   {
@@ -1157,12 +1517,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "11bc9a03-6b07-8392-947f-81d5314bb531",
+    "title": "Notion Exporter - 在 Notion 中写作，发布到任何地方",
+    "description": "Notion 内容导出到公众号、小红书、知乎、抖音等社交媒体",
+    "shortDesc": "Notion 内容导出到公众号、小红书、知乎、抖音等社交媒体",
+    "url": "https://notionexporter.com/zh-hans",
+    "category": "文字处理",
+    "icon": ""
+  },
+  {
     "id": "2c1c9a03-6b07-82c6-aedb-8100d07ed327",
     "title": "Godly — Astronomically good web design inspiration",
     "description": "每天都在策划最好的网页设计灵感。浏览最好的电子商务网站、作品集网站、动画网站等。",
     "shortDesc": "每天都在策划最好的网页设计灵感。浏览最好的电子商务网站、作品集网站、动画网站等。",
     "url": "https://godly.website/",
     "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "b57c9a03-6b07-823b-ac0e-018c9a76f543",
+    "title": "Favicon.io - The Ultimate Favicon Generator (Free)",
+    "description": "With Favicon.io you can quickly generate a favicon for your website for free!",
+    "shortDesc": "With Favicon.io you can quickly generate a favicon...",
+    "url": "https://favicon.io/",
+    "category": "开发工具",
     "icon": ""
   },
   {
@@ -1175,12 +1553,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "015c9a03-6b07-83da-b664-81fba72e3b03",
+    "title": "Civitai: The Home of Open-Source Generative AI",
+    "description": "探索数千个高质量的 Stable Diffusion 和 Flux 模型，分享你由人工智能生成的艺术作品，并与充满活力的创作者社区互动。",
+    "shortDesc": "探索数千个高质量的 Stable Diffusion 和 Flux 模型，分享你由人工智能生成的艺术...",
+    "url": "https://civitai.com/",
+    "category": "AI工具",
+    "icon": ""
+  },
+  {
     "id": "7fdc9a03-6b07-82fe-8f83-0115c62a5d32",
     "title": "Collect UI",
     "description": "从每日 UI 存档及其他来源收集的每日灵感。基于 Dribbble 作品，精心挑选，每日更新。",
     "shortDesc": "从每日 UI 存档及其他来源收集的每日灵感。基于 Dribbble 作品，精心挑选，每日更新。",
     "url": "https://collectui.com/",
     "category": "设计资源",
+    "icon": ""
+  },
+  {
+    "id": "f5fc9a03-6b07-838f-a5eb-815d53a9ff75",
+    "title": "Midjourney",
+    "description": "一个独立的研究实验室，探索新的思维媒介，拓展人类的想象力。",
+    "shortDesc": "一个独立的研究实验室，探索新的思维媒介，拓展人类的想象力。",
+    "url": "https://www.midjourney.com/home",
+    "category": "AI工具",
     "icon": ""
   },
   {
@@ -1193,6 +1589,15 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "db5c9a03-6b07-82e7-88fc-819fd7bbc4d3",
+    "title": "Ideogram: Image Generation for Everyone",
+    "description": "Ideogram是一款免费使用的人工智能工具，可生成逼真的图像、海报、标志等。",
+    "shortDesc": "Ideogram是一款免费使用的人工智能工具，可生成逼真的图像、海报、标志等。",
+    "url": "https://ideogram.ai/",
+    "category": "AI工具",
+    "icon": ""
+  },
+  {
     "id": "cb1c9a03-6b07-8202-a54b-81fdb06deaff",
     "title": "Landbook",
     "description": "找到最佳的着陆页灵感。浏览精心策划的网站设计示例，为你的下一个网站获取灵感。",
@@ -1202,282 +1607,12 @@ export const sites = [
     "icon": ""
   },
   {
-    "id": "a56c9a03-6b07-8346-8372-0150d309aa12",
-    "title": "Diffchecker - Compare text online to find the difference between two text files",
-    "description": "在线免费文字差异对比",
-    "shortDesc": "在线免费文字差异对比",
-    "url": "https://www.diffchecker.com/",
-    "category": "文字处理",
-    "icon": ""
-  },
-  {
-    "id": "a58c9a03-6b07-835d-8ac9-81804fccee1c",
-    "title": "Markdown 表格 编辑和生成器\n - 在线表格转换工具",
-    "description": "此生成器用于快速创建和在线生成 Markdown 表格，你也可以使用类似 Excel 的表格编辑器来编辑 Markdown 表格",
-    "shortDesc": "此生成器用于快速创建和在线生成 Markdown 表格，你也可以使用类似 Excel 的表格编辑器来...",
-    "url": "https://tableconvert.com/zh-cn/markdown-generator",
-    "category": "文字处理",
-    "icon": ""
-  },
-  {
-    "id": "fd6c9a03-6b07-8242-97a6-817440191432",
-    "title": "可能吧公众号排版器",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://knb.im/mp/",
-    "category": "文字处理",
-    "icon": ""
-  },
-  {
-    "id": "11bc9a03-6b07-8392-947f-81d5314bb531",
-    "title": "Notion Exporter - 在 Notion 中写作，发布到任何地方",
-    "description": "Notion 内容导出到公众号、小红书、知乎、抖音等社交媒体",
-    "shortDesc": "Notion 内容导出到公众号、小红书、知乎、抖音等社交媒体",
-    "url": "https://notionexporter.com/zh-hans",
-    "category": "文字处理",
-    "icon": ""
-  },
-  {
-    "id": "ea3c9a03-6b07-827a-bcac-01bbaaa1c7fc",
-    "title": "文字转卡片工具",
-    "description": "文字转样式美观卡片，在线免费",
-    "shortDesc": "文字转样式美观卡片，在线免费",
-    "url": "https://www.memocard.net/",
-    "category": "文字处理",
-    "icon": ""
-  },
-  {
-    "id": "2e7c9a03-6b07-8226-93c8-818e80228dc5",
-    "title": "Similarweb: AI-Powered Digital Data Intelligence Solutions",
-    "description": "Similarweb is an AI-powered digital data company providing real-time market intelligence, competitive insights, and consumer trends to accelerate business growth.",
-    "shortDesc": "Similarweb is an AI-powered digital data company p...",
-    "url": "https://www.similarweb.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "64cc9a03-6b07-8303-bfc8-81fa80f73f14",
-    "title": "Zarla's Free Logo Maker | Create a Free Logo Now",
-    "description": "免费AI生成logo，质量还不错",
-    "shortDesc": "免费AI生成logo，质量还不错",
-    "url": "https://www.zarla.com/free-logo-maker",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "abac9a03-6b07-83fc-806f-01d87b4759a3",
-    "title": "百度指数",
-    "description": "百度指数是以百度海量网民行为数据为基础的数据分享平台。在这里，你可以研究关键词搜索趋势、洞察网民兴趣和需求、监测舆情动向、定位受众特征。",
-    "shortDesc": "百度指数是以百度海量网民行为数据为基础的数据分享平台。在这里，你可以研究关键词搜索趋势、洞察网民兴趣...",
-    "url": "https://index.baidu.com/v2/#/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "dffc9a03-6b07-82c3-b821-01eb8a330999",
-    "title": "Ubersuggest: Free Keyword Research Tool - Neil Patel",
-    "description": "Ubersuggest is a FREE SEO tool that enables you to do keyword research, analyze competitors, do site audits and more! Level up your marketing today.",
-    "shortDesc": "Ubersuggest is a FREE SEO tool that enables you to...",
-    "url": "https://neilpatel.com/ubersuggest/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "da6c9a03-6b07-822f-9dae-813c71d59287",
-    "title": "Search listening tool for market, customer & content research - AnswerThePublic",
-    "description": "Use our free tool to get instant, raw search insights, direct from the minds of your customers. Upgrade to a paid plan to monitor for new ways that people talk & ask questions about your brand, product or topic.",
-    "shortDesc": "Use our free tool to get instant, raw search insig...",
-    "url": "https://answerthepublic.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "8a3c9a03-6b07-8228-a912-8134c2df96a2",
-    "title": "Google 趋势",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://trends.google.com/trends/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "ad2c9a03-6b07-83ae-83bc-01c630931744",
-    "title": "tailwind-config-viewer",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://rogden.github.io/tailwind-config-viewer/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "517c9a03-6b07-83f0-b0b0-013f5f83097f",
-    "title": "Ahrefs—Marketing Intelligence Tools Powered by Big Data.",
-    "description": "Unlock data to make effective decisions across digital marketing. SEO, content marketing, PPC, digital PR, and more.",
-    "shortDesc": "Unlock data to make effective decisions across dig...",
-    "url": "https://ahrefs.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "b29c9a03-6b07-8259-b187-01ae33f6e9cb",
-    "title": "React Icons",
-    "description": "Include popular icons in your React projects easly with react-icons.",
-    "shortDesc": "Include popular icons in your React projects easly...",
-    "url": "https://react-icons.github.io/react-icons/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "a61c9a03-6b07-83dd-967d-015737290da6",
-    "title": "Semrush SEO Toolkit: Check Website SEO with Analysis Tools",
-    "description": "From research to reporting, take your SEO to the next level with Semrush tools. Keyword research, backlink audit, rank tracking, competitor analysis & more.",
-    "shortDesc": "From research to reporting, take your SEO to the n...",
-    "url": "https://www.semrush.com/projects/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "9f2c9a03-6b07-822d-b533-81ae52aefe34",
-    "title": "站长工具 - 站长之家",
-    "description": "站长工具是站长的必备工具。经常上站长工具可以了解SEO数据变化。还可以检测网站死链接、蜘蛛访问、HTML格式检测、网站速度测试、友情链接检查、网站域名IP查询、PR、权重查询、alexa、whois查询等等。",
-    "shortDesc": "站长工具是站长的必备工具。经常上站长工具可以了解SEO数据变化。还可以检测网站死链接、蜘蛛访问、HT...",
-    "url": "https://tool.chinaz.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "c69c9a03-6b07-834c-99bc-8153a0fb51d9",
-    "title": "站长工具-百度权重排名查询-站长seo查询 - 爱站网",
-    "description": "爱站网站长工具提供网站收录查询和站长查询以及百度权重值查询等多个站长工具，免费查询各种工具，包括有关键词排名查询，百度收录查询等。",
-    "shortDesc": "爱站网站长工具提供网站收录查询和站长查询以及百度权重值查询等多个站长工具，免费查询各种工具，包括有关...",
-    "url": "https://www.aizhan.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "0b3c9a03-6b07-8351-b59c-8155cfc822eb",
-    "title": "网站时光机",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://web.archive.org/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "c8fc9a03-6b07-82c8-9e8f-811950c980b9",
-    "title": "算数指数-巨量算数",
-    "description": "内容消费生态下的热度趋势查询。抖音、今日头条等多端热词指数查询，及相关热点关联分析、用户画像等深度下钻分析。",
-    "shortDesc": "内容消费生态下的热度趋势查询。抖音、今日头条等多端热词指数查询，及相关热点关联分析、用户画像等深度下...",
-    "url": "https://trendinsight.oceanengine.com/arithmetic-index",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "6dfc9a03-6b07-82f4-bb51-81964718fb49",
-    "title": "榜单订阅 - 新榜",
-    "description": "新榜每天发布更多榜单数据，覆盖新媒体平台、地区、行业等，通过新榜指数了解最新发展趋势",
-    "shortDesc": "新榜每天发布更多榜单数据，覆盖新媒体平台、地区、行业等，通过新榜指数了解最新发展趋势",
-    "url": "https://www.newrank.cn/ranksub",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "e81c9a03-6b07-8345-8392-0185008aabe3",
-    "title": "今日热榜",
-    "description": "今日热榜提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、抖音...追踪全网热点、简单高效阅读。",
-    "shortDesc": "今日热榜提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Git...",
-    "url": "https://tophub.today/c/news",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "2d4c9a03-6b07-8251-ad81-01c46561bffd",
-    "title": "百度热搜",
-    "description": "百度热搜以数亿用户海量的真实数据为基础，通过专业的数据挖掘方法，计算关键词的热搜指数，旨在建立权威、全面、热门、时效的各类关键词排行榜，引领热词阅读时代。",
-    "shortDesc": "百度热搜以数亿用户海量的真实数据为基础，通过专业的数据挖掘方法，计算关键词的热搜指数，旨在建立权威、...",
-    "url": "https://top.baidu.com/board",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "9dbc9a03-6b07-83d4-98e8-01aaa2437f57",
-    "title": "iconfont-阿里巴巴矢量图标库",
-    "description": "iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造，设计和前端开发的便捷工具",
-    "shortDesc": "iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等...",
-    "url": "https://www.iconfont.cn/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "ee1c9a03-6b07-8247-9058-012c1d835848",
-    "title": "Free icons sets",
-    "description": "Exclusive collection of icon sets free for personal and commercial usage",
-    "shortDesc": "Exclusive collection of icon sets free for persona...",
-    "url": "https://www.graphberry.com/category/icons",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "479c9a03-6b07-8310-b49c-01c38938887b",
-    "title": "logoEPS.com",
-    "description": "矢量Logo图 下载",
-    "shortDesc": "矢量Logo图 下载",
-    "url": "https://logoeps.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "5b3c9a03-6b07-8300-a7f8-01e9ab7a1921",
-    "title": "Font Awesome",
-    "description": "The internet's icon library + toolkit. Used by millions of designers, devs, & content creators. Open-source. Always free. Always awesome.",
-    "shortDesc": "The internet's icon library + toolkit. Used by mil...",
-    "url": "https://fontawesome.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "0c3c9a03-6b07-83c1-b369-01667f64660e",
-    "title": "porkbun.com | An oddly satisfying experience.",
-    "description": "Porkbun是一个非常棒的ICANN认证域名注册商，总部位于太平洋西北部。我们与众不同，我们很容易，我们负担得起。使用我们，你不会后悔的。如果你不使用我们，我们会很难过，但我们仍然会爱你。",
-    "shortDesc": "Porkbun是一个非常棒的ICANN认证域名注册商，总部位于太平洋西北部。我们与众不同，我们很容易...",
-    "url": "https://porkbun.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "f6ac9a03-6b07-8268-9d2e-0179f12393cb",
-    "title": "Cheap Domain Names & Web Hosting Starting at $0.99!",
-    "description": "便宜的域名注册和负担得起的网站托管。我们提供免费的附加组件和好处，我们的竞争对手喜欢收费。24/7顶级支持！",
-    "shortDesc": "便宜的域名注册和负担得起的网站托管。我们提供免费的附加组件和好处，我们的竞争对手喜欢收费。24/7顶...",
-    "url": "https://www.namesilo.com/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "483c9a03-6b07-8311-9dbc-81be6940b637",
-    "title": "Namecheap",
-    "description": "便宜的域名",
-    "shortDesc": "便宜的域名",
-    "url": "https://www.namecheap.com/domains/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "fe7c9a03-6b07-8324-9696-8182dbdbd435",
-    "title": "IconKitchen",
-    "description": "iOS/Android/Web Icon设计",
-    "shortDesc": "iOS/Android/Web Icon设计",
-    "url": "https://icon.kitchen/",
-    "category": "开发工具",
-    "icon": ""
-  },
-  {
-    "id": "b57c9a03-6b07-823b-ac0e-018c9a76f543",
-    "title": "Favicon.io - The Ultimate Favicon Generator (Free)",
-    "description": "With Favicon.io you can quickly generate a favicon for your website for free!",
-    "shortDesc": "With Favicon.io you can quickly generate a favicon...",
-    "url": "https://favicon.io/",
-    "category": "开发工具",
+    "id": "56ec9a03-6b07-8290-bdb7-010edce8cac5",
+    "title": "Google NotebookLM | Note Taking & Research Assistant Powered by AI",
+    "description": "利用人工智能的力量进行快速总结和记笔记，NotebookLM 是你强大的虚拟研究助手，其基础是你可以信赖的信息。",
+    "shortDesc": "利用人工智能的力量进行快速总结和记笔记，NotebookLM 是你强大的虚拟研究助手，其基础是你可以...",
+    "url": "https://notebooklm.google.com/",
+    "category": "AI工具",
     "icon": ""
   },
   {
@@ -1508,66 +1643,21 @@ export const sites = [
     "icon": ""
   },
   {
-    "id": "0fec9a03-6b07-82e4-9e5a-018c4505a29b",
-    "title": "Lucide Icons",
-    "description": "Beautiful & consistent icon toolkit made by the community.",
-    "shortDesc": "Beautiful & consistent icon toolkit made by the co...",
-    "url": "https://lucide.dev/",
-    "category": "开发工具",
+    "id": "68fc9a03-6b07-82d6-88df-018761b053c9",
+    "title": "Arc 浏览器",
+    "description": "最适合ai研究场景的浏览器。全新的浏览器体验，基于Chrome内核，沉浸/分屏体验很好。支持工作区，自定义页面，ai功能",
+    "shortDesc": "最适合ai研究场景的浏览器。全新的浏览器体验，基于Chrome内核，沉浸/分屏体验很好。支持工作区，...",
+    "url": "https://arc.net/",
+    "category": "桌面软件",
     "icon": ""
   },
   {
-    "id": "557c9a03-6b07-8220-a182-0152391130ec",
-    "title": "Ezho | Ezho记录读书、思考、创业的心得",
-    "description": "Ezho记录读书、思考、创业的心得",
-    "shortDesc": "Ezho记录读书、思考、创业的心得",
-    "url": "https://ezho.top/",
-    "category": "信息源",
-    "icon": ""
-  },
-  {
-    "id": "f42c9a03-6b07-82b2-a077-8127dd06aa89",
-    "title": "top-rss-list/README.md at main · weekend-project-space/top-rss-list",
-    "description": "订阅人数最多的rss源，中文优质rss源. Contribute to weekend-project-space/top-rss-list development by creating an account on GitHub.",
-    "shortDesc": "订阅人数最多的rss源，中文优质rss源. Contribute to weekend-projec...",
-    "url": "https://github.com/weekend-project-space/top-rss-list/blob/main/README.md",
-    "category": "信息源",
-    "icon": ""
-  },
-  {
-    "id": "e38c9a03-6b07-82bf-94d3-81b22bb55f24",
-    "title": "RSS订阅源推荐",
-    "description": "RSS订阅源推荐",
-    "shortDesc": "RSS订阅源推荐",
-    "url": "https://rss-source.com/",
-    "category": "信息源",
-    "icon": ""
-  },
-  {
-    "id": "449c9a03-6b07-835b-9499-010779c3ee18",
-    "title": "Apple 播客热门排行榜",
-    "description": "人气最高的排行榜",
-    "shortDesc": "人气最高的排行榜",
-    "url": "https://podcasts.apple.com/cn/charts",
-    "category": "信息源",
-    "icon": ""
-  },
-  {
-    "id": "12ac9a03-6b07-83cb-856d-81696c707c3f",
-    "title": "中文播客榜",
-    "description": "榜单只是一种维度，愿你找到喜欢的节目",
-    "shortDesc": "榜单只是一种维度，愿你找到喜欢的节目",
-    "url": "https://xyzrank.com/#/",
-    "category": "信息源",
-    "icon": ""
-  },
-  {
-    "id": "a28c9a03-6b07-83c8-98ab-01934643c139",
-    "title": "RSSHub",
-    "description": "万物皆可 RSS 🧡",
-    "shortDesc": "万物皆可 RSS 🧡",
-    "url": "https://docs.rsshub.app/zh/",
-    "category": "信息源",
+    "id": "ea3c9a03-6b07-827a-bcac-01bbaaa1c7fc",
+    "title": "文字转卡片工具",
+    "description": "文字转样式美观卡片，在线免费",
+    "shortDesc": "文字转样式美观卡片，在线免费",
+    "url": "https://www.memocard.net/",
+    "category": "文字处理",
     "icon": ""
   },
   {
@@ -1580,318 +1670,21 @@ export const sites = [
     "icon": ""
   },
   {
-    "id": "9fac9a03-6b07-83f4-9c11-81ced8260571",
-    "title": "少数派 - 高效工作，品质生活",
-    "description": "少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质",
-    "shortDesc": "少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质",
-    "url": "https://sspai.com/",
-    "category": "信息源",
-    "icon": ""
-  },
-  {
-    "id": "62fc9a03-6b07-8266-b843-81281221782a",
-    "title": "Tim Ferriss Blog",
-    "description": "每周4小时系列畅销书作家Tim Ferriss的博客",
-    "shortDesc": "每周4小时系列畅销书作家Tim Ferriss的博客",
-    "url": "https://tim.blog/",
-    "category": "信息源",
-    "icon": ""
-  },
-  {
-    "id": "4bbc9a03-6b07-83b5-a555-81529c4945e2",
-    "title": "moyuguy/sidenote2obsidian: 已上架Chrome应用商店",
-    "description": "在任何网页上写卡片笔记，一键发布到obsidian上。",
-    "shortDesc": "在任何网页上写卡片笔记，一键发布到obsidian上。",
-    "url": "https://github.com/moyuguy/sidenote2obsidian",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "a12c9a03-6b07-83e0-8979-813f196c161e",
-    "title": "moyuguy/notion_bookmarks: Notion个人导航站",
-    "description": "Notion个人导航站. Contribute to moyuguy/notion_bookmarks development by creating an account on GitHub.",
-    "shortDesc": "Notion个人导航站. Contribute to moyuguy/notion_bookmark...",
-    "url": "https://github.com/moyuguy/notion_bookmarks",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "ed5c9a03-6b07-827a-aee1-8154d5d09929",
-    "title": "The AI workspace that works for you. | Notion",
-    "description": "A tool that connects everyday work into one space. It gives you and your teams AI tools—search, writing, note-taking—inside an all-in-one, flexible workspace.",
-    "shortDesc": "A tool that connects everyday work into one space....",
-    "url": "https://www.notion.so",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "e8bc9a03-6b07-82c0-82e4-81a483f86d53",
-    "title": "Obsidian-Pkmer",
-    "description": "obsidian——如果你是刚安装 Obsidian 担心上手进阶教程较难，可以参考这里 如何使用Obsidian笔记-一步一步的指南Obsidian 是一款本地文档型纯文本笔记软...",
-    "shortDesc": "obsidian——如果你是刚安装 Obsidian 担心上手进阶教程较难，可以参考这里 如何使用O...",
-    "url": "https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian/",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "341c9a03-6b07-820a-bc9c-81598adb1bc0",
-    "title": "Book Awards",
-    "description": "List of book awards: Goodreads Choice Award, Lambda Literary Award, Locus Award, RITA Award by Romance Writers of America, Independent Publisher Book Awa...",
-    "shortDesc": "List of book awards: Goodreads Choice Award, Lambd...",
-    "url": "https://www.goodreads.com/award",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "b79c9a03-6b07-82a5-8b07-01ddf5c5e15c",
-    "title": "The Greatest Books of All Time",
-    "description": "The Greatest Books of All Time. This list is generated by aggregating 534 lists from various critics, authors, experts, and readers.",
-    "shortDesc": "The Greatest Books of All Time. This list is gener...",
-    "url": "https://thegreatestbooks.org/",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "92fc9a03-6b07-837a-8da5-01512bbf8781",
-    "title": "Obsidian 微信读书同步插件",
-    "description": "Obsidian 微信读书同步插件",
-    "shortDesc": "Obsidian 微信读书同步插件",
-    "url": "https://github.com/zhaohongxuan/obsidian-weread-plugin",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "339c9a03-6b07-839c-8b31-81072d2da689",
-    "title": "豆瓣读书同步到Notion",
-    "description": "抓取豆瓣读书信息，基于Notion搭建私人图书管理系统",
-    "shortDesc": "抓取豆瓣读书信息，基于Notion搭建私人图书管理系统",
-    "url": "https://greasyfork.org/zh-CN/scripts/464467-%E8%B1%86%E7%93%A3%E8%AF%BB%E4%B9%A6%E5%90%8C%E6%AD%A5%E5%88%B0notion",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "7d9c9a03-6b07-82f0-9d5c-8174203f71ed",
-    "title": "豆瓣资源下载大师：1秒搞定豆瓣电影|音乐|图书下载",
-    "description": "【装这一个脚本就够了！可能是你遇到的最好的豆瓣增强脚本】聚合数百家资源网站，通过右侧边栏1秒告诉你哪些网站能下载豆瓣页面上的电影|电视剧|纪录片|综艺|动画|音乐|图书等，有资源的网站显示绿色，没资源的网站显示黄色，就这么直观！所有豆瓣条目均提供在线播放|阅读、字幕|歌词下载及PT|NZB|BT|磁力|百度盘|115网盘等下载链接，加入官网打死也不出的豆列搜索功能，此外还能给豆瓣条目额外添加IMDB评分|IMDB TOP 250|Metascore评分|烂番茄评分|AniDB评分|Bgm评分|MAL|亚马逊评分等更多评分形式。官方电报群：@doubandown",
-    "shortDesc": "【装这一个脚本就够了！可能是你遇到的最好的豆瓣增强脚本】聚合数百家资源网站，通过右侧边栏1秒告诉你哪...",
-    "url": "https://greasyfork.org/zh-CN/scripts/329484-%E8%B1%86%E7%93%A3%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD%E5%A4%A7%E5%B8%88-1%E7%A7%92%E6%90%9E%E5%AE%9A%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1-%E9%9F%B3%E4%B9%90-%E5%9B%BE%E4%B9%A6%E4%B8%8B%E8%BD%BD",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "396c9a03-6b07-83ab-bd84-012e84b00422",
-    "title": "Goodreads",
-    "description": "国外读书评分网站",
-    "shortDesc": "国外读书评分网站",
-    "url": "https://www.goodreads.com/",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "4dac9a03-6b07-8227-997a-0177c8a81be4",
-    "title": "豆瓣读书",
-    "description": "豆瓣读书，看评分",
-    "shortDesc": "豆瓣读书，看评分",
-    "url": "https://book.douban.com/",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "99ec9a03-6b07-83a0-b2c7-015ae8e8bdd3",
-    "title": "Z-Library – the world’s largest e-book library. Your gateway to knowledge and culture.",
-    "description": "Z-Library is an online library dedicated to enhancing global education through easy access to books. Recognizing books as a valuable source of knowledge throughout history, we aim to provide free literature access to those in need.",
-    "shortDesc": "Z-Library is an online library dedicated to enhanc...",
-    "url": "https://z-lib.fm/",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "c81c9a03-6b07-83cb-8462-81231bd393ac",
-    "title": "微信读书",
-    "description": "微信读书提供海量正版书籍、小说、漫画、公众号、听书，多设备同步实现跨屏阅读。与微信好友一起发现更多精品好书，随时交流感想，让阅读不再孤独。",
-    "shortDesc": "微信读书提供海量正版书籍、小说、漫画、公众号、听书，多设备同步实现跨屏阅读。与微信好友一起发现更多精...",
-    "url": "https://weread.qq.com/",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "fc1c9a03-6b07-8218-808d-813bf5f0a759",
-    "title": "PDFdir手动添加目录",
-    "description": "扫描版PDF手动添加目录",
-    "shortDesc": "扫描版PDF手动添加目录",
-    "url": "https://github.com/chroming/pdfdir",
-    "category": "知识管理",
-    "icon": ""
-  },
-  {
-    "id": "e38c9a03-6b07-832b-9c0d-815706841949",
-    "title": "Artefacts.ai",
-    "description": "Artefacts is a 3D AI toolkit that enables users to effortlessly transform text or 2D images into 3D assets. Unleash your creativity with Artefacts - the future of 3D content creation.",
-    "shortDesc": "Artefacts is a 3D AI toolkit that enables users to...",
-    "url": "https://artefacts.ai/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "d22c9a03-6b07-83cd-b0e6-8162341de94c",
-    "title": "Tripo 网页版 | 随心设计、个性定制，打造属于您的 3D 世界",
-    "description": "Tripo 网页版，轻松上传图片或文字，秒变高质量3D模型，随地随地设计、编辑和定制 3D 作品，所有创作者的不二之选。",
-    "shortDesc": "Tripo 网页版，轻松上传图片或文字，秒变高质量3D模型，随地随地设计、编辑和定制 3D 作品，所...",
-    "url": "https://www.tripo3d.ai/app/home",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "597c9a03-6b07-831b-b9d9-014d3ea3a34d",
-    "title": "Meshy AI - 创作者首选的#1 AI 3D模型生成器",
-    "description": "Meshy是一个AI 3D模型生成器，可以帮助轻松地将图像和文本转化为3D模型，仅需几秒钟。",
-    "shortDesc": "Meshy是一个AI 3D模型生成器，可以帮助轻松地将图像和文本转化为3D模型，仅需几秒钟。",
-    "url": "https://www.meshy.ai/?utm_source=google&utm_medium=cpc&utm_campaign=2025-purchase&utm_term=&gad_source=1&gad_campaignid=22366628367&gbraid=0AAAAApPWZYgnTy23rCjVoESpHbIDGWiiI&gclid=Cj0KCQjwotDBBhCQARIsAG5pinNOWA8NqXYDcvupqyBvhiGGXM1OjMgoeFHqJSrMmR7i3ok_y_G_3xwaAjzGEALw_wcB",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "819c9a03-6b07-8359-acb1-014b130204ac",
-    "title": "Discover STL files for 3D printing ideas and high-quality 3D printer models. | MyMiniFactory",
-    "description": "STL files for 3D designers and makers, share free and paid guaranteed 3D printable models. Download high-quality 3D print files for tabletop gaming, toys, gadgets and more for your 3D printers.",
-    "shortDesc": "STL files for 3D designers and makers, share free ...",
-    "url": "https://www.myminifactory.com/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "9d2c9a03-6b07-826d-a3f3-81f50f0f51b8",
-    "title": "Free 3D Printable Files and Designs | Pinshape",
-    "description": "Pinshape is a thriving 3D printing community &amp; marketplace full of quality 3D printable files. Sell &amp; share your designs, or download 3D files to print now!",
-    "shortDesc": "Pinshape is a thriving 3D printing community &amp;...",
-    "url": "https://pinshape.com/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "cbac9a03-6b07-83e3-a512-0181e3a0d7a1",
-    "title": "在线图片转SVG ",
-    "description": "使用Adobe Express的免费SVG转换工具，在线将图像转为SVG格式。快捷轻松地上传您的JPG或PNG图像，即可将它转为SVG文件。",
-    "shortDesc": "使用Adobe Express的免费SVG转换工具，在线将图像转为SVG格式。快捷轻松地上传您的JP...",
-    "url": "https://www.adobe.com/cn/express/feature/image/convert/svg",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "3aac9a03-6b07-82de-90f7-8137a660f7b0",
-    "title": "3D model community. Search & download free 3D models. Share 3D models",
-    "description": "3D Model Community for 3D model enthusiasts. Use geometric search to find over 1 million free 3D models. Download 3D models & upload models to collaborate.",
-    "shortDesc": "3D Model Community for 3D model enthusiasts. Use g...",
-    "url": "https://thangs.com/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "bc6c9a03-6b07-82c8-8b3e-81291cb9b71e",
-    "title": "3D models database | Printables.com",
-    "description": "Community site for 3D printer users. Discover thousands of great printable 3D models, download them for free and read interesting articles about 3D printing.",
-    "shortDesc": "Community site for 3D printer users. Discover thou...",
-    "url": "https://www.printables.com/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "a0bc9a03-6b07-8288-9641-01bb1102fb35",
-    "title": "Cults・下载免费 3D 打印机模型・STL、OBJ、3MF、CAD",
-    "description": "世界领先的 3D 打印机文件独立网站・下载最佳 3D 打印对象・在最大的 DIY 社区 Cults3D 上分享您的设计。",
-    "shortDesc": "世界领先的 3D 打印机文件独立网站・下载最佳 3D 打印对象・在最大的 DIY 社区 Cults3...",
-    "url": "https://cults3d.com/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "a4dc9a03-6b07-8386-bfe6-817d8a4c1ab2",
-    "title": "Thingiverse - Digital Designs for Physical Objects",
-    "description": "Download millions of 3D models and files for your 3D printer, laser cutter, or CNC. From custom parts to unique designs, you can find them on Thingive",
-    "shortDesc": "Download millions of 3D models and files for your ...",
-    "url": "https://www.thingiverse.com/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "a37c9a03-6b07-8383-8c28-813d8817d67c",
-    "title": "MakerWorld：免费下载 3D 模型",
-    "description": "行业领先的 3D 打印模型社区，为 3D 打印爱好者和设计师提供服务。免费提供海量 3D 模型和 STL 模型下载，是您寻找彩色 3D 模型的首选平台",
-    "shortDesc": "行业领先的 3D 打印模型社区，为 3D 打印爱好者和设计师提供服务。免费提供海量 3D 模型和 S...",
-    "url": "https://makerworld.com.cn/zh",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "6c5c9a03-6b07-83f0-b3bb-017f9d3c29de",
-    "title": "QRCode Monkey - The free QR Code Generator to create custom QR Codes with Logo",
-    "description": "Create custom QR Codes with Logo, Color and Design for free. This QR Code Maker offers free vector formats for best print quality.",
-    "shortDesc": "Create custom QR Codes with Logo, Color and Design...",
-    "url": "https://www.qrcode-monkey.com/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "bd9c9a03-6b07-82f1-9167-81b68c2245f0",
-    "title": "SVG 2 STL",
-    "description": "3D pringing SVG images made simple. Convert your SVG images to 3D printable STL models online and for free in just three simple steps.",
-    "shortDesc": "3D pringing SVG images made simple. Convert your S...",
-    "url": "https://svg2stl.com/",
-    "category": "3D打印",
-    "icon": ""
-  },
-  {
-    "id": "14cc9a03-6b07-834d-a3c2-01781bc0218d",
-    "title": "DietPlan - 个性化饮食方案",
-    "description": "",
-    "shortDesc": "",
-    "url": "https://eat4fit.online/",
-    "category": "桌面软件",
-    "icon": ""
-  },
-  {
-    "id": "63dc9a03-6b07-8296-884d-01652d137a18",
-    "title": "Follow",
-    "description": "Next-Gen Information Browser",
-    "shortDesc": "Next-Gen Information Browser",
-    "url": "https://follow.is/",
-    "category": "桌面软件",
-    "icon": ""
-  },
-  {
-    "id": "68fc9a03-6b07-82d6-88df-018761b053c9",
-    "title": "Arc 浏览器",
-    "description": "最适合ai研究场景的浏览器。全新的浏览器体验，基于Chrome内核，沉浸/分屏体验很好。支持工作区，自定义页面，ai功能",
-    "shortDesc": "最适合ai研究场景的浏览器。全新的浏览器体验，基于Chrome内核，沉浸/分屏体验很好。支持工作区，...",
-    "url": "https://arc.net/",
-    "category": "桌面软件",
-    "icon": ""
-  },
-  {
-    "id": "607c9a03-6b07-83e7-88d8-81f0835d00a3",
-    "title": "KeyClu-快捷键速查",
-    "description": "macOS快捷键速查工具",
-    "shortDesc": "macOS快捷键速查工具",
-    "url": "https://github.com/Anze/KeyCluCask",
-    "category": "桌面软件",
-    "icon": ""
-  },
-  {
-    "id": "03602922-342a-4582-b7c7-8b2b9697b91b",
-    "title": "Lakr233/AssppWeb",
-    "description": "A web-based tool for acquiring and installing iOS apps outside the App Store. Authenticate with your Apple ID, search for apps, acquire licenses, 和 install IPAs directly to your device.",
-    "shortDesc": "A web-based tool for acquiring and installing iOS ...",
-    "url": "https://github.com/Lakr233/AssppWeb",
-    "category": "桌面软件",
-    "icon": ""
-  },
-  {
     "id": "69ac9a03-6b07-832f-b43f-016015ef7d44",
     "title": "wappalyzer 查看网站的技术栈",
     "description": "查看网站的技术栈",
     "shortDesc": "查看网站的技术栈",
     "url": "https://www.wappalyzer.com/",
     "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "9fac9a03-6b07-83f4-9c11-81ced8260571",
+    "title": "少数派 - 高效工作，品质生活",
+    "description": "少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质",
+    "shortDesc": "少数派致力于更好地运用数字产品或科学方法，帮助用户提升工作效率和生活品质",
+    "url": "https://sspai.com/",
+    "category": "信息源",
     "icon": ""
   },
   {
@@ -1904,6 +1697,15 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "0fec9a03-6b07-82e4-9e5a-018c4505a29b",
+    "title": "Lucide Icons",
+    "description": "Beautiful & consistent icon toolkit made by the community.",
+    "shortDesc": "Beautiful & consistent icon toolkit made by the co...",
+    "url": "https://lucide.dev/",
+    "category": "开发工具",
+    "icon": ""
+  },
+  {
     "id": "fdcc9a03-6b07-83a9-a66e-81f3de3f706d",
     "title": "仪表盘-自部署导航站",
     "description": "很适合群晖上用",
@@ -1913,12 +1715,30 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "607c9a03-6b07-83e7-88d8-81f0835d00a3",
+    "title": "KeyClu-快捷键速查",
+    "description": "macOS快捷键速查工具",
+    "shortDesc": "macOS快捷键速查工具",
+    "url": "https://github.com/Anze/KeyCluCask",
+    "category": "桌面软件",
+    "icon": ""
+  },
+  {
     "id": "b7ac9a03-6b07-8358-ab9f-81793ad10375",
     "title": "Markdown Viewer",
     "description": "Chrome中预览markdown文件，在线和本地文件均可预览。效果不错",
     "shortDesc": "Chrome中预览markdown文件，在线和本地文件均可预览。效果不错",
     "url": "https://chromewebstore.google.com/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk",
     "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "62fc9a03-6b07-8266-b843-81281221782a",
+    "title": "Tim Ferriss Blog",
+    "description": "每周4小时系列畅销书作家Tim Ferriss的博客",
+    "shortDesc": "每周4小时系列畅销书作家Tim Ferriss的博客",
+    "url": "https://tim.blog/",
+    "category": "信息源",
     "icon": ""
   },
   {
@@ -1994,6 +1814,15 @@ export const sites = [
     "icon": ""
   },
   {
+    "id": "5a5c9a03-6b07-82dc-994a-01c033822b1b",
+    "title": "通义听悟",
+    "description": "很牛逼，可以直接转录播客，用AI概括视频和音频要点",
+    "shortDesc": "很牛逼，可以直接转录播客，用AI概括视频和音频要点",
+    "url": "https://tingwu.aliyun.com/home",
+    "category": "AI工具",
+    "icon": ""
+  },
+  {
     "id": "09bc9a03-6b07-83e8-9095-01b24257002d",
     "title": "youtube-dl 命令行下载youtube视频",
     "description": "可以尝试",
@@ -2009,6 +1838,177 @@ export const sites = [
     "shortDesc": "youtube下载",
     "url": "https://ssyoutube.com/en748JK/",
     "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "31bc9a03-6b07-80b9-9f44-e8610a38970d",
+    "title": "openclaw【小龙虾】",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://openclaw.ai/",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "28cbc333-4c66-4acc-93d2-cac94458294d",
+    "title": "OpenClaw 汉化版 - 开源 AI 助手「龙虾爪」中文版",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://openclaw.qt.cool/",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "81f8821d-7310-4570-ba94-92107754761f",
+    "title": "HKUDS/nanobot: \"🐈 nanobot: The Ultra-Lightweight OpenClaw\"",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://github.com/HKUDS/nanobot",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "0d9fa051-c17b-4b17-b583-9a4b4897daae",
+    "title": "HKUDS/ClawWork: \"ClawWork: OpenClaw as Your AI Coworker - 💰 $15K earned in 11 Hours\"",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://github.com/HKUDS/ClawWork",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "cda9f183-fc5c-4f91-86e8-651e2dc16d2a",
+    "title": "PicoClaw",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://picoclaw.io/",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "839205f0-71d3-4f12-8e33-33097e9f4d7d",
+    "title": "MimiClaw — Run OpenClaw on $5 Chips",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://mimiclaw.io/",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "b2ecdfa1-6912-4e4b-aabf-fd2316f00827",
+    "title": "ZeroClaw — Private AI Assistant | Local, Secure",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://www.zeroclawlabs.ai/",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "5666132a-92dd-4f4e-b590-b84d5b919b86",
+    "title": "NanoClaw - Secure AI Agent for WhatsApp, Telegram & More",
+    "description": "",
+    "shortDesc": "",
+    "url": "https://nanoclaw.dev",
+    "category": "openclaw",
+    "icon": ""
+  },
+  {
+    "id": "03602922-342a-4582-b7c7-8b2b9697b91b",
+    "title": "Lakr233/AssppWeb",
+    "description": "A web-based tool for acquiring and installing iOS apps outside the App Store. Authenticate with your Apple ID, search for apps, acquire licenses, 和 install IPAs directly to your device.",
+    "shortDesc": "A web-based tool for acquiring and installing iOS ...",
+    "url": "https://github.com/Lakr233/AssppWeb",
+    "category": "桌面软件",
+    "icon": ""
+  },
+  {
+    "id": "3c83f36a-7d3e-426e-80de-63df95a0752d",
+    "title": "免费在线 Photoshop 工具_网页版 PS 在线修图抠图去水印_无需下载直接使用",
+    "description": "FreePS，在线图像编辑器，一款使用HTML5+Vue技术开发的开源在线图像编辑器，具有图像编辑、画笔、滤镜、调整大小、文本、缩放、图层和截图等功能。该编辑器模仿了Photoshop的大部分功能..",
+    "shortDesc": "FreePS，在线图像编辑器，一款使用HTML5+Vue技术开发的开源在线图像编辑器，具有图像编辑、...",
+    "url": "https://ps.mmaiverse.com/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "653e8ca5-a8e8-4b72-ba8a-42e1d1aafeaf",
+    "title": "免费IP归属地查询工具 - 快速查询IP地址归属地信息",
+    "description": "免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。",
+    "shortDesc": "免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。",
+    "url": "https://ip.mmaiverse.com/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "1a1133f0-52c0-4d8d-803d-fae8238de4da",
+    "title": "免费在线M3U8Player播放器，用于m3u8文件的在线播放器",
+    "description": "M3U8Player 是一款实现 HTTP 实时流客户端的 Chrome 浏览器扩展工具。你可以播放 .m3u8 HTTP Live Streaming (HLS)。它依靠 HTML5 视频和媒体源扩展进行播放。它的工作原理是将 MPEG-2 传输流和 AAC/MP3 流转换成 ISO BMFF (MP4) 片段。如果浏览器中有 Web Worker，可使用它异步执行转码。它还支持 HLS + fmp4。",
+    "shortDesc": "M3U8Player 是一款实现 HTTP 实时流客户端的 Chrome 浏览器扩展工具。你可以播放...",
+    "url": "https://m3u8.mmaiverse.com/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "cefabb80-d2e8-407f-b17b-0e213a8bd1a3",
+    "title": "在线画图_在线画画_免费在线画图工具, 在线画图让你创意满满",
+    "description": "在线画图工具，您的创意绘图助手！我们提供简单易用的在线画图软件，支持多种画图功能，让您轻松创建精美的图形、插图和设计。无论是专业设计师还是业余爱好者，都能在这里找到灵感和工具。立即体验我们的在线画图工具，释放您的创意，轻松分享您的作品！",
+    "shortDesc": "在线画图工具，您的创意绘图助手！我们提供简单易用的在线画图软件，支持多种画图功能，让您轻松创建精美的...",
+    "url": "https://ht.mmaiverse.com/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "17a95065-e81d-4a11-8933-9d379629e549",
+    "title": "房贷计算器2026年 - 房贷计算在线工具",
+    "description": "买房是人生中的大事，选择合适的房贷是关键。房贷计算器官网开发的房贷计算器2026是一款非常受欢迎的工具，每天超过88万人使用它来计算和咨询房屋贷款，包括提前还款计算器和公积金贷款计算器。无论您是想要了解房贷利率、首付比例、贷款期限等，房贷计算器都能为您提供详细的数据和计算结果。此外，如果您在线咨询贷款时遇到任何问题或疑虑，也可以使用贷款计算器进行详细咨询和了解。总之，选择合适的房贷产品，根据自己的实际情况选择最合适的还款方式，合理规划自己的财务，是买房前必须要做的一项重要准备工作。",
+    "shortDesc": "买房是人生中的大事，选择合适的房贷是关键。房贷计算器官网开发的房贷计算器2026是一款非常受欢迎的工...",
+    "url": "https://fd.mmaiverse.com/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "657cd62e-65b8-4060-9e5e-7f510edb6f47",
+    "title": "IT工具 - 开发人员的在线工具",
+    "description": "为开发者提供的方便的在线工具集合，具有出色的用户界面。IT 工具是一个免费且开源的为开发者和 IT 工作者提供的方便的在线工具集合",
+    "shortDesc": "为开发者提供的方便的在线工具集合，具有出色的用户界面。IT 工具是一个免费且开源的为开发者和 IT ...",
+    "url": "https://it.mmaiverse.com/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "60449d73-ae3a-42c9-aae5-5090617debef",
+    "title": "PDFCraft - 专业 PDF 工具",
+    "description": "在浏览器中免费、私密、强大的PDF处理",
+    "shortDesc": "在浏览器中免费、私密、强大的PDF处理",
+    "url": "https://pdf.mmaiverse.com/zh/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "b29153c2-b715-4add-b316-50fd0ae286bd",
+    "title": "中国传统颜色手册 | 中国色 | 中国古典颜色 | Chinese Color Cheat sheet",
+    "description": "全网最全的中国传统颜色数据库，包含600+国风色卡精准色值、命名由来与使用场景。一键获取CMYK/RGB/HEX色彩代码，提升设计效率与专业度。中国色，中国风，中国传统颜色，设计，Chinese color cheat sheet online",
+    "shortDesc": "全网最全的中国传统颜色数据库，包含600+国风色卡精准色值、命名由来与使用场景。一键获取CMYK/R...",
+    "url": "https://se.mmaiverse.com/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "4986fd37-c81a-40e7-8eec-a7c41e34c5ee",
+    "title": "DOCX转Markdown在线转换器 - 免费DOCX到MD格式转换工具",
+    "description": "D2M是一个免费的在线工具，可将DOCX文件快速转换为Markdown格式，支持浏览器本地转换，保护隐私，无需上传文件到服务器。",
+    "shortDesc": "D2M是一个免费的在线工具，可将DOCX文件快速转换为Markdown格式，支持浏览器本地转换，保护...",
+    "url": "https://d2m.mmaiverse.com/",
+    "category": "在线小工具",
+    "icon": ""
+  },
+  {
+    "id": "3a981255-bbca-472c-84d6-1761e643aaa3",
+    "title": "QClaw - 微信远程办公 AI 助手 | 腾讯出品",
+    "description": "随时随地，微信一下，QClaw 帮你高效干活",
+    "shortDesc": "随时随地，微信一下，QClaw 帮你高效干活",
+    "url": "https://qclaw.qq.com/",
+    "category": "openclaw",
     "icon": ""
   }
 ];
