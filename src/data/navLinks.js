@@ -1,5 +1,5 @@
 export const websiteConfig = {
-  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46624LWQVSC%2F20260516%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260516T085343Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCkBqMoRUW7CI4MWFR6alIw0kwt2gnBJSVIPcqeamUSYQIhAIs0%2BrRrdEAwTiZPCo5PDdz3hXEAhGN4gL9z87h%2FZq%2BTKogECIn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igzqrmz8n8yTZZZBl98q3ANoUGZ852qpzUUU0LzqRl91UGxJId8tDFtpHjCRcMmsYLmsQTzNDbvLBngssJ3P1WNObF2ww4zH%2F6TusvuvgUYfko3AJ94OlCUC7D6B0WWvJQrGXllrgUIR6gE1ObS1QKvcOvx5a76jMcpJ9m8dnMaymvd71Zd2cZQ%2Bhy8V1LRqmpKGsW7LHBSmE7LQfhduLOXX96SIkVNnq0zsoRvpmxouzAs7GRCRoq0c4X8baMvlmMIp6VrZTABRBKChHdlhytG3Q1GQISO%2Bfr%2F5jHd%2FX8EZGvXKHSql2xAaJe%2FHISUtqs7zC3MyHp50UNTqurU50QNB4pmiZtzY0SSEQCjD6ijS89czo7JWezNegb5xnCtZZZPcDLkMJwajrg%2Fw7Sjl0KGpF5Z%2FHzeGDM6iEZPzlnEZyTVUlqS5qNYz%2BgSdujjb0iwNb6tOXFIH%2FItAWDbVSOkYvZ7o6Ss8r2WN7svW7nj4SOoAxIeIh%2Bedd8GbpPi0m0CWrtzwFBlhkDIe3y03dqBjM6ZPgSl32I8FBxAO%2Fi7w5jItAO3a2YH7hg25WCcaVEuVoIUCwNrPavMa8vrIyLLd6xFDk5bpFeWdPC6hk96%2FZ8maRRbPNk%2B0xMLQjxBNq5Hqgb3CFitN%2BAuZqTDczKDQBjqkAcVB5lLr4lxnbfS0KOLMDu5etlEmp8EwBfJYaO8ved6ZlzW7zK3mSNAkSedlKz8TGFW1bfwwwANqtY1rcot6EhkfvsNz5dnjzNbhSLljGcJ10S4EJj3v5n6Q3AOe%2BA3ziKvPaCEAcwI1sLCm0Dez%2FCW31pnrbswrlCTpii0XALXOMtoLHwa42E%2Fy2kC2K%2BycLG15KDor1x3zT4HOJdCBUF2yIVnq&X-Amz-Signature=33e9dc23ee7364be45476c066a5fb06f9134c6c1b1d9166f27215c0d68cfed5d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UMZLLQDH%2F20260516%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260516T102204Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDUzPpkFJdIXvgcSpHYKzd53WHLncnQzUpnL8XLKIVtDwIhALZ823t8QW4JfuHNX9sTCfwSfGh9l4JNhokwUgzxIm%2BRKogECIr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgyGuB1WHVrFvRljNAIq3ANWrLHS0uUGHdBlN9%2Bbh46i5EpYIZC88ziouiODOmTm9vVuL5XhzEfQpGjhf4HXD51BTgy6IN1QzR%2BcY4hkwDGT%2BT9QPlYf2juxCISzFxdXVMY%2FODY2N48U3En0ZR3GugusxPU7EC88Y6M6pP64VpTkTxFfopUBn4QxqPsAu402P4zon6Qd%2BCPVYNff05cr5v%2BQV3o9yuBDfTUt9HqSkH6XdD1CLmIaqVjmDz25OGn8jrOIc8tswLTxSr6e0ucK6mRQ3yHMWFyF4Q%2Fl5eDzNhmgfakRUxTEtG%2Fid4m1hE2IFaGbzjPL0%2BuuYBPY0LUnd07emF9cGeg9JZA7lcAsRsUlfoounsOzy%2FnMk2vT26MCg9%2FgBy07AjrpOa%2BGCnMdGWbWuxs%2FkobhMRDnhl%2F%2FCO0QPVoZrNRCENhn%2F5sDx9JL6qnt8iCU4zfe1nMHXbQfEDhXZCcvDFGKDLZ2FUx1f8dryrDDhVY12MVHhaE6mjtA%2BNfoaqGcEnV98E%2BWoSazkm2un0foFlMSfWmqCOuq8mONEFT6%2BR0nZ11zEDmq259IQLYNgiiM50dla2bSwuV%2FpWzcCkxanLyrX4vDwWL68Ss2MNnBI93eSaG6QBXvrNbEXbuqtf15pV6Krkh3JzDA6aDQBjqkAfbC%2F%2BYY5xIocT%2BVNnA8fbBmNjaXX2YFACfNPS4XDuBnapfB%2FjwGxkhLtnEHz4fx1RhIevcja%2BwpnaeGGx5gXhmgqYk8YFksZn63NDKlNxSbY2Shp8NriQNUA%2BY8TIOxoc2sjhk9WvCJVHME4WiozY%2B9HflbuXJIqA2wNp1rYsEzLUVbmOEkO3PrJ%2FZ%2BtC9Z794z3ul4vh%2Bm4s0Gt2miCurR6AeP&X-Amz-Signature=806fb8980181563030532343743c2124e999b40edf6356f7178d96bb754f60a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
   "site_monetag": "<script src=\"https://5gvci.com/act/files/tag.min.js?z=10688447\" data-cfasync=\"false\" async></script>",
   "site_google": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643\"\ncrossorigin=\"anonymous\"></script>",
   "social_blog": "https://52dh.cc.cd",
@@ -2008,6 +2008,24 @@ export const sites = [
     "description": "youtube下载",
     "shortDesc": "youtube下载",
     "url": "https://ssyoutube.com/en748JK/",
+    "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "22455286-c661-4f5a-8cab-d2beb572536a",
+    "title": "LobsterAI - 有道 AI Agent 产品",
+    "description": "一个7×24小时帮你干活的全场景个人助理 Agent",
+    "shortDesc": "一个7×24小时帮你干活的全场景个人助理 Agent",
+    "url": "https://lobsterai.youdao.com/#/index",
+    "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "1e7ddb81-d47c-4b78-b5e1-0cd235c19816",
+    "title": "QClaw | Personal Local AI Agent & Desktop Automation Assistant",
+    "description": "QClaw is a personal AI agent that lives on your computer.",
+    "shortDesc": "QClaw is a personal AI agent that lives on your co...",
+    "url": "https://qclawsg.qq.com/",
     "category": "未分类",
     "icon": ""
   }
