@@ -1,5 +1,5 @@
 export const websiteConfig = {
-  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667WKKE6B5%2F20260523%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260523T035915Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJHMEUCICKxvzdXnU3GBxyfQzffGPzsoq3FVEPuSwQ%2F%2B4o0FdH8AiEA4Noyv%2BiZGbb4NBLUDrL9LP%2FSUCEpKwAOX8I7208tj%2FQq%2FwMILBAAGgw2Mzc0MjMxODM4MDUiDG11gJ9mx4Oxws7E4CrcAyBAF9koNPNWfqhbXCcT4%2FYwpkKW5lkTex7SNWQPJNsrH7GGEGLUlarULo9zf%2FOuKCrwW7Cn3S%2BLDCGrh8roxVRx3sHCgsNTyOvQl4rFQLJ8XxlprDy0oCUJ%2BrTIRS5kHVXlD9M6U%2BB0rVPvYiMNEyLQCCrvZ0jol%2BcW4tTlHCMl31DyZjBuprP5kn%2FMT8fki03Zk%2FMV0PFMig0ImkkmpAB79goi1VaEuPXDXO1trggytfl8hdqCtrMaoTGR%2Bg1zHEYWzzYmwHHsV5qoKwqUiNolM%2Bx%2F4ZrXqiisSzSRjUoAnoWIYv0OG435To7ccyVYHDd0uSqvPu8LxlV%2BCB%2BHN04%2B4naphS7YvwnU0x6I5tb8Iubtr2qA1MsKblhv5tMl1onLncXbIXUsFV7oInJths8uwQIDwm5Q%2F3ImKw%2FHV5Kx69bT2xfjfnVfsq4ytFwu0PlGqnVXlCcah%2BwE%2Fy%2B0bxu7gTWi8JjVEYLNLy9ogrFlAgJ7T%2F%2BffiRwzVy97cEMKzuXsdN9CYsCmA76m8Rw1OjvDpV1gIIKfPOWcdcHXi7nBw1ZWTpdaG6%2B%2B7W%2F5V%2FrKWMDBhEHCmnO%2FKp7TXvUd2eJTz2fnOZJfs9GN2j840RwxEDjw0akBFHVL7XxMK6kxNAGOqUBepVveA3x7Z2eVp6zKE2ySws%2Bf26HNqNfTMldBbAwRqMUoT%2BqGl%2FhMPwqexcJQ%2F%2BBHeTxu46M0lF4xAUPo9LKd7Bue3ZXP31ObmFl1IUNZ0lG4Akc23%2BzsWgxLXft7l2FCLvYvtZqlPNBPYNyruS60d6tDVQ6pRkAbRSk8ttu21ERPYrhfB7niZrcbdx70EImINThTv1ibeqEdRdEE1d1eJfQTenw&X-Amz-Signature=604bb8de1461bc6964776f66813c1d15c412b448fb0730df5b09ef985ea72b90&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664HLFSO7T%2F20260523%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260523T064132Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGcaCXVzLXdlc3QtMiJIMEYCIQCPCAF1LXn%2Fs%2BYQ9garsHZYWg1t0RADsYXj5PjtB5JSfQIhAJJzg%2B01jWlnJue5Qu0sFvRwvQ0ygCZTfvkN3IJ1a5h0Kv8DCDAQABoMNjM3NDIzMTgzODA1IgwY%2FFyk2RgkVgVimfMq3APL5rbnpJEUIvmZC8wiaB5jlFgRte53%2Fg%2F3sU7EQ3WLiPxCPAiSaV4k659ve%2BdLHu0OXNIVGe%2BPnCs%2BQTxw2AlqXaWcAcs%2B%2B7be4ZUXEDFAh1Z1D9nmBLwYdLDHAIo40IjqUKTAPyIH0ZuMGalEmL%2FIfmThbdEMoU8L%2FTu9Edx%2F%2BGOPD%2FFu4ugvyiB82Ua8Zjab9KO0pgDKNu2r0LoE3FEs8ScIhbcB2BeKN0HLT0aOz41Fji%2BhPaK5yrbjh66kATb2VMCUWdki7Wv7zUosDQ9I4Y1kVxLgnVGii5UEf%2B7MoPQBnp1xdIyukMoo2AtAYx9CHSN0plr1yrhOgTS3zkybz%2F0hT32Z%2BFCncumTLvaTKiq6dmzV54uMzxmO7SebDH7Aszml6ye3NnvhMHEdW9V4L7rpoAO1jSZer1DkJ3mUodcEAh3pyxbhd7hzfPVKF1yb6Kn%2BGzY%2FQ7qVub7huNvUqencv7Gsxl3qdj48mKx7vBCHZUZcNE%2FosJGNA4x1k%2FG%2BnqX%2BDj58jCn3Jyfwd6ZCSG%2Ftnhl32zvaG8mQe2nDAYUQR2ZT0uru3G3ry3RRH5W6Wq7JmZlFi91sDi%2FdCl3PUTAG41LG3xZJTFJU8XDWcfFg4A%2FJzIbRTHCQpzD7lcXQBjqkAbDzQ6tFLhKRBuZqV1M83TUvNbtY7k5hzyZY6DXevFqC7NRpUzf7%2B8RFyXZ5aNeYg58rZ0GQoQ6PPbLlWH%2FlONYGBN6d5jc0vDpiWIZs65flxXgyjEm67qIda5XRO5o%2BVusqnJD9ttDa3y2bAY1S1Qy1atMaKkSXn4SfASRHN9pqlv3PHm7cCA2mA2YgEtYlRUaamxHBc%2FKmLtibqAyy6rSZf6bS&X-Amz-Signature=6f5b64a05c613ba6295b3f2bc9925e43e6b81b89aeef02ba4f96b521546209cc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
   "site_monetag": "<script src=\"https://5gvci.com/act/files/tag.min.js?z=10688447\" data-cfasync=\"false\" async></script>",
   "site_google": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643\"\ncrossorigin=\"anonymous\"></script>",
   "social_blog": "https://52dh.cc.cd",
@@ -2026,6 +2026,15 @@ export const sites = [
     "description": "QClaw is a personal AI agent that lives on your computer.",
     "shortDesc": "QClaw is a personal AI agent that lives on your co...",
     "url": "https://qclawsg.qq.com/",
+    "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "4319a931-733c-450c-9ba6-a4fd607e2122",
+    "title": "Marvis马维斯-更懂你的AI助手-腾讯Marvis官网",
+    "description": "更懂你的AI助手",
+    "shortDesc": "更懂你的AI助手",
+    "url": "https://marvis.qq.com/",
     "category": "未分类",
     "icon": ""
   }
