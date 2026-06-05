@@ -1,5 +1,5 @@
 export const websiteConfig = {
-  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Y5WB5USF%2F20260604%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260604T231537Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCb46FDoEb%2FbWZjDdR5ZsxaAkqqstEBYIpn%2BPiuEGtnbAIhAN03IUYuUopBK5k5eXqxQjv%2BfOgVMd6kjSM92BUOTvG0Kv8DCF8QABoMNjM3NDIzMTgzODA1IgzUzA4p6HcM4QQGy8Mq3AMUMxeIRKFXfFTnZFUJz%2BSCj1qui44RN9lixx8%2FG5qhZNgzPvrnFk8wAK1Z75wVQHXu5kU%2BTxFKtHlQt49LNls0LDg%2BSO53kycoq0dn7LVhDnBpzPfRPzSAc7Ov4m0UY2UNvYEJUNoSWFG86f06uUc7ozNVbtV1bmAcKNSTRI28512uL3t02z%2FeKpVgM9lY62IH%2BgCp04MwxHVJ8oIX2KemtL8rbi%2BSeNKp%2F87KIbAHRsS%2B%2F3O28F0%2BQKRwmDmBM5r2LLIdy4YoE6bWpWnkjoY7aZbQDKQEa5d5MljKLdSJjnbsxEektmgOzM%2FIqfsRymtd4cLYOLtHbv4TkwXtrVXzrMnlLrM72FUzE92en58E3AuTxO6KzWPtqasbV8tOI7b419mNx7sC2fMPimnw0Yk4qv3v%2Fmv%2B0PD%2FZli3Nv6R0Md4Lg5GxIBxLjNoSDlUf9uqg%2FbgWzwqYxDnQAK7kTrzJlT9DKX2TfTIQPRgVtU9%2FSWaUV4Fi9tSrzVrdXawXi6GhvK21DYlfbfVM36g%2FSPTq7bOk71fEGjaj77rjjGC8sHaBQa5F%2F51x99vxQVP2GVYszfs8lg3RcibwNj%2BnrAbJb%2F57s4CB4VHk3mNs%2Ben3XSo9Gr%2FvHeD7eDPQDCC6YfRBjqkAVUMj%2BH%2F2CS2NTHiNgRqpMbh63tPUjO4Lo0FXCeUCAlWEk9Mkjauk6ArpMgUo4Uii5f80SCHqM%2FitVYd4Sr7GYmXU4DTTKjkeIXbbBc4PhZxoiffnRpxp0NMKTmGayNPt5ynd3r3y3Htwy4HKfJ7R%2BuoZvylImjWZrB0pZcDc82T1Hswx8znzzRcx8Nemu6JOcTxR%2B63eYzJRQXzBqr%2Faur3ikRb&X-Amz-Signature=4a5c190620818f8dace193b829bf6ef3053396a0dc933bdd7ce468b18b9557da&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665FFWI73K%2F20260605%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260605T043810Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCICe0%2B7YCkAvtoT3d0b1aBmJUuaChVSSSv37ueK0rdCDDAiBRU58dl3cZyiYW05N3tjp1Z9AetFn873RjUf4GDvEasir%2FAwhkEAAaDDYzNzQyMzE4MzgwNSIM3Ai10gihj%2B0qsDgrKtwDex2%2FVrowEiQ4xJoBp%2B2Sn1nGchf7G5hNvlHoaqkIkmNhSYUbflCPsAR%2BEYCXJTjJQqyro9Vwz7nBELYUnUySNKXsEDjwu3%2FIa8NGWFocHlbSnkfTwajcjsIDl4kJ985Zr%2Bq86Fj8sa4LOxp2%2F9vZjrYT%2BGEeQIdv9WoXg7e3GqxR6aGAdTQgegLmy021lfsp3vD79ilyvEvkBbQIM4t1IeQajznQ4dgnUDn45RYcg3YCzgipr5JslFIeu1OexYkA9Htsvb42ep3AKRpwezxZo261ttjMSqp30Oyrj2CBIc9tFBIz%2Flvr7%2BympbmkHn%2Be1lmcegyOShOY9ZDw7E47t90kY0V83KP%2FirhYvnX0StoEz3Ei43boagN4fsSuR0rcFMsLd6UJRA%2F5FaiIzIx08%2FefUscREeTiq9khTkTSIhj%2Fs2cDZp4tz%2FEtAuhZ%2FD97rDAXe8zZCMyAvkVs%2F%2FJdiPIfUDCBLhY4IV2f67G3ET8u%2FmJDuDbEkvVVdJINMZGfZWML4%2F%2Bs3esRF%2BA8bTgFa47dmwJo%2FkvZeCYYTm5isSYb9yRmYsl1Jgh%2FHYrZxIehihg9QaB7%2BuWbEl3xGRdXzgQaZWhu9sxk7mjXO5gIX4o5PKS%2FksUNyU3RDb0w0f%2BI0QY6pgH8oV9KouJUX2ZkIFoj4Rutgld8rSS1y82jjqP4lv9FnwgxfIhcBTrV8id%2B8JPzbfVtcQUZen1Tk%2FHv%2BXEJa%2FPMtm0frZ7agfOrcLp1VEEPnzj0dyk7zoXYPbBQdOBCrUfQ6q3aZ8cWi%2Ft0OHBXOKUGtIQAlNkC1edN0L8%2FxaVTCsdlTPHpHtZYXjVrZjZoOt9nkSvx9kuwQLR1zOzJMmp%2FbWkyZFCu&X-Amz-Signature=0d88a7fa8b03666d7b9c554d90a0e2583c35ec77e8eb29212ba074810303014e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
   "site_monetag": "<script src=\"https://5gvci.com/act/files/tag.min.js?z=10688447\" data-cfasync=\"false\" async></script>",
   "site_google": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643\"\ncrossorigin=\"anonymous\"></script>",
   "social_blog": "https://52dh.cc.cd",
@@ -2035,6 +2035,15 @@ export const sites = [
     "description": "更懂你的AI助手",
     "shortDesc": "更懂你的AI助手",
     "url": "https://marvis.qq.com/",
+    "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "2f7fc0a0-6a21-4c16-90bd-81cfd3d06d04",
+    "title": "ClawHub",
+    "description": "@mydaozun",
+    "shortDesc": "@mydaozun",
+    "url": "https://clawhub.ai/",
     "category": "未分类",
     "icon": ""
   }
