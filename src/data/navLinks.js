@@ -1,5 +1,5 @@
 export const websiteConfig = {
-  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QNASUFRR%2F20260607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260607T001236Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIFwPDazMyLon6Y%2B0NkthfB7nE0bQnEv3DdjfjhD2eRrMAiBWCXukMIFOojJzqJ177eUU2Lcm7PFEcRoEPvUBJ4RwCSqIBAiR%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMefsxhMPYcaS6shsmKtwDz5%2F%2BmMOXLsUqUoeWFbEPGzJNiDFm3A7x3YLexlXLSZJ5gcWNySjVIVkH0XQmE2R3f8Fpuwzf35j6Y0KMmI3O%2F4iLDUkyYtJvjFUbkgxO%2BTF%2FWLeYnv2Zja02o98D06ig0CD34UG6ogKpvxYicfC75CoV%2FKvBCkYIkkerL0sV8G0Ng33tLYn%2BdSO6xFw9syJXTClNSDQ%2FVYLlbDo9S9dEhbhIpkaBwOzsi5YeW4h7SGqX%2BsG9nc2dpiu%2BGUKMhL%2FeFNYuo8gK0XM6Zt1t3qM81dO4xGnSFKKRefjABOoID2MMLDxV3ZxMthAXu4l8uT5D5sF9g52kMAr2fiETSyUE0%2B5tDCkXNYrECH%2FtQqQMvGM6iXpdm3gsz4e74o6eDRKejTnMLsC4gMouebs6YqPvdnirrrHAHKwjykzQ75cGhZFbFCT8q9aFmPI5JEMbwkWnxReaZJOyVnneG07WPh%2B1am4wlyclBIpazse6mqkG3c80JHtgoHt7hALk2PCucLXte7uyWyalg3dIq7Q%2Bbi2%2BqMDurkJlht0NgDp4qDaOl24KVC5G6d68INEX4cRPSDWFh1fGUBQ9EGm5oDyRQSLD7bTV4Udd6FjRP4QI%2BzTse73iw8RDy64n%2F2y79tQwgN6S0QY6pgG7bNOm9SbZ8vDOj8M2KEkcND534vba%2FlV8GgZogMGXuZo2extNrCMCJuGsDtPhFUR0%2B%2B1depoG7puiPELuNlYIqAb5Gn01jkmNchbxY%2FgxLYbbETB54K%2Bbwm2bODhsf5dWPLGYLL6UPHtIvrATZcLTe7k4AK8OFptN3ctnoi%2BWJy%2Bo6Qe1SIYbpT5aBOqIbpLL5%2BnDe2M6yticfZlUjoRFvugJU5WW&X-Amz-Signature=8c7420f84dffdae9550ce88898dfa3b43d9634328b93605344a1c2e36f5342d2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XWI3CHZJ%2F20260607%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260607T054500Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIC5M4Nv%2Bkypp0o486wE20a%2FEXcxzIsvF%2Btsf%2BEbdUODwAiBYRVXCf0tYZ%2F2QiCLeK1wGEP5rE%2BgXVt2JXGWMpstbfyqIBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMCCExCC5bEJT1Cuw1KtwDiI6hKUVfPdlBZBhy8gE6%2BriLsgydjNB3C5jDmLKMDkFqKkZyBlLwOGB9Xl2LupYDDtPgno5pA%2FT0%2FlWgod7LIlQ7FGCncoM%2FNmazFn7HSu3JzGEYsL8rPwB9bp2s3ayF12K5NT74wEco2OmT1g4oa1SvmhBNjaO2%2BDr2C%2BiaR8NJkvY%2BfsQbF7rWMuOw%2BwxQsli7mjZkpKTfLFSNX2gC52Gr432joK9mbsqxf%2F47pEMA7AQV5iJ2VgQioLJDpg%2Bbc%2FdOHgU%2FjuG%2BNf7zNMpW59Tv%2B0DsljPzhS5eD9POSeuzV517asX9d5W02kZK3sOWAhLmyvRUa43Spo8KOgPCA%2FhgXETdAspepTXiOEgmSk1Ifn51PqHGdSvaifaOiPCF2Ib0MNxSY5MNvclIOvJom1LaiZFResMbfhW%2FFUqFO3Z3YTbAM9HNA24fI%2B%2BNV6wZqj0KUGwzMjhBSP4uVHdUP6wwVQVbRDEXtDi9tRrR5Gb3F7x6YXezFdm0C0jhhO3RsSAMmHGI9khWSrYERUPowOSsGFZIhlNES0uIE5%2Fw3L6Na%2F7JH8XAJMCLdun64lBTo4kiTITk1LQf8D2KRk%2BllUDjBfVN3FPAajZ356lVJcpXgWBWv1wnQZmLAS4wmNGT0QY6pgFIKGnEv%2BxJj6hfSLH7RqmfApoXgcfqv4EmJ92lOElGP%2FVRX22T9m190PNb3uuQSTcPYjCME2GqbWljigAA04blPADSys0XE%2FKpuSvbZPi8QgLTp%2BNFo%2FibSE3gKHOycLgwe%2BCrd4%2B0YTNuTMAEj5A34AdajiKfp5cVsdQ5vF72AT8NuO7OhVaF4z99mESBo2%2Fn42QnqLgTrL2H1guEPqcvSgUpXM1g&X-Amz-Signature=a35d8051cb3a3203f1fc1f9eb178161763f342221fec662350de07f3342711e6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
   "site_monetag": "<script src=\"https://5gvci.com/act/files/tag.min.js?z=10688447\" data-cfasync=\"false\" async></script>",
   "site_google": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643\"\ncrossorigin=\"anonymous\"></script>",
   "social_blog": "https://52dh.cc.cd",
@@ -2044,6 +2044,15 @@ export const sites = [
     "description": "@mydaozun",
     "shortDesc": "@mydaozun",
     "url": "https://clawhub.ai/",
+    "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "3dfdc492-c99c-466a-88d6-8abbe9c012a3",
+    "title": "永久无限免费AI工具 - 无需登录，无需注册 | AIFreeForever",
+    "description": "AI FREE FOREVER是生成免费AI图像和免费与AI聊天的最佳平台。此外，您还可以免费获得700多个AI工具，包括配音、转录和贴纸。立即将我们加入书签以获取任何免费AI工具。",
+    "shortDesc": "AI FREE FOREVER是生成免费AI图像和免费与AI聊天的最佳平台。此外，您还可以免费获得7...",
+    "url": "https://aifreeforever.com/zh",
     "category": "未分类",
     "icon": ""
   }
