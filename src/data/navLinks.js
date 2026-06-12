@@ -1,5 +1,5 @@
 export const websiteConfig = {
-  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663R3KABCI%2F20260612%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260612T133335Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEE0aCXVzLXdlc3QtMiJHMEUCIQDYgkFvIUSzstnkGLGi8j2PoAk1DjhtRAVxTJ14me2x%2FQIgOMvc5BSnNh20NRG%2FTw%2BbP4Kv0D7ctAvZbC742VzU7cYq%2FwMIFhAAGgw2Mzc0MjMxODM4MDUiDIcjh9Hlr4VFeUXlZircA%2F7tZrFf90tcTpzRz4MCv9QMGeCHNtwa9fvHoBb6VRLKUsMCbBrTQ%2F03mBd9YYDbeo7xDiqUHLZjxGAMuXQkLdu95KiF3H%2Bdt1HNVNacHLYShmYyII01HJ5aM5SDEMi7DJbHhzKYjFbDaHbS8I9FWmILRk9TIZcqYnlroQey8BAsIkdnoTnSXzdiwD%2BZ9YvqpwA5vIarjhi%2BWHLh7XqWzMaAr7aS4uTtxFXktKSdLrTRkh2m6CxbtVEwZ5lxjYhlSEAEiQbThJQr4cJ5v5eKH5IdiuoifUQxHXH6LOWPmhp8XOFkgfPNsUZ8QODAmuavuX5%2FV%2FcU4M4ROFfF23Rl4LcyUz%2Fx8hZ1BCoJ%2Fp3%2BcuYEBIfyhFzIf367G1rDMdW1KfC2%2BEPBCKTuYb9R54%2BEZKnNTqKyZSC0IAZFcY%2ByCNzgfKR%2Bvea4F%2Bo2jiMQQN50OP4N06y7SMBjFPo%2Bd5YfVSUXJS95eqqeeh4VRx541TYVxv5Edf9nnVjLSmGaCNbOLBMN%2Bq4GLm5gjEEV6ODNTiA2Y3RizXrAO%2FZtZ%2F0CLvHdenFbybJyYBLHIIC94IAd2vDJfiwwGN%2F5AZf3ZIAkIRoycfmqQn7Lwvc1fDHhELocEJKz5qO4H7p%2BsFotML2JsNEGOqUBNw7S%2BvUtVMcOWywz0HKmtj4%2Fjbyh4lkihKxRKA1y5lYvOiYcpDUWwmfppujQrfZORxvZYAIfVtGAptHI1JhE8Uz0SBGYQ8YI26DWrJG93LAlYs4Wg1kPQyNUzHjCog4Nx%2B3fpvlNU7d8SdnoVlz052toxZi%2FkD6ljeAvtDQGFUd7e0wN%2FDx8RYxlFD5p%2FO%2FanQLY%2FhBTEr7UvWHJgxhwOgJG1II3&X-Amz-Signature=b2a88dcef1d7caa21130e25742024be0a1f72aa31f85e486a909a535573626ad&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+  "favicon": "https://prod-files-secure.s3.us-west-2.amazonaws.com/bd431346-c354-4ec7-9303-d2ff19b0555d/41e73a98-e58f-4269-8b8d-f22245744fd8/52DH.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666VYVR5ZB%2F20260612%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260612T165059Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFEaCXVzLXdlc3QtMiJIMEYCIQDx0rwSxR1ArqWj0ynVMK6TGgtFgbXVqUFnKI1aYQBI1AIhAMXP3o%2FqVNt1vyzb1RLqU6DSNEuBJOJBiqIT5BUQFgyhKv8DCBoQABoMNjM3NDIzMTgzODA1IgyIM99NYgpI2GhKoDMq3AOLkG%2F0w018ppvrpwkamEHw98Nlab%2BJ%2FZ0Cwwt6EUNGf9taH1d0CHMULo7AhKOjPaTDtq9Yqv1vJOwFpuYjxVN9hC49MlqRJGpg0CKUDbNZIKU6C52dsRFcCschqMA3DZ%2BCdbe%2Fo7zi0xsUxZ77%2BjDAJCalXPTjFzdxytD1%2BMJyXmXjkL9Bn4wirP76EV%2FON5OQbNEaneXnf9K2D61fo6px4380NQdc5%2Bv2c9%2FI47t3sYEapMXvZ6fu3hZFj60OtvWFTGW%2BHj06O%2FIPPKkzbeJGPcf0APSDMZ3G2%2BHdRTnc5%2FWKdAlZobNjPCUP7ByBO3910U8%2B7CzPW%2FqXzl5GGsd%2FvfkIwWWKCg%2B9JHO0jDyG3plYfB3wYu9B3SX0C5IDiUEhDPTBykrYKFKD8TZIh9NA042OMYhyZjpt0109bCMaE1L9cPBsepEJQ8Jg5cVEVxWphtRaXsTplnYcUfflP0elyr6u3DqfTNTrZzCMH2beYMYw0iNnOBhZ2NPk96dHVYv%2BEiELFBMOME0CVfQVsxdhVNM5qYqmljBYhRc4QCpDGbVaqfYswkVhCSLN%2FwqQZSDtSUnCsvd8H%2FG2osBBB%2BGG%2BZUTfrDAe14bpJlcm16C%2B82wIInCchtcqsQvcTDo5rDRBjqkAS0T8o7ieoTwieKrwspKbV%2FHFedUXUC7vcnIe457ADgsnxPx0bP4RPRHy2AHJSgK7KOv3RIqHunr%2BhlJAgvStBb%2BUyA4kuRw0rh5xKcRajBuFQkhiwH6J7dGeU1ZXrAYkfNfGE94qC18Qm%2FSgXsOYkDYaJ4VTmxXS%2BQat%2FGPq0YL3Kl0ubXlyieDTeeBDJbQUJUhq4ByvUf8NJ2ZfZwyXGHpf9YU&X-Amz-Signature=8da89a962d7cd95ec69df2db9bcf30db3fd1ea82471782aa7ea441b2ed63c32b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
   "site_monetag": "<script src=\"https://5gvci.com/act/files/tag.min.js?z=10688447\" data-cfasync=\"false\" async></script>",
   "site_google": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6155137717903643\"\ncrossorigin=\"anonymous\"></script>",
   "social_blog": "https://52dh.cc.cd",
@@ -2053,6 +2053,15 @@ export const sites = [
     "description": "AI FREE FOREVER是生成免费AI图像和免费与AI聊天的最佳平台。此外，您还可以免费获得700多个AI工具，包括配音、转录和贴纸。立即将我们加入书签以获取任何免费AI工具。",
     "shortDesc": "AI FREE FOREVER是生成免费AI图像和免费与AI聊天的最佳平台。此外，您还可以免费获得7...",
     "url": "https://aifreeforever.com/zh",
+    "category": "未分类",
+    "icon": ""
+  },
+  {
+    "id": "d8857721-1ce2-4ffc-af1c-bdab4548bb2b",
+    "title": "TouchAI",
+    "description": "一触即达的桌面效率 Agent",
+    "shortDesc": "一触即达的桌面效率 Agent",
+    "url": "https://touch-ai.org/",
     "category": "未分类",
     "icon": ""
   }
